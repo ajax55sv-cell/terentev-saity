@@ -9,7 +9,7 @@
 <meta property="og:title" content="Сергей Терентьев – сайты для малого бизнеса, онлайн по всей России">
 <meta property="og:description" content="Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/case-ajax55sv-cell-github-io-polosa-barbershop-demo-desktop.webp">
+<meta property="og:image" content="https://ajax55sv-cell.github.io/terentev-saity/assets/case-ajax55sv-cell-github-io-polosa-barbershop-demo-desktop.jpg">
 <meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -259,7 +259,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   });
 
   // живой телефон
-  const phone = (c, dur) => `<div class="phone" style="--dur:${dur}s"><div class="notch"></div><div class="screen">${c.mobile ? `<img src="${esc(c.mobile)}" alt="Сайт ${esc(c.title)} на телефоне" loading="lazy" data-shift>` : ''}</div></div>`;
+  const phone = (c, dur) => `<div class="phone" style="--dur:${dur}s"><div class="notch"></div><div class="screen">${c.mobile ? `<img src="${esc(c.mobile)}" alt="Сайт ${esc(c.title)} на телефоне" decoding="async" data-shift>` : ''}</div></div>`;
   const fan = $('fan');
   const withShots = cases.filter((c) => c.mobile);
   if (withShots.length) fan.innerHTML = withShots.slice(0, 3).map((c, i) => phone(c, 20 + i * 4)).join('');
@@ -269,7 +269,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   $('cases').innerHTML = cases.map((c, i) => `
     <article class="case reveal">
       <div class="devices${c.desktop ? '' : ' solo'}">
-        ${c.desktop ? `<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc((c.url || '').replace(/^https?:\/\//, ''))}</span></div><img src="${esc(c.desktop)}" alt="Сайт ${esc(c.title)}" loading="lazy"></div>` : ''}
+        ${c.desktop ? `<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc((c.url || '').replace(/^https?:\/\//, ''))}</span></div><img src="${esc(c.desktop)}" alt="Сайт ${esc(c.title)}" decoding="async"></div>` : ''}
         ${c.mobile ? phone(c, 18 + (i % 3) * 3) : ''}
       </div>
       <div class="case-text">
