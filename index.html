@@ -137,6 +137,11 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 .niches span{font-size:14px;color:var(--ink-3)}
 .more{display:flex;justify-content:center;padding-top:24px}
 #moreCases .case:first-child{border-top:1px dashed var(--line)}
+#works{scroll-margin-top:64px}
+.niche-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin:0 0 8px;padding:14px 18px;border-radius:var(--r);background:var(--soft);color:var(--ink-2);font-size:15px}
+.niche-note[hidden]{display:none}
+.niche-note b{color:var(--ink)}
+.niche-note .btn{padding:11px 18px;font-size:14px;background:var(--paper)}
 .case{scroll-margin-top:84px}
 
 /* условия работы */
@@ -211,6 +216,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
 
   <section class="block" id="works">
     <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div><p id="worksNote"></p></div>
+    <div class="niche-note" id="nicheNote" hidden></div>
     <div id="cases"></div>
     <div id="moreCases" hidden></div>
     <div class="more" id="moreWrap" hidden><button class="btn btn-ghost" id="moreBtn" type="button"></button></div>
@@ -328,29 +334,40 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
       </div>
     </article>`;
   // первые 6 работ открыты, остальные под кнопкой «Показать ещё»
+  // нажали нишу: все её работы идут первыми и открыты, остальные под кнопкой «Показать ещё»
   const OPEN = 6;
-  $('cases').innerHTML = cases.slice(0, OPEN).map(caseHtml).join('') || '<p style="color:var(--ink-3)">Работы появятся здесь.</p>';
-  const rest = cases.slice(OPEN);
-  if (rest.length) {
-    $('moreCases').innerHTML = rest.map((c, i) => caseHtml(c, i + OPEN)).join('');
-    $('moreWrap').hidden = false;
+  const renderCases = (key) => {
+    const mine = key ? cases.filter((c) => c.group === key) : [];
+    const list = key ? [...mine, ...cases.filter((c) => c.group !== key)] : cases;
+    const open = key ? mine.length : OPEN;
+    $('cases').innerHTML = list.slice(0, open).map(caseHtml).join('') || '<p style="color:var(--ink-3)">Работы появятся здесь.</p>';
+    const rest = list.slice(open);
+    $('moreCases').innerHTML = rest.map((c, i) => caseHtml(c, i + open)).join('');
+    $('moreCases').hidden = true;
+    $('moreWrap').hidden = !rest.length;
     $('moreBtn').textContent = `Показать ещё ${rest.length} ${word(rest.length, 'работу', 'работы', 'работ')}`;
-  }
+    const title = key && (D.niches || []).find((n) => n.key === key);
+    $('nicheNote').hidden = !title;
+    $('nicheNote').innerHTML = title ? `<span>Показываю: <b>${esc(title.title)}</b> – ${mine.length} ${word(mine.length, 'работа', 'работы', 'работ')}. Остальные ниже.</span><button class="btn btn-ghost" id="nicheReset" type="button">Показать все работы</button>` : '';
+  };
+  renderCases(null);
   const openMore = () => { $('moreCases').hidden = false; $('moreWrap').hidden = true; document.querySelectorAll('#moreCases .phone,#moreCases .reveal').forEach((el) => io.observe(el)); document.querySelectorAll('#moreCases [data-shift]').forEach(fit); };
   $('moreBtn').addEventListener('click', openMore);
 
-  // ниши: у каждой работы поле group, ссылка ведёт к первой работе ниши и раскрывает список
+  // ниши: у каждой работы поле group, нажатие показывает все работы этой ниши первыми
   $('nicheList').innerHTML = (D.niches || []).map((n) => {
-    const idx = cases.map((c, i) => (c.group === n.key ? i : -1)).filter((i) => i > -1);
-    if (!idx.length) return '';
-    return `<li><a href="#case-${idx[0]}" data-case="${idx[0]}"><b>${esc(n.title)}</b><span>${idx.length} ${word(idx.length, 'работа', 'работы', 'работ')}</span></a></li>`;
+    const cnt = cases.filter((c) => c.group === n.key).length;
+    if (!cnt) return '';
+    return `<li><a href="#works" data-niche="${esc(n.key)}"><b>${esc(n.title)}</b><span>${cnt} ${word(cnt, 'работа', 'работы', 'работ')}</span></a></li>`;
   }).join('');
   document.addEventListener('click', (e) => {
-    const a = e.target.closest('[data-case]'); if (!a) return;
+    const a = e.target.closest('[data-niche]'), r = e.target.closest('#nicheReset');
+    if (!a && !r) return;
     e.preventDefault();
-    const el = $('case-' + a.dataset.case); if (!el) return;
-    if (el.closest('#moreCases') && $('moreCases').hidden) openMore();
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    renderCases(a ? a.dataset.niche : null);
+    document.querySelectorAll('#cases .phone,#cases .reveal,#moreCases .phone,#moreCases .reveal').forEach((el) => io.observe(el));
+    document.querySelectorAll('#cases [data-shift],#moreCases [data-shift]').forEach((img) => { if (img.complete) fit(img); else img.addEventListener('load', () => fit(img)); });
+    $('works').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
   $('price').innerHTML = (D.services || []).map((s) => `<li${s.hit ? ' class="hit"' : ''}><h3>${esc(s.title)}</h3><span class="sum">${esc(s.price || 'по запросу')}</span>${s.term ? `<span class="term">${esc(s.term)}</span>` : ''}${Array.isArray(s.desc) ? `<ul>${s.desc.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : `<p>${esc(s.desc || '')}</p>`}</li>`).join('');
