@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сергей Терентьев – сайты для малого бизнеса, онлайн по всей России</title>
-<meta name="description" content="Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.">
-<meta property="og:title" content="Сергей Терентьев – сайты для малого бизнеса, онлайн по всей России">
-<meta property="og:description" content="Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.">
+<title>Сайт для малого бизнеса под ключ: демо бесплатно – Сергей Терентьев</title>
+<meta name="description" content="Сделаю демо вашего сайта за 1 день бесплатно. Платите, только когда сайт готов и всё устраивает. Лендинги для салонов красоты, шиномонтажей, автосервисов. От 10 000 ₽.">
+<meta property="og:title" content="Сайт для малого бизнеса под ключ: демо бесплатно – Сергей Терентьев">
+<meta property="og:description" content="Сделаю демо вашего сайта за 1 день бесплатно. Платите, только когда сайт готов и всё устраивает. Лендинги для салонов красоты, шиномонтажей, автосервисов. От 10 000 ₽.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://ajax55sv-cell.github.io/terentev-saity/assets/case-ajax55sv-cell-github-io-dr-topal-desktop.jpg">
 <meta name="color-scheme" content="light">
@@ -52,7 +52,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.02em;margin
 .hello{display:inline-flex;align-items:center;gap:12px;background:var(--soft);border-radius:999px;padding:6px 18px 6px 6px;font-weight:500}
 .hello img,.hello b{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
 .hello b{background:var(--accent);color:#fff;display:grid;place-items:center;font:700 16px/1 var(--display)}
-h1{font-size:clamp(34px,5.4vw,64px);line-height:1.04;margin:22px 0 0}
+h1{font-size:clamp(28px,4.1vw,50px);line-height:1.08;margin:22px 0 0}
 h1 em{font-style:normal;color:var(--accent)}
 .lead{font-size:clamp(17px,1.8vw,20px);color:var(--ink-2);max-width:36ch;margin:20px 0 0}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
@@ -121,9 +121,27 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 .pnote li{position:relative;padding-left:20px}
 .pnote li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 
+/* ниши: ссылки на работы */
+.niches{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:760px){.niches{grid-template-columns:repeat(5,1fr);gap:12px}}
+.niches a{display:flex;flex-direction:column;gap:4px;height:100%;padding:18px 18px 16px;border-radius:var(--r);background:var(--soft);text-decoration:none;transition:background .2s,transform .2s}
+.niches a:hover{background:var(--line);transform:translateY(-2px)}
+.niches b{font:600 17px/1.25 var(--body)}
+.niches span{font-size:14px;color:var(--ink-3)}
+.more{display:flex;justify-content:center;padding-top:24px}
+#moreCases .case:first-child{border-top:1px dashed var(--line)}
+.case{scroll-margin-top:84px}
+
+/* условия работы */
+.terms{margin-top:48px}
+.terms h3{font-size:clamp(20px,2.2vw,26px);line-height:1.15}
+.terms .pnote{margin-top:20px}
+@media (min-width:860px){.terms .pnote{grid-template-columns:1fr 1fr;gap:12px 44px}}
+
 /* как работаю – настоящая последовательность, поэтому номера */
 .steps{display:grid;gap:14px;counter-reset:s;list-style:none;margin:0;padding:0}
-@media (min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:760px){.steps{grid-template-columns:repeat(2,1fr)}.steps li:last-child{grid-column:1/-1}}
+@media (min-width:1060px){.steps{grid-template-columns:repeat(5,1fr)}.steps li:last-child{grid-column:auto}}
 .steps li{position:relative;background:var(--soft);border-radius:var(--r);padding:24px 22px 26px;counter-increment:s}
 .steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;font:700 15px/1 var(--display);margin-bottom:16px}
 .steps h3{font-size:18px;line-height:1.2}
@@ -175,19 +193,25 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     <div class="fan" id="fan" aria-label="Мои работы"></div>
   </section>
 
+  <section class="block" id="niches">
+    <div class="block-head reveal"><div><div class="eyebrow">Для кого</div><h2>Для каких бизнесов делаю</h2></div><p>Салоны красоты, шиномонтажи, автосервисы и другой малый бизнес. Нажмите на нишу - покажу работу.</p></div>
+    <ul class="niches reveal" id="nicheList"></ul>
+  </section>
+
   <section class="block" id="works">
     <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div><p id="worksNote"></p></div>
     <div id="cases"></div>
+    <div id="moreCases" hidden></div>
+    <div class="more" id="moreWrap" hidden><button class="btn btn-ghost" id="moreBtn" type="button"></button></div>
   </section>
 
   <section class="block" id="services">
     <div class="block-head reveal"><div><div class="eyebrow">Услуги и цены</div><h2>Что могу сделать для вас</h2></div><p>Точную цену назову, когда увижу задачу. Демо – бесплатно.</p></div>
     <ul class="price reveal" id="price"></ul>
-    <ul class="pnote reveal">
-      <li>Домен и хостинг вы покупаете сами у сервиса, я подскажу, что выбрать.</li>
-      <li>Перенос сайта на них входит в любой пакет.</li>
-      <li>Доработки после сдачи – от 1 000 ₽.</li>
-    </ul>
+    <div class="terms reveal">
+      <h3>Условия работы</h3>
+      <ul class="pnote" id="terms"></ul>
+    </div>
   </section>
 
   <section class="block" id="how">
@@ -199,7 +223,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     <div>
       <div class="eyebrow" style="color:rgba(255,255,255,.6)">Написать</div>
       <h2 id="finalTitle">Покажу демо вашего сайта</h2>
-      <p>Нажмите на мессенджер – сообщение уже набрано, останется отправить. Отвечаю в течение дня.</p>
+      <p>Нажмите на мессенджер - сообщение уже набрано, останется отправить. Следом пришлите нишу, город и ссылку на карточку или опишите бизнес словами. Отвечаю в течение дня.</p>
       <div class="cta" data-cta></div>
     </div>
     <div class="chat" aria-hidden="true">
@@ -211,10 +235,10 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 </main>
 
-<footer class="wrap"><span id="foot"></span><span></span><span>Сайт собран с Claude Code</span></footer>
+<footer class="wrap"><span id="foot"></span><span id="footMail"></span></footer>
 <div class="toast" id="toast" role="status"></div>
 
-<script id="data" type="application/json">{"name":"Сергей Терентьев","city":"онлайн по всей России","cityIn":"России","photo":"","palette":"А","messengers":{"telegram":"Seryj56","whatsapp":"","max":""},"message":"Здравствуйте! Хочу заказать сайт. Посмотрел ваши работы на витрине – расскажите, как начать?","services":[{"title":"Лайт","desc":"Сайт с услугами, ценами, отзывами и кнопками связи. 2 круга правок.","price":"10 000 ₽","term":"срок 2 дня"},{"title":"Стандарт","desc":"Всё из «Лайта» плюс виджет записи на удобное время.","price":"15 000 ₽","term":"срок 2 дня","hit":true},{"title":"Премиум","desc":"Кинематографичный сайт: сцены и параллакс при прокрутке и месяц сопровождения (до 5 мелких правок).","price":"20 000 ₽","term":"срок 3 дня"}],"cases":[{"title":"Dr. Topal","niche":"Подология и эстетика","city":"Калуга","url":"https://ajax55sv-cell.github.io/dr-topal/","folder":"ohota/kaluga-nogti-n03-dr-topal-144577012038-demo-prod","kind":"demo","about":"Студия подологии и эстетики: услуги, цены и запись.","desktop":"assets/case-ajax55sv-cell-github-io-dr-topal-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-dr-topal-mobile.webp"},{"title":"Лак и точка","niche":"Студия маникюра","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-nogti/","folder":"portfolio-nogti","kind":"demo","about":"Студия маникюра: прайс, работы мастеров и запись одной кнопкой.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-nogti-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-nogti-mobile.webp"},{"title":"Шинный двор","niche":"Шиномонтаж","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-shinomontazh/","folder":"portfolio-shinomontazh","kind":"demo","about":"Шиномонтаж «к своему времени»: запись на удобный час без очереди.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-shinomontazh-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-shinomontazh-mobile.webp"},{"title":"Свой дом","niche":"Строительство","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-stroiteli/","folder":"portfolio-stroiteli","kind":"demo","about":"Каркасные дома и бани по этапам, с кнопкой расчёта сметы.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-stroiteli-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-stroiteli-mobile.webp"},{"title":"Mery Animators","niche":"Детские праздники","city":"Калуга","url":"https://ajax55sv-cell.github.io/mery-animators/","folder":"ohota/kaluga-korporativy-n05-mery-animators-116185298849-demo","kind":"demo","about":"Аниматоры на детские праздники: программы, цены и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-mery-animators-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-mery-animators-mobile.webp"},{"title":"Участки у моря","niche":"Недвижимость","city":"Сочи","url":"https://ajax55sv-cell.github.io/nedvizhimost-sochi-demo/","folder":"nedvizhimost-sochi-demo","kind":"demo","about":"Земельные участки в Сочи: сайт принимает трафик и собирает контакты.","desktop":"assets/case-ajax55sv-cell-github-io-nedvizhimost-sochi-demo-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-nedvizhimost-sochi-demo-mobile.webp"},{"title":"Проверенный автоимпорт","niche":"Авто из Китая, Кореи и Японии","city":"","url":"https://ajax55sv-cell.github.io/avtoimport-demo-d/","folder":"avtoimport-demo-d","kind":"demo","about":"Привоз авто под ключ: этапы, расчёт и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-avtoimport-demo-d-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-avtoimport-demo-d-mobile.webp"},{"title":"Sofi","niche":"Ателье","city":"Калуга","url":"https://ajax55sv-cell.github.io/sofi/","folder":"ohota/kaluga-atelie-n01-sofi-206470159642-demo","kind":"demo","about":"Ателье: ремонт и перекрой меха, кожи, трикотажа.","desktop":"assets/case-ajax55sv-cell-github-io-sofi-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-sofi-mobile.webp"},{"title":"Гладкая","niche":"Лазерная эпиляция","city":"Калуга","url":"https://ajax55sv-cell.github.io/gladkaya/","folder":"ohota/kaluga-epilyaciya-n01-gladkaya-214284886603-demo","kind":"demo","about":"Студия аппаратной косметологии: прайс и запись.","desktop":"assets/case-ajax55sv-cell-github-io-gladkaya-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-gladkaya-mobile.webp"},{"title":"Ваша Светлость","niche":"Клининг","city":"Калуга","url":"https://ajax55sv-cell.github.io/vasha-svetlost/","folder":"ohota/kaluga-klining-n09-vasha-svetlost-38203257359-demo","kind":"demo","about":"Уборка квартир: что входит, цены и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-vasha-svetlost-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-vasha-svetlost-mobile.webp"},{"title":"For You","niche":"Корпоративы и праздники","city":"Калуга","url":"https://ajax55sv-cell.github.io/for-you/","folder":"ohota/kaluga-korporativy-n14-for-you-120003155362-demo","kind":"demo","about":"Площадка на крыше для вечеринок, шатёр и купола.","desktop":"assets/case-ajax55sv-cell-github-io-for-you-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-for-you-mobile.webp"},{"title":"Queen nails","niche":"Студия маникюра","city":"Калуга","url":"https://ajax55sv-cell.github.io/queen-nails/","folder":"ohota/kaluga-nogti-n02-queen-nails-130530556231-demo","kind":"demo","about":"Студия маникюра, педикюра и подологии.","desktop":"assets/case-ajax55sv-cell-github-io-queen-nails-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-queen-nails-mobile.webp"},{"title":"Авто-Мото","niche":"Шиномонтаж","city":"Калуга","url":"https://ajax55sv-cell.github.io/avto-moto/","folder":"ohota/kaluga-shinomontazh-n01-avto-moto-192604298404-demo","kind":"demo","about":"Шиномонтаж: ремонт колёс и дисков, мотоциклы.","desktop":"assets/case-ajax55sv-cell-github-io-avto-moto-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-avto-moto-mobile.webp"},{"title":"Рубин","niche":"Автосервис","city":"Новошахтинск","url":"https://ajax55sv-cell.github.io/rubin/","folder":"ohota/avtoservis-rubin200221860627-demo","kind":"demo","about":"Автосервис: услуги, цены и запись.","desktop":"assets/case-ajax55sv-cell-github-io-rubin-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-rubin-mobile.webp"}],"legal":{"status":"самозанятый","fio":"","inn":"","ogrnip":"","email":""}}</script>
+<script id="data" type="application/json">{"name":"Сергей Терентьев","city":"онлайн по всей России","cityIn":"России","photo":"","palette":"А","messengers":{"telegram":"Seryj56","whatsapp":"","max":""},"message":"Здравствуйте! Хочу заказать сайт. Посмотрел ваши работы на витрине – расскажите, как начать?","services":[{"title":"Лайт","desc":"Сайт с услугами, ценами, отзывами и кнопками связи. 2 круга правок, правки словами в тот же день.","price":"10 000 ₽","term":"срок 2 дня"},{"title":"Стандарт","desc":"Всё из «Лайта» плюс виджет записи на удобное время. Правки словами в тот же день.","price":"15 000 ₽","term":"срок 2 дня","hit":true},{"title":"Макси","desc":"Кинематографичный сайт: сцены и параллакс при прокрутке и месяц сопровождения (до 5 мелких правок).","price":"20 000 ₽","term":"срок 3 дня"}],"cases":[{"title":"Dr. Topal","niche":"Подология и эстетика","city":"Калуга","url":"https://ajax55sv-cell.github.io/dr-topal/","folder":"ohota/kaluga-nogti-n03-dr-topal-144577012038-demo-prod","kind":"demo","about":"Студия подологии и эстетики: услуги, цены и запись.","desktop":"assets/case-ajax55sv-cell-github-io-dr-topal-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-dr-topal-mobile.webp","group":"nogti"},{"title":"Авто-Мото","niche":"Шиномонтаж","city":"Калуга","url":"https://ajax55sv-cell.github.io/avto-moto/","folder":"ohota/kaluga-shinomontazh-n01-avto-moto-192604298404-demo","kind":"demo","about":"Шиномонтаж: ремонт колёс и дисков, мотоциклы.","desktop":"assets/case-ajax55sv-cell-github-io-avto-moto-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-avto-moto-mobile.webp","group":"shinomontazh"},{"title":"Гладкая","niche":"Лазерная эпиляция","city":"Калуга","url":"https://ajax55sv-cell.github.io/gladkaya/","folder":"ohota/kaluga-epilyaciya-n01-gladkaya-214284886603-demo","kind":"demo","about":"Студия аппаратной косметологии: прайс и запись.","desktop":"assets/case-ajax55sv-cell-github-io-gladkaya-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-gladkaya-mobile.webp","group":"epilyaciya"},{"title":"Рубин","niche":"Автосервис","city":"Новошахтинск","url":"https://ajax55sv-cell.github.io/rubin/","folder":"ohota/avtoservis-rubin200221860627-demo","kind":"demo","about":"Автосервис: услуги, цены и запись.","desktop":"assets/case-ajax55sv-cell-github-io-rubin-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-rubin-mobile.webp","group":"avtoservis"},{"title":"Ваша Светлость","niche":"Клининг","city":"Калуга","url":"https://ajax55sv-cell.github.io/vasha-svetlost/","folder":"ohota/kaluga-klining-n09-vasha-svetlost-38203257359-demo","kind":"demo","about":"Уборка квартир: что входит, цены и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-vasha-svetlost-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-vasha-svetlost-mobile.webp","group":"klining"},{"title":"For You","niche":"Корпоративы и праздники","city":"Калуга","url":"https://ajax55sv-cell.github.io/for-you/","folder":"ohota/kaluga-korporativy-n14-for-you-120003155362-demo","kind":"demo","about":"Площадка на крыше для вечеринок, шатёр и купола.","desktop":"assets/case-ajax55sv-cell-github-io-for-you-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-for-you-mobile.webp","group":"prazdniki"},{"title":"Лак и точка","niche":"Студия маникюра","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-nogti/","folder":"portfolio-nogti","kind":"demo","about":"Студия маникюра: прайс, работы мастеров и запись одной кнопкой.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-nogti-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-nogti-mobile.webp","group":"nogti"},{"title":"Шинный двор","niche":"Шиномонтаж","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-shinomontazh/","folder":"portfolio-shinomontazh","kind":"demo","about":"Шиномонтаж «к своему времени»: запись на удобный час без очереди.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-shinomontazh-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-shinomontazh-mobile.webp","group":"shinomontazh"},{"title":"Свой дом","niche":"Строительство","city":"Казань","url":"https://ajax55sv-cell.github.io/portfolio-stroiteli/","folder":"portfolio-stroiteli","kind":"demo","about":"Каркасные дома и бани по этапам, с кнопкой расчёта сметы.","desktop":"assets/case-ajax55sv-cell-github-io-portfolio-stroiteli-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-portfolio-stroiteli-mobile.webp","group":"stroitelstvo"},{"title":"Mery Animators","niche":"Детские праздники","city":"Калуга","url":"https://ajax55sv-cell.github.io/mery-animators/","folder":"ohota/kaluga-korporativy-n05-mery-animators-116185298849-demo","kind":"demo","about":"Аниматоры на детские праздники: программы, цены и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-mery-animators-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-mery-animators-mobile.webp","group":"prazdniki"},{"title":"Участки у моря","niche":"Недвижимость","city":"Сочи","url":"https://ajax55sv-cell.github.io/nedvizhimost-sochi-demo/","folder":"nedvizhimost-sochi-demo","kind":"demo","about":"Земельные участки в Сочи: сайт принимает трафик и собирает контакты.","desktop":"assets/case-ajax55sv-cell-github-io-nedvizhimost-sochi-demo-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-nedvizhimost-sochi-demo-mobile.webp","group":"nedvizhimost"},{"title":"Проверенный автоимпорт","niche":"Авто из Китая, Кореи и Японии","city":"","url":"https://ajax55sv-cell.github.io/avtoimport-demo-d/","folder":"avtoimport-demo-d","kind":"demo","about":"Привоз авто под ключ: этапы, расчёт и заявка.","desktop":"assets/case-ajax55sv-cell-github-io-avtoimport-demo-d-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-avtoimport-demo-d-mobile.webp","group":"avtoimport"},{"title":"Sofi","niche":"Ателье","city":"Калуга","url":"https://ajax55sv-cell.github.io/sofi/","folder":"ohota/kaluga-atelie-n01-sofi-206470159642-demo","kind":"demo","about":"Ателье: ремонт и перекрой меха, кожи, трикотажа.","desktop":"assets/case-ajax55sv-cell-github-io-sofi-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-sofi-mobile.webp","group":"atelie"},{"title":"Queen nails","niche":"Студия маникюра","city":"Калуга","url":"https://ajax55sv-cell.github.io/queen-nails/","folder":"ohota/kaluga-nogti-n02-queen-nails-130530556231-demo","kind":"demo","about":"Студия маникюра, педикюра и подологии.","desktop":"assets/case-ajax55sv-cell-github-io-queen-nails-desktop.webp","mobile":"assets/case-ajax55sv-cell-github-io-queen-nails-mobile.webp","group":"nogti"}],"legal":{"status":"самозанятый","fio":"","inn":"","ogrnip":"","email":""},"h1":"Сайт для вашего бизнеса: сначала демо бесплатно, платите, когда всё устраивает","lead":"Демо за 1 день, готовый сайт за 2-3 дня, цена от 10 000 ₽. Не понравится - ничего не платите.","steps":[["Напишите мне","Ниша, город и ссылка на карточку, соцсети или старый сайт. Если их нет, опишите бизнес словами."],["Демо за 1 день","Присылаю ссылку на готовое демо, бесплатно и без обязательств. Не понравилось - ничего не платите."],["Расскажите, что хотите","Если демо понравилось, пришлите список пожеланий, ответьте на мои вопросы и добавьте свои фото, если они есть."],["Готовый сайт за 2-3 дня","Собираю по вашим материалам. Правки словами делаю в тот же день."],["Оплата и передача","Когда всё устраивает, вы платите 100% и получаете сайт на вашем адресе вместе с исходными файлами."]],"terms":["Демо бесплатно, до оплаты и до разговора о цене.","Оплата 100% только когда сайт готов и вас всё устраивает.","После оплаты передаю все исходные файлы сайта.","Правки словами в тот же день. В тарифах Лайт и Стандарт 2 круга правок.","Домен и хостинг вы покупаете сами, я подскажу, что выбрать. Перенос сайта на них входит в любой тариф.","Не хотите разбираться с хостингом - перенесу сайт в вашу Тильду (подписка Тильды около 750 ₽ в месяц или 6000 ₽ в год, оплачиваете вы).","Доработки после сдачи - от 1 000 ₽.","Работаю как самозанятый, выдаю чек."],"niches":[{"key":"nogti","title":"Ногти и маникюр"},{"key":"epilyaciya","title":"Эпиляция"},{"key":"shinomontazh","title":"Шиномонтаж"},{"key":"avtoservis","title":"Автосервис"},{"key":"klining","title":"Клининг"},{"key":"stroitelstvo","title":"Строительство"},{"key":"prazdniki","title":"Праздники"},{"key":"atelie","title":"Ателье"},{"key":"nedvizhimost","title":"Недвижимость"},{"key":"avtoimport","title":"Автоимпорт"}]}</script>
 <script>
 (() => {
   const D = JSON.parse(document.getElementById('data').textContent);
@@ -230,7 +254,9 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   $('lead').textContent = D.lead || 'Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.';
   $('chatAva').innerHTML = ava; $('chatName').textContent = D.name;
   $('bubble').textContent = D.message;
-  $('foot').textContent = `© ${new Date().getFullYear()} ${D.name}${D.city ? ', ' + D.city : ''}`;
+  const L = D.legal || {};
+  $('foot').textContent = `© ${new Date().getFullYear()} ${L.fio || D.name}${L.status ? ', ' + L.status : ''}${L.inn ? ', ИНН ' + L.inn : ''}`;
+  if (L.email) $('footMail').innerHTML = `<a href="mailto:${esc(L.email)}">${esc(L.email)}</a>`;
 
   const cases = D.cases || [];
   const real = cases.filter((c) => c.kind === 'real').length;
@@ -276,8 +302,8 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   else { fan.classList.add('empty'); fan.textContent = 'Здесь появятся ваши работы: скажите Клоду «добавь в витрину сайт …»'; }
 
   const story = (c) => [['Задача', c.task], ['Что сделал', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
-  $('cases').innerHTML = cases.map((c, i) => `
-    <article class="case reveal">
+  const caseHtml = (c, i) => `
+    <article class="case reveal" id="case-${i}">
       <div class="devices${c.desktop ? '' : ' solo'}">
         ${c.desktop ? `<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc((c.url || '').replace(/^https?:\/\//, ''))}</span></div><img src="${esc(c.desktop)}" alt="Сайт ${esc(c.title)}" decoding="async"></div>` : ''}
         ${c.mobile ? phone(c, 18 + (i % 3) * 3) : ''}
@@ -289,9 +315,35 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
         ${c.quote ? `<blockquote class="quote">«${esc(c.quote)}»<cite>${esc(c.quoteAuthor || 'владелец')}</cite></blockquote>` : ''}
         ${c.url ? `<a class="open" href="${esc(c.url)}" target="_blank" rel="noopener">Открыть сайт →</a>` : ''}
       </div>
-    </article>`).join('') || '<p style="color:var(--ink-3)">Работы появятся здесь.</p>';
+    </article>`;
+  // первые 6 работ открыты, остальные под кнопкой «Показать ещё»
+  const OPEN = 6;
+  $('cases').innerHTML = cases.slice(0, OPEN).map(caseHtml).join('') || '<p style="color:var(--ink-3)">Работы появятся здесь.</p>';
+  const rest = cases.slice(OPEN);
+  if (rest.length) {
+    $('moreCases').innerHTML = rest.map((c, i) => caseHtml(c, i + OPEN)).join('');
+    $('moreWrap').hidden = false;
+    $('moreBtn').textContent = `Показать ещё ${rest.length} ${word(rest.length, 'работу', 'работы', 'работ')}`;
+  }
+  const openMore = () => { $('moreCases').hidden = false; $('moreWrap').hidden = true; document.querySelectorAll('#moreCases .phone,#moreCases .reveal').forEach((el) => io.observe(el)); document.querySelectorAll('#moreCases [data-shift]').forEach(fit); };
+  $('moreBtn').addEventListener('click', openMore);
+
+  // ниши: у каждой работы поле group, ссылка ведёт к первой работе ниши и раскрывает список
+  $('nicheList').innerHTML = (D.niches || []).map((n) => {
+    const idx = cases.map((c, i) => (c.group === n.key ? i : -1)).filter((i) => i > -1);
+    if (!idx.length) return '';
+    return `<li><a href="#case-${idx[0]}" data-case="${idx[0]}"><b>${esc(n.title)}</b><span>${idx.length} ${word(idx.length, 'работа', 'работы', 'работ')}</span></a></li>`;
+  }).join('');
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('[data-case]'); if (!a) return;
+    e.preventDefault();
+    const el = $('case-' + a.dataset.case); if (!el) return;
+    if (el.closest('#moreCases') && $('moreCases').hidden) openMore();
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 
   $('price').innerHTML = (D.services || []).map((s) => `<li${s.hit ? ' class="hit"' : ''}><h3>${esc(s.title)}</h3><span class="sum">${esc(s.price || 'по запросу')}</span>${s.term ? `<span class="term">${esc(s.term)}</span>` : ''}<p>${esc(s.desc || '')}</p></li>`).join('');
+  $('terms').innerHTML = (D.terms || []).map((t) => `<li>${esc(t)}</li>`).join('');
   $('steps').innerHTML = (D.steps || [
     ['Демо до оплаты', 'Собираю демо вашего сайта по карточке на Картах или вашему описанию.'],
     ['Правки словами', 'Говорите, что поменять, – меняю в тот же день.'],
