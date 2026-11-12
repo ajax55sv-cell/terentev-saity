@@ -136,6 +136,7 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 .niches b{font:600 17px/1.25 var(--body)}
 .niches span{font-size:14px;color:var(--ink-3)}
 .more{display:flex;justify-content:center;padding-top:24px}
+.more[hidden]{display:none}
 #moreCases .case:first-child{border-top:1px dashed var(--line)}
 #works{scroll-margin-top:64px}
 .niche-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin:0 0 8px;padding:14px 18px;border-radius:var(--r);background:var(--soft);color:var(--ink-2);font-size:15px}
@@ -215,7 +216,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 
   <section class="block" id="works">
-    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div><p id="worksNote"></p></div>
+    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div></div>
     <div class="niche-note" id="nicheNote" hidden></div>
     <div id="cases"></div>
     <div id="moreCases" hidden></div>
@@ -284,9 +285,6 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     real ? `<span><b>${real}</b>${word(real, 'реальный заказ', 'реальных заказа', 'реальных заказов')}</span>` : '',
     niches.length ? `<span><b>${niches.length}</b>${word(niches.length, 'ниша', 'ниши', 'ниш')}</span>` : ''
   ].join('');
-  const kinds = new Set(cases.map((c) => c.kind || 'demo'));
-  if (kinds.size > 1) $('worksNote').textContent = [kinds.has('real') && '«Реальный заказ» – за сайт заплатил владелец', kinds.has('study') && '«Учебный кейс» – задача из обучения', kinds.has('demo') && '«Демо-проект» – сайт, собранный на пробу'].filter(Boolean).join('. ') + '.';
-  else $('worksNote').textContent = real && real < cases.length ? '«Реальный заказ» – сайт, за который заплатил владелец. «Демо-проект» – собранный на пробу, «Учебный кейс» – задача из обучения.' : real ? 'Все работы – реальные заказы.' : 'Демо-проекты: так выглядят сайты, которые я собираю для бизнесов.';
 
   // мессенджеры: ссылка с готовым текстом; для MAX текст копируется в буфер
   const msg = D.message || 'Здравствуйте! Хочу заказать сайт.';
