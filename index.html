@@ -309,8 +309,21 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   const toast = (t) => { const el = $('toast'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 3200); };
   document.addEventListener('click', (e) => {
     const a = e.target.closest('[data-copy]'); if (!a) return;
-    try { navigator.clipboard.writeText(msg); toast('Текст сообщения скопирован – вставьте его в чат MAX'); } catch (_) {}
+    // копируем надёжно: Clipboard API, а если он не сработал - запасной способ через textarea
+    const fallback = () => {
+      try {
+        const t = document.createElement('textarea');
+        t.value = msg; t.setAttribute('readonly', ''); t.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(t); t.select(); t.setSelectionRange(0, t.value.length);
+        const ok = document.execCommand('copy'); t.remove(); return ok;
+      } catch (_) { return false; }
+    };
+    const done = (ok) => toast(ok ? 'Текст сообщения скопирован – вставьте его в чат MAX' : 'Не удалось скопировать – выделите текст в бабле рядом и скопируйте вручную');
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(msg).then(() => done(true), () => done(fallback()));
+    else done(fallback());
   });
+  // MAX не умеет подставлять текст в ссылку - честно говорим об этом рядом с кнопками
+  if (M.max) document.querySelectorAll('.cta-note').forEach((n) => { n.insertAdjacentHTML('afterend', '<p class="cta-note cta-max">В MAX текст сообщения копируется при нажатии на кнопку – вставьте его в чат (в Telegram он подставляется сам).</p>'); });
 
   // живой телефон
   const phone = (c, dur) => `<div class="phone" style="--dur:${dur}s"><div class="notch"></div><div class="screen">${c.mobile ? `<img src="${esc(c.mobile)}" alt="Сайт ${esc(c.title)} на телефоне" decoding="async" data-shift>` : ''}</div></div>`;
