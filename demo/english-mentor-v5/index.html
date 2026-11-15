@@ -1,0 +1,1521 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English with Alex Sem · наставничество по английскому</title>
+<meta name="description" content="Наставничество по английскому для взрослых: наставник отвечает за цель, методист за программу, преподаватель за навыки. 3 пробных занятия, ежемесячные отчёты, первый месяц 24 000 ₽.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="English with Alex Sem">
+<meta property="og:title" content="English with Alex Sem · наставничество по английскому">
+<meta property="og:description" content="Не уроки, а сопровождение до результата. 3 пробных занятия, ежемесячные отчёты и progress checks.">
+<meta property="og:url" content="{{ссылка-сайта}}">
+<meta property="og:image" content="{{ссылка-сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%273%27 y=%273%27 width=%2726%27 height=%2726%27 rx=%276%27 fill=%27%2320b8b1%27/%3E%3Cpath d=%27M22 7v18%27 stroke=%27%232b2b2b%27 stroke-width=%272.4%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M9 12h8M9 17h8M9 22h8%27 stroke=%27%232b2b2b%27 stroke-width=%271.6%27 stroke-linecap=%27round%27 opacity=%27.55%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"English with Alex Sem","description":"Наставничество по английскому для взрослых: цель, программа и навыки под ответственностью команды. 3 пробных занятия, ежемесячные отчёты.","url":"{{ссылка-сайта}}","image":"{{ссылка-сайта}}/assets/og.jpg","email":"info@alex-sem.ru","telephone":"{{телефон}}","address":{"@type":"PostalAddress","streetAddress":"{{адрес}}","addressLocality":"{{город}}","addressCountry":"RU"},"openingHours":"{{часы}}","priceRange":"от 24000 ₽ за первый месяц","sameAs":["#"]}
+</script>
+<style>
+  html, body { margin: 0; background: #ffffff; }
+
+  /* ---- тема: шесть цветов, два шрифта. Плюс цвета тетради (--nb-*) --------- */
+  .v-page {
+    --v-canvas: #ffffff; --v-surface: #f5f5f5;
+    --v-ink: #2b2b2b; --v-ink-soft: #5c6262;           /* 6:1 на белом */
+    --v-accent: #20b8b1; --v-accent-ink: #2b2b2b;      /* кнопка 5,8:1 */
+    --v-accent-deep: #0e7c77;                          /* мелкий акцентный текст, 5:1 */
+    --v-font-display: "Jost", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Montserrat", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 43 43 43;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .08), 0 8px 22px rgb(var(--v-shadow-color) / .10);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .10), 0 22px 54px rgb(var(--v-shadow-color) / .16);
+    --v-radius: 8px;
+    --v-track-tight: 0;
+    /* тетрадь: бумага листа, линейка, поля, обложка */
+    --nb-paper: #ffffff; --nb-line: #d3e6e5; --nb-margin: #20b8b1; --nb-cover: #2b2b2b; --nb-cover-ink: #ffffff;
+    /* мелкие кегли не ниже 13 и 15 px */
+    --v-t-xs: clamp(0.8125rem, 0.79rem + 0.15vw, 0.85rem);
+    --v-t-sm: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  }
+  @media (max-width: 860px) { .v-page { --v-t-xs: 0.9375rem; } }  /* на телефоне мелкий кегль не ниже 15 px */
+  .v-page .v-display { font-weight: 700; }
+  .v-page .v-btn { font-size: var(--v-t-base); }
+  .v-page .v-lede { color: var(--v-ink); }
+  .nowrap { white-space: nowrap; }
+  /* маркер-текстовыделитель: одна форма акцента на всю страницу */
+  .mark { background: linear-gradient(to top, var(--v-accent) 0 .55em, transparent .55em); padding: 0 .12em; margin: 0 -.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+  /* ---- шапка: марка, закладки тетради, одна кнопка --------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--v-6);
+    padding: var(--v-3) var(--v-gutter); background: rgb(255 255 255 / .88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1; text-decoration: none; display: inline-flex; align-items: center; gap: .5em; white-space: nowrap; letter-spacing: -.01em; }
+  .bar__mark i { width: .8em; height: 1em; border-radius: 2px; background: var(--v-accent); position: relative; flex: none; }
+  .bar__mark i::after { content: ""; position: absolute; top: 15%; bottom: 15%; right: 26%; width: 1.5px; background: var(--v-ink); opacity: .8; }
+  .bar .v-btn { padding: .72em 1.25em; font-size: var(--v-t-sm); }
+  @media (max-width: 860px) {
+    .bar { grid-template-columns: auto auto; justify-content: space-between; gap: var(--v-3); }
+    .bar .v-btn { padding: .65em 1em; }
+  }
+
+  /* ---- 1 · обложка: стол ученика с задачами (учебники, тетрадь, калькулятор,
+          наушники, бланк экзамена) на весь экран. Картинка не кропится по бокам:
+          ширина 100 %, прижата к низу, сверху добираем бумагой и растушёвкой ------ */
+  .hero__img { overflow: hidden; }
+  .hero__back { will-change: transform; }
+  .hero__back img { position: absolute; left: -3%; bottom: -16px; top: auto; width: 106%; height: auto; max-width: none; object-fit: fill; }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .9) 12%, rgb(255 255 255 / 0) 30%),
+      linear-gradient(to right, rgb(255 255 255 / .66) 0%, rgb(255 255 255 / .42) 32%, rgb(255 255 255 / .12) 48%, transparent 58%); }
+  .hero__copy { max-width: min(42rem, 50vw); bottom: 0; top: 0; display: flex; flex-direction: column; justify-content: center; padding-top: 3rem; }
+  .hero__label { font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink-soft); margin-bottom: var(--v-4); }
+  .hero__copy h1 { font-size: clamp(2.3rem, 1rem + 2.6vw, 3.5rem); line-height: 1; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 40ch; }
+  /* стикеры-задачи поверх фото: по ним ученик узнаёт себя. Появляются по реплике hero, по одному */
+  .tags { position: absolute; inset: 0; z-index: 3; pointer-events: none; margin: 0; padding: 0; list-style: none; }
+  .tag { position: absolute; left: var(--x); top: var(--y); margin: 0; font-family: var(--v-font-display); font-weight: 700; font-size: clamp(1rem, .7rem + .55vw, 1.3rem); line-height: 1; letter-spacing: -.005em; color: var(--v-ink); background: var(--nb-paper); padding: .55em .8em .5em; border-radius: 2px; box-shadow: 0 1px 0 rgb(255 255 255 / .9) inset, var(--v-e1); white-space: nowrap;
+    opacity: 0; transform: rotate(var(--r, 0deg)) translateY(10px) scale(.96);
+    transition: opacity .5s var(--v-ease-out), transform .5s var(--v-ease-out); transition-delay: calc(var(--i, 0) * 90ms + 220ms); }
+  .tag::after { content: ""; position: absolute; left: 12%; right: 12%; bottom: .28em; height: 1px; background: var(--nb-line); }
+  .tags.v-cue-on .tag { opacity: 1; transform: rotate(var(--r, 0deg)); }
+  .hero__cta { margin-top: var(--v-6); display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); }
+  .hero__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 30ch; }
+  .hero__hint b { color: var(--v-ink); font-weight: 600; }
+  /* вторая реплика: цена бездействия */
+  .hero__turn { max-width: min(38rem, 46vw); bottom: 0; top: 0; display: flex; flex-direction: column; justify-content: center; padding-top: 3.5rem; }
+  .hero__turn h2 { font-size: clamp(2rem, .9rem + 2.6vw, 3.6rem); line-height: 1.02; }
+  .hero__turn p { margin-top: var(--v-5); max-width: 40ch; }
+  .hero__turn p b { font-weight: 600; }
+  @media (max-width: 860px) {
+    .hero__back img { left: 0; width: 100%; }
+    .hero__scrim { background: linear-gradient(to bottom, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .94) 42%, rgb(255 255 255 / .55) 56%, transparent 68%); }
+    .hero__copy, .hero__turn { left: var(--v-gutter); right: var(--v-gutter); top: 4.4rem; bottom: auto; display: block; padding-top: 0; max-width: none; }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__copy h1 { font-size: clamp(1.7rem, 1.1rem + 2.8vw, 2.3rem); line-height: 1.04; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); }
+    .hero__cta { margin-top: var(--v-4); flex-direction: column; align-items: flex-start; gap: var(--v-3); }
+    .hero__turn h2 { font-size: clamp(1.7rem, 1.1rem + 2.6vw, 2.3rem); }
+    .hero__turn p { margin-top: var(--v-4); }
+    /* стикеры на телефоне: кучка на столе над тетрадью, в две строки, всё в кадре */
+    .tags { inset: auto var(--v-gutter) 6.5vh var(--v-gutter); display: flex; flex-wrap: wrap; gap: var(--v-2) var(--v-3); align-content: flex-end; }
+    .tag { position: static; font-size: var(--v-t-sm); padding: .5em .7em .45em; }
+  }
+  @media (min-width: 861px) and (max-height: 760px) {
+    .hero__copy h1 { font-size: clamp(2rem, .9rem + 2.4vw, 3.1rem); }
+    .hero__copy .v-lede { margin-top: var(--v-4); font-size: var(--v-t-base); }
+  }
+
+  /* ---- 2 · кому и зачем: три строки с линиями + фото учебников --------------- */
+  .komu { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: var(--v-8) var(--v-9); align-items: center; }
+  .komu__copy .v-label { display: block; margin-bottom: var(--v-5); }
+  .komu__copy > p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .lines { margin-top: var(--v-6); max-width: 52ch; }
+  .lines li { display: grid; grid-template-columns: minmax(9rem, .38fr) 1fr; gap: var(--v-2) var(--v-6); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); align-items: baseline; }
+  .lines li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .lines b { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.2; }
+  .lines span { color: var(--v-ink-soft); font-size: var(--v-t-sm); text-wrap: pretty; }
+  .komu__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); background: var(--v-surface); aspect-ratio: 3 / 4; max-width: 26rem; width: 100%; justify-self: end; }
+  .komu__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .komu__fig figcaption { position: absolute; z-index: 3; left: var(--v-5); right: var(--v-5); top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 24ch; }
+  .komu__fig figcaption b { display: block; color: var(--v-ink); font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.2; margin-bottom: .3em; }
+  @media (max-width: 860px) {
+    .komu { grid-template-columns: 1fr; gap: var(--v-6); }
+    .komu__fig { justify-self: start; max-width: 22rem; }
+    .lines li { grid-template-columns: 1fr; gap: var(--v-1); }
+  }
+
+  /* ---- 3 · план: тетрадь, которую листаешь (фирменный ход) --------------------- */
+  .plan { height: 100%; display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: var(--v-8); align-items: center; padding: 5rem var(--v-gutter) 2rem; }
+  .plan__copy .v-label { display: block; margin-bottom: var(--v-5); }
+  .plan__copy h2 { font-size: clamp(1.9rem, .9rem + 2.4vw, 3.3rem); line-height: 1.02; }
+  .plan__copy > p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 42ch; text-wrap: pretty; }
+  /* этапы: текущий подсвечен маркером, --on считается от --v-p акта (наследуется) */
+  .stages { margin-top: var(--v-6); display: grid; max-width: 34rem; }
+  .stages li { --on: calc(clamp(0, (var(--v-p, 0) - var(--a)) * 40, 1) - clamp(0, (var(--v-p, 0) - var(--b)) * 40, 1));
+    display: grid; grid-template-columns: 6.5rem 1fr; gap: var(--v-4); align-items: baseline; padding: var(--v-3) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .stages li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .stages li small { font-size: inherit; color: var(--v-ink-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .stages li span { position: relative; z-index: 0; color: var(--v-ink); opacity: calc(.55 + .45 * var(--on)); }
+  .stages li span::before { content: ""; position: absolute; z-index: -1; left: -.2em; right: -.2em; top: .55em; height: .6em; background: var(--v-accent); transform-origin: left; transform: scaleX(var(--on)); }
+  .plan__note { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 40ch; }
+  .plan__note b { color: var(--v-ink); font-weight: 600; }
+
+  /* тетрадь: разворот из двух страниц, лист вращается вокруг корешка */
+  .nb { --pg: min(calc((100svh - 9.5rem) / 1.38), 24rem, 21vw); --lh: 1.75rem; --pad: 1.35rem;
+    position: relative; width: calc(var(--pg) * 2); height: calc(var(--pg) * 1.38); margin-left: auto; margin-right: clamp(0rem, 2vw, 2rem);
+    perspective: 2400px; transform-style: preserve-3d; }
+  .nb__base { position: absolute; left: 50%; top: 0; width: 50%; height: 100%; transform: translateZ(-14px); background: var(--nb-paper); border-radius: 0 3px 3px 0; box-shadow: var(--v-e2), inset 0 0 0 1px rgb(var(--v-shadow-color) / .06); }
+  .nb__base::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: rgb(var(--v-shadow-color) / .2); }
+  .leaf { --f: clamp(0, (var(--v-p, 0) - var(--a)) / (var(--b) - var(--a)), 1);
+    position: absolute; left: 50%; top: 0; width: 50%; height: 100%; transform-origin: 0 50%; transform-style: preserve-3d;
+    transform: translateZ(calc((var(--f) * 2 - 1) * var(--i) * 1.5px)) rotateY(calc(var(--f) * -180deg)); will-change: transform; }
+  .leaf__face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; padding: var(--pad) var(--pad) var(--pad) var(--pad); overflow: hidden;
+    background:
+      linear-gradient(to right, transparent calc(100% - 2.6rem), var(--nb-margin) calc(100% - 2.6rem), var(--nb-margin) calc(100% - 2.6rem + 1px), transparent calc(100% - 2.6rem + 1px)),
+      repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--lh) - 1px), var(--nb-line) calc(var(--lh) - 1px), var(--nb-line) var(--lh)),
+      var(--nb-paper);
+    background-origin: border-box; background-position: 0 0, 0 calc(var(--pad) + var(--lh) * .9), 0 0;
+    box-shadow: inset 0 0 0 1px rgb(var(--v-shadow-color) / .06); border-radius: 0 3px 3px 0; }
+  .leaf__face::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to right, rgb(var(--v-shadow-color) / .22), rgb(var(--v-shadow-color) / .06) 30%, transparent 55%); opacity: calc(var(--f) * 1.6); }
+  .leaf__back { transform: rotateY(180deg); border-radius: 3px 0 0 3px;
+    background:
+      linear-gradient(to right, transparent 2.6rem, var(--nb-margin) 2.6rem, var(--nb-margin) calc(2.6rem + 1px), transparent calc(2.6rem + 1px)),
+      repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--lh) - 1px), var(--nb-line) calc(var(--lh) - 1px), var(--nb-line) var(--lh)),
+      var(--nb-paper);
+    background-position: 0 0, 0 calc(var(--pad) + var(--lh) * .9), 0 0; padding-left: calc(var(--pad) + 2.2rem); }
+  .leaf__back::after { background: linear-gradient(to left, rgb(var(--v-shadow-color) / .18), rgb(var(--v-shadow-color) / .05) 30%, transparent 55%); opacity: calc((1 - var(--f)) * 1.6); }
+  /* обложка: плотный картон, наклейка с надписью */
+  .leaf--cover .leaf__front { background: var(--nb-cover); box-shadow: var(--v-e2), inset 0 0 0 1px rgb(255 255 255 / .08); color: var(--nb-cover-ink); display: grid; align-content: end; }
+  .leaf--cover .leaf__front::after { background: linear-gradient(to right, rgb(0 0 0 / .32), rgb(0 0 0 / .08) 30%, transparent 55%); }
+  .cover__label { background: var(--nb-paper); color: var(--v-ink); border-radius: 3px; padding: var(--v-4) var(--v-4) var(--v-3); margin-bottom: var(--v-3); display: grid; gap: .35em; box-shadow: 0 1px 2px rgb(0 0 0 / .18); }
+  .cover__label b { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.15; }
+  .cover__label span { font-size: var(--v-t-sm); color: var(--v-ink-soft); border-bottom: 1px solid var(--v-hair-strong); padding-bottom: .15em; }
+  .cover__label span i { font-style: normal; color: var(--v-ink); }
+  .cover__brand { font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; opacity: .8; }
+  /* страница этапа: заголовок и строки ложатся на линейку */
+  .pg__week { font-size: var(--v-t-sm); color: var(--v-accent-deep); font-weight: 600; line-height: var(--lh); font-variant-numeric: tabular-nums; }
+  .pg__title { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: var(--lh); color: var(--v-ink); }
+  .pg__lines { margin-top: var(--lh); }
+  .pg__lines li { line-height: var(--lh); font-size: var(--v-t-sm); color: var(--v-ink); padding-left: 1.1em; position: relative; }
+  .pg__lines li::before { content: ""; position: absolute; left: 0; top: calc(var(--lh) / 2 - .2em); width: .4em; height: .4em; border-radius: 50%; background: var(--v-accent-deep); opacity: .7; }
+  .pg__hw { position: absolute; left: var(--pad); right: calc(2.6rem + .4rem); bottom: var(--pad); line-height: var(--lh); font-size: var(--v-t-sm); color: var(--v-ink); }
+  .pg__hw b { font-weight: 600; }
+  .leaf__back .pg__hw { left: calc(var(--pad) + 2.2rem); right: var(--pad); }
+  .pg__note { font-size: var(--v-t-sm); color: var(--v-ink-soft); line-height: var(--lh); }
+  .pg__blank { display: grid; gap: 0; }
+  .pg__blank span { line-height: var(--lh); font-size: var(--v-t-sm); color: var(--v-ink-soft); display: flex; gap: .6em; align-items: baseline; }
+  .pg__blank span::before { content: ""; flex: 1; order: 1; border-bottom: 1px dotted var(--v-hair-strong); transform: translateY(-.35em); }
+  .pg__blank span i { order: 2; font-style: normal; color: var(--v-ink); font-weight: 600; }
+  /* скобы на корешке */
+  .nb__staple { position: absolute; left: 50%; width: 2px; height: 1rem; margin-left: -1px; background: rgb(var(--v-shadow-color) / .3); border-radius: 2px; z-index: 5; transform: translateZ(12px); }
+  .nb__staple--a { top: 22%; } .nb__staple--b { top: 72%; }
+    @media (max-width: 860px) {
+    .plan { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); gap: var(--v-4); padding: 5rem var(--v-gutter) 1.5rem; align-items: start; }
+    .plan__copy h2 { font-size: clamp(1.5rem, 1rem + 2.6vw, 2rem); }
+    .plan__copy > p { display: none; }
+    .stages { margin-top: var(--v-4); }
+    .stages li { padding: var(--v-2) 0; grid-template-columns: 5.6rem 1fr; }
+    .plan__note { display: none; }
+    /* на телефоне видна одна страница: разворот сдвинут так, что правая страница по центру, перевёрнутые листы уходят за край */
+    .nb { --pg: min(calc(100vw - 2 * var(--v-gutter) - 1rem), calc((100svh - 26.5rem) / 1.38), 20rem); --lh: 1.6rem; --pad: 1.1rem; margin: var(--v-3) 0 0 calc(50% - var(--pg) * 1.5); align-self: start; }
+  }
+  @media (max-width: 400px) { .nb { --lh: 1.5rem; } }
+  @media (min-width: 861px) and (max-height: 760px) { .nb { --lh: 1.6rem; --pad: 1.1rem; } .plan__copy > p { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .leaf { transform: rotateY(calc(var(--f) * -180deg)); } }
+
+  /* ---- 4 · занятие по минутам: лента ------------------------------------------ */
+  .les { height: 100%; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem; }
+  .les__rail { padding-inline: var(--v-gutter); align-items: stretch; gap: clamp(1rem, 2.5vw, 2.5rem); }
+  .card { flex: none; width: clamp(17rem, 24vw, 22rem); display: flex; flex-direction: column; }
+  .card--intro { width: clamp(18rem, 27vw, 26rem); padding-right: var(--v-6); justify-content: center; }
+  .card--intro .v-label { display: block; margin-bottom: var(--v-5); }
+  .card--intro h2 { font-size: clamp(1.9rem, 1rem + 2.2vw, 3rem); line-height: 1.02; }
+  .card--intro p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 30ch; text-wrap: pretty; }
+  .card--intro .v-btn { margin-top: var(--v-6); align-self: flex-start; }
+  .card--photo { width: clamp(22rem, 34vw, 32rem); }
+  .card--photo figure { display: flex; flex-direction: column; height: 100%; border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: var(--v-e1); }
+  .card--photo img { width: 100%; flex: 1; min-height: 0; object-fit: cover; }
+  .card--photo figcaption { padding: var(--v-4) var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .card--photo figcaption b { color: var(--v-ink); font-weight: 600; }
+  /* линейка минут: линия через всю карточку, залит свой отрезок из 45 */
+  .seg { position: relative; display: block; height: 1.4rem; margin-bottom: var(--v-4); }
+  .seg::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--v-hair-strong); }
+  .seg::after { content: ""; position: absolute; top: calc(50% - 2px); height: 5px; border-radius: 3px; background: var(--v-accent); left: calc(var(--from) / 45 * 100%); width: calc((var(--to) - var(--from)) / 45 * 100%); }
+  .card__min { font-size: var(--v-t-sm); color: var(--v-accent-deep); font-weight: 600; font-variant-numeric: tabular-nums; margin-bottom: var(--v-3); }
+  .card h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.12; }
+  .card > p { margin-top: var(--v-4); color: var(--v-ink); font-size: var(--v-t-sm); max-width: 30ch; text-wrap: pretty; }
+  .card__who { margin-top: auto; padding-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .card__who b { color: var(--v-ink); font-weight: 600; }
+  @media (pointer: coarse) {
+    .les { height: auto; padding-top: 5rem; padding-bottom: var(--v-6); display: block; }
+    .les__rail { align-items: flex-start; }
+    .card, .card--intro { width: min(74vw, 22rem); }
+    .card--intro { justify-content: flex-start; }
+    .card--photo { width: min(78vw, 24rem); }
+    .card--photo img { aspect-ratio: 4 / 3; flex: none; }
+    .card--intro { padding-right: 0; }
+    .card--intro h2 { font-size: var(--v-t-xl); }
+    [data-v-stage] { scroll-padding-inline: var(--v-gutter); }
+  }
+
+  /* ---- 5 · цены и форматы: строки с линиями ----------------------------------- */
+  .prices { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); grid-template-rows: auto 1fr; gap: var(--v-7) var(--v-9); align-items: start; }
+  .prices__head { grid-column: 1; grid-row: 1; }
+  .prices__head .v-label { display: block; margin-bottom: var(--v-5); }
+  .prices__head p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 34ch; text-wrap: pretty; }
+  .terms { margin-top: var(--v-6); display: grid; gap: var(--v-3); font-size: var(--v-t-sm); }
+  .terms li { display: grid; grid-template-columns: auto 1fr; gap: var(--v-3); align-items: baseline; }
+  .terms li::before { content: ""; width: 1.3rem; height: 1px; background: var(--v-accent-deep); align-self: center; }
+  .terms b { font-weight: 600; }
+  .prices__fig { grid-column: 1; grid-row: 2; width: min(100%, 19rem); border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e1); background: var(--v-surface); }
+  .prices__fig img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  .prices__fig figcaption { padding: var(--v-3) var(--v-4) var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .prices__fig figcaption b { color: var(--v-ink); font-weight: 600; }
+  .prices__list { grid-column: 2; grid-row: 1 / span 2; }
+  .rows li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: var(--v-1) var(--v-6); align-items: baseline; padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); }
+  .rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .rows h3 { grid-row: 1; grid-column: 1; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.2; }
+  .rows p { grid-row: 2; grid-column: 1; color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 46ch; text-wrap: pretty; }
+  .rows .time { grid-row: 1; grid-column: 2; color: var(--v-ink-soft); font-size: var(--v-t-sm); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .rows .price { grid-row: 1; grid-column: 3; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); color: var(--v-ink); white-space: nowrap; min-width: 7ch; text-align: right; }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-7); }
+  .cta span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 36ch; text-wrap: pretty; }
+  @media (max-width: 860px) {
+    .prices { grid-template-columns: 1fr; grid-template-rows: none; gap: var(--v-6); }
+    .prices__head, .prices__list, .prices__fig { grid-column: 1; grid-row: auto; }
+    .prices__fig { width: min(100%, 16rem); }
+    .rows li { grid-template-columns: minmax(0, 1fr) auto; }
+    .rows .time { grid-row: 2; grid-column: 1; }
+    .rows p { grid-row: 3; }
+    .rows .price { grid-column: 2; font-size: var(--v-t-base); }
+  }
+
+  /* ---- 6 · преподаватель: шторка снизу на фото + строки ------------------------- */
+  .prep { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: var(--v-8) var(--v-9); align-items: center; }
+  .prep__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 3 / 4; background: var(--v-surface); max-width: 28rem; width: 100%; }
+  .prep__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .prep__fig .v-scrim { top: auto; height: 46%; }
+  .prep__fig figcaption { position: absolute; z-index: 3; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); display: grid; gap: .2em; }
+  .prep__fig figcaption b { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); }
+  .prep__fig figcaption span { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .prep__fig figcaption .fact { color: var(--v-ink); }
+  .prep__copy .v-label { display: block; margin-bottom: var(--v-5); }
+  .prep__copy .said { margin-top: var(--v-6); max-width: 50ch; }
+  .said p { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); text-wrap: pretty; }
+  .said p:last-child { border-bottom: 1px solid var(--v-hair); }
+  .said b { font-weight: 600; }
+  @media (max-width: 860px) { .prep { grid-template-columns: 1fr; gap: var(--v-6); } .prep__fig { max-width: 22rem; order: 2; } }
+
+  /* ---- 7 · отзывы с Яндекс.Карт (честные слоты) ---------------------------------- */
+  @property --r { syntax: "<number>"; inherits: false; initial-value: 0; }
+  .reviews__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--v-6) var(--v-8); align-items: end; margin-bottom: var(--v-7); }
+  .reviews__head .v-label { display: block; margin-bottom: var(--v-5); }
+  .reviews__rating { display: grid; grid-template-columns: auto auto; gap: var(--v-1) var(--v-4); align-items: center; font-size: var(--v-t-sm); }
+  .reviews__num { grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1; color: var(--v-ink); }
+  .reviews__rating a { color: var(--v-ink); }
+  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
+  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); line-height: 1.4; }
+  .reviews__text { text-wrap: pretty; }
+  .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 600; }
+  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } .reviews__head { grid-template-columns: 1fr; align-items: start; margin-bottom: var(--v-6); } }
+
+  /* ---- 8 · запись на пробное: финал держит реплику, футер в сцене ---------------- */
+  .fin { height: 100%; display: grid; grid-template-rows: 1fr auto; padding: 0 var(--v-gutter); }
+  .fin__inner { align-self: center; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: var(--v-8); align-items: end; padding-top: var(--v-9); }
+  .fin__inner h2 { font-size: clamp(2.2rem, 1rem + 3vw, 4.2rem); line-height: .98; }
+  .fin__inner p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .fin__btns { margin-top: var(--v-6); display: flex; flex-wrap: wrap; gap: var(--v-3); }
+  .fin__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .fin__tel { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); text-decoration: none; color: var(--v-ink); display: inline-block; padding-block: .3em; margin-bottom: var(--v-1); }
+  .fin__meta b { color: var(--v-ink); font-weight: 600; }
+  .fin__meta a:not(.fin__tel) { color: var(--v-ink); display: inline-block; padding-block: .25em; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); flex-wrap: wrap; padding: var(--v-6) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .fin__inner { grid-template-columns: 1fr; gap: var(--v-6); padding-top: var(--v-8); }
+    .fin__inner h2 { font-size: clamp(1.8rem, 1.2rem + 3vw, 2.4rem); }
+    .fin__tel { font-size: var(--v-t-lg); }
+    .foot span:last-child { display: none; }
+  }
+
+  /* ============ English with Alex Sem: правки каркаса под бриф ============ */
+  /* шапка: логотип слева, название по центру, бургер справа */
+  .bar { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  .bar__name { justify-self: center; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-base); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; text-decoration: none; color: var(--v-ink); }
+  .bar__end { justify-self: end; display: flex; align-items: center; gap: var(--v-3); }
+  .menu { position: relative; }
+  .menu summary { list-style: none; cursor: pointer; width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border-radius: var(--v-radius); }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu__ico, .menu__ico::before, .menu__ico::after { display: block; width: 1.4rem; height: 2px; background: var(--v-ink); border-radius: 2px; }
+  .menu__ico { position: relative; }
+  .menu__ico::before, .menu__ico::after { content: ""; position: absolute; left: 0; transition: transform .18s var(--v-ease-out); }
+  .menu__ico::before { top: -7px; } .menu__ico::after { top: 7px; }
+  .menu[open] .menu__ico { background: transparent; }
+  .menu[open] .menu__ico::before { transform: translateY(7px) rotate(45deg); }
+  .menu[open] .menu__ico::after { transform: translateY(-7px) rotate(-45deg); }
+  .menu__list { position: absolute; right: 0; top: calc(100% + .5rem); min-width: 16rem; background: #fff; border: 1px solid var(--v-hair); border-radius: var(--v-radius); box-shadow: var(--v-e2); padding: var(--v-2); display: grid; }
+  .menu__list a { display: block; padding: .7em .9em; text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); border-radius: 4px; }
+  @media (hover: hover) and (pointer: fine) { .menu__list a:hover { background: #f5f5f5; } }
+  @media (max-width: 860px) {
+    .bar { grid-template-columns: auto 1fr auto; gap: var(--v-2); }
+    .bar__name { font-size: .95rem; letter-spacing: .03em; }
+    .bar__end .v-btn { display: none; }
+  }
+
+  /* заголовки: Oswald капсом (замена Bebas Neue, у которого нет кириллицы) */
+  .v-page .v-display { letter-spacing: .005em; text-wrap: balance; }
+
+  /* 5 · кейсы: строки-аккордеоны, заголовок прилипает слева */
+  .cases { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .cases__head { position: sticky; top: 6rem; }
+  .cases__head p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 34ch; text-wrap: pretty; }
+  .case, .qa { border-top: 1px solid var(--v-hair); }
+  .case:last-child, .qa:last-child { border-bottom: 1px solid var(--v-hair); }
+  .case summary, .qa summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: var(--v-4); align-items: baseline; padding: var(--v-5) 0; }
+  .qa summary { grid-template-columns: 1fr auto; }
+  .case summary::-webkit-details-marker, .qa summary::-webkit-details-marker { display: none; }
+  .case__n { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); color: var(--v-accent-deep); min-width: 2ch; font-variant-numeric: tabular-nums; }
+  .case__t, .qa__q { font-weight: 600; font-size: var(--v-t-base); line-height: 1.35; }
+  .case summary::after, .qa summary::after { content: ""; width: .6rem; height: .6rem; border-right: 2px solid var(--v-ink); border-bottom: 2px solid var(--v-ink); transform: rotate(45deg); transition: transform .2s var(--v-ease-out); align-self: center; margin-bottom: .2rem; }
+  .case[open] summary::after, .qa[open] summary::after { transform: rotate(-135deg); margin-bottom: -.2rem; }
+  .case__body { padding: 0 0 var(--v-5) calc(2ch + var(--v-4)); display: grid; gap: var(--v-3); color: var(--v-ink); font-size: var(--v-t-sm); max-width: 56ch; }
+  .case__body b { font-weight: 600; color: var(--v-accent-deep); }
+  .qa p { padding: 0 var(--v-7) var(--v-5) 0; color: var(--v-ink-soft); max-width: 62ch; text-wrap: pretty; font-size: var(--v-t-sm); }
+  .qa p b { color: var(--v-ink); font-weight: 600; }
+  @media (max-width: 860px) { .cases, .faq { grid-template-columns: 1fr; gap: var(--v-6); } .cases__head { position: static; } .case__body { padding-left: 0; } }
+
+  /* 6 · цена: пин с двумя репликами */
+  .pr { position: absolute; inset: 0; }
+  .pr__copy { position: absolute; left: var(--v-gutter); top: 0; bottom: 0; max-width: min(40rem, 52vw); display: flex; flex-direction: column; justify-content: center; padding-top: 3rem; }
+  .pr__copy .v-label { display: block; margin-bottom: var(--v-4); }
+  .pr__copy h2 { font-size: clamp(1.9rem, 1rem + 2.4vw, 3.3rem); line-height: 1.02; }
+  .pr__num { font-family: var(--v-font-display); font-weight: 700; font-size: clamp(3.6rem, 1.5rem + 7vw, 8.5rem); line-height: .95; letter-spacing: -.01em; margin-top: var(--v-5); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .pr__num small { font-size: .42em; font-weight: 500; color: var(--v-ink-soft); margin-left: .12em; }
+  .pr__num .mark { padding: 0 .08em; margin: 0 -.08em; }
+  .pr__copy p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .pr__terms { position: absolute; right: var(--v-gutter); top: 0; bottom: 0; width: min(26rem, 34vw); display: flex; flex-direction: column; justify-content: center; padding-top: 3rem; }
+  .pr__terms ul { display: grid; font-size: var(--v-t-sm); }
+  .pr__terms li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); display: grid; gap: .2em; }
+  .pr__terms li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .pr__terms b { font-weight: 600; }
+  .pr__terms span { color: var(--v-ink-soft); }
+  .pr__terms .v-btn { margin-top: var(--v-6); align-self: flex-start; }
+  @media (max-width: 860px) {
+    .pr__copy { left: var(--v-gutter); right: var(--v-gutter); top: 4.6rem; bottom: auto; max-width: none; display: block; padding-top: 0; }
+    .pr__num { margin-top: var(--v-3); font-size: clamp(3rem, 2rem + 8vw, 4.4rem); }
+    .pr__copy p { margin-top: var(--v-3); font-size: var(--v-t-sm); }
+    .pr__terms { left: var(--v-gutter); right: var(--v-gutter); top: auto; bottom: 1.2rem; width: auto; padding-top: 0; }
+    .pr__terms li { padding: var(--v-2) 0; }
+    .pr__terms .v-btn { margin-top: var(--v-4); }
+  }
+
+  /* 7 · с чего начать: форма */
+  .start { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: var(--v-8) var(--v-9); align-items: start; }
+  .start__copy p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 40ch; text-wrap: pretty; }
+  .steps { margin-top: var(--v-6); display: grid; max-width: 36rem; counter-reset: st; }
+  .steps li { counter-increment: st; display: grid; grid-template-columns: 2ch 1fr; gap: var(--v-4); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .steps li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .steps li::before { content: counter(st); font-family: var(--v-font-display); font-weight: 700; color: var(--v-accent-deep); font-size: var(--v-t-lg); line-height: 1.1; }
+  .steps b { font-weight: 600; }
+  .form { display: grid; gap: var(--v-5); padding: var(--v-7); background: #fff; border-radius: var(--v-radius); box-shadow: var(--v-e2); }
+  .form label { display: grid; gap: var(--v-2); font-size: var(--v-t-sm); font-weight: 600; }
+  .form input[type="text"], .form select { font: inherit; font-size: 1rem; font-weight: 400; color: var(--v-ink); padding: .85em 1em; border: 1px solid var(--v-hair-strong); border-radius: var(--v-radius); background: #fff; width: 100%; min-height: 3rem; }
+  .form input:focus-visible, .form select:focus-visible { outline: 2px solid var(--v-accent-deep); outline-offset: 1px; }
+  .form .agree { display: flex; gap: var(--v-3); align-items: flex-start; font-weight: 400; font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .form .agree input { margin-top: .2em; width: 1.1rem; height: 1.1rem; accent-color: var(--v-accent-deep); flex: none; }
+  .form .agree a { color: var(--v-ink); }
+  .form .v-btn { justify-self: start; }
+  .form__msg { font-size: var(--v-t-sm); color: var(--v-accent-deep); font-weight: 600; min-height: 1.4em; margin: 0; }
+  @media (max-width: 860px) { .start { grid-template-columns: 1fr; gap: var(--v-6); } .form { padding: var(--v-5); } }
+
+  /* 8 · отзывы без рейтинга Карт */
+  .reviews__head { grid-template-columns: 1fr; margin-bottom: var(--v-7); }
+
+  /* 9 · бонус */
+  .bonus { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: var(--v-8) var(--v-9); align-items: center; }
+  .bonus__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 3 / 4; max-width: 24rem; width: 100%; background: #fff; }
+  .bonus__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .bonus__copy p { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .links { margin-top: var(--v-6); display: flex; flex-wrap: wrap; gap: var(--v-3) var(--v-6); font-size: var(--v-t-sm); }
+  .links a { color: var(--v-ink); font-weight: 600; padding-block: .4em; text-decoration-color: var(--v-accent); text-underline-offset: .25em; text-decoration-thickness: 2px; }
+  @media (max-width: 860px) { .bonus { grid-template-columns: 1fr; gap: var(--v-6); } .bonus__fig { max-width: 18rem; } }
+
+  /* 10 · FAQ */
+  .faq { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: var(--v-8) var(--v-9); align-items: start; }
+
+  /* 11 · финал: графитовый блок и футер */
+  .fin { --v-ink: #fff; --v-ink-soft: #c4cbcb; --v-hair: rgb(255 255 255 / .18); --v-hair-strong: rgb(255 255 255 / .34); color: #fff; }
+  .fin .v-btn--ghost { color: #fff; border-color: rgb(255 255 255 / .5); }
+  .fin__meta a:not(.fin__tel) { color: #fff; }
+  .fin__tel { font-size: var(--v-t-lg); }
+  .foot a { color: inherit; }
+  .foot nav { display: flex; gap: var(--v-5); flex-wrap: wrap; }
+
+  /* cookie-плашка */
+  .cookie { position: fixed; left: var(--v-gutter); bottom: var(--v-4); z-index: 40; max-width: 30rem; display: flex; gap: var(--v-4); align-items: center; padding: var(--v-4) var(--v-5); background: #2b2b2b; color: #fff; border-radius: var(--v-radius); box-shadow: var(--v-e2); font-size: var(--v-t-xs); line-height: 1.4; }
+  .cookie { cursor: pointer; }
+  .cookie[hidden] { display: none; }
+  .cookie a { color: #fff; }
+  .cookie button { flex: none; font: inherit; font-weight: 600; color: #2b2b2b; background: #20b8b1; border: 0; border-radius: var(--v-radius); padding: .65em 1.1em; cursor: pointer; min-height: 2.75rem; }
+  @media (max-width: 860px) { .cookie { right: var(--v-gutter); bottom: .6rem; } }
+
+
+  /* ============ правки v2 по скриншотам ============ */
+  /* цена: цифры графитовые, подчёркивание акцентом вместо плашки */
+  .pr__copy { max-width: min(46rem, 56vw); }
+  .pr__copy .pr__num { color: var(--v-ink); }
+  .pr__num .mark { background: linear-gradient(to top, var(--v-accent) 0 .1em, transparent .1em); padding: 0; margin: 0; }
+  .pr__num--two { font-size: clamp(2.6rem, 1rem + 4.6vw, 5.8rem); }
+  @media (max-width: 860px) { .pr__num--two { font-size: clamp(2.1rem, 1.1rem + 5.4vw, 3.3rem); } }
+
+  /* логотип-заглушка (монограмма, пока нет {{логотип}}) */
+  .bar__mark { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 6px; background: var(--v-accent); color: var(--v-accent-ink); font-family: var(--v-font-display); font-weight: 700; font-size: .95rem; letter-spacing: .02em; text-decoration: none; }
+
+  /* первый экран: низ растворяется в белый, чтобы не было шва со следующим актом */
+  .hero__scrim { background:
+    linear-gradient(to top, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .8) 6%, rgb(255 255 255 / 0) 20%),
+    linear-gradient(to bottom, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .9) 12%, rgb(255 255 255 / 0) 30%),
+    linear-gradient(to right, rgb(255 255 255 / .66) 0%, rgb(255 255 255 / .42) 32%, rgb(255 255 255 / .12) 48%, transparent 58%); }
+  @media (max-width: 860px) { .hero__scrim { background:
+    linear-gradient(to top, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .8) 5%, rgb(255 255 255 / 0) 16%),
+    linear-gradient(to bottom, rgb(255 255 255 / 1) 0%, rgb(255 255 255 / .94) 42%, rgb(255 255 255 / .55) 56%, transparent 68%); } }
+
+  /* маркер этапов: по ширине текста и светлее, чтобы не перечёркивал */
+  .stages li span { justify-self: start; }
+  .stages li span::before { top: .6em; height: .55em; background: color-mix(in srgb, var(--v-accent) 42%, transparent); }
+
+  /* команда: лента по центру экрана, фото ниже */
+  @media (pointer: fine) { .les__rail { align-items: center; } .card--photo figure { height: min(34rem, 62vh); } }
+
+  /* кнопка формы – настоящий button */
+  .form .v-btn { border: 0; cursor: pointer; font-family: inherit; background: var(--v-accent); color: var(--v-accent-ink); }
+
+
+  /* ============ правки v3: телефон ============ */
+  .stages, .steps { padding: 0; list-style: none; }
+  @media (max-width: 860px) {
+    /* цена: крупные цифры (правило .pr__copy p раньше перебивало кегль) */
+    .pr__copy .pr__num { font-size: clamp(3.6rem, 2rem + 9vw, 5.2rem); margin-top: var(--v-3); }
+    .pr__copy .pr__num--two { font-size: clamp(2.2rem, 1rem + 6.4vw, 3.4rem); }
+    .pr__num small { font-size: .4em; }
+    /* первый экран: воздух под шапкой, стикеры выше плашки cookie */
+    .hero__copy, .hero__turn { top: 5.2rem; }
+    .tags { bottom: 15vh; }
+    /* cookie компактнее */
+    .cookie { padding: var(--v-3) var(--v-4); gap: var(--v-3); font-size: .8125rem; bottom: .5rem; }
+    .cookie button { padding: .5em .9em; min-height: 2.5rem; }
+    /* финал помещается в экран телефона */
+    .fin__inner { padding-top: 5rem; align-self: start; gap: var(--v-5); }
+    .fin__inner h2 { font-size: clamp(1.6rem, 1.1rem + 2.6vw, 2.1rem); }
+    .fin__inner p { margin-top: var(--v-3); }
+    .fin__btns { margin-top: var(--v-4); }
+    .fin__btns .v-btn--ghost { display: none; }
+    .fin__meta { gap: var(--v-2); }
+    .fin__tel { font-size: 1.1rem; margin-bottom: 0; }
+    .foot { padding: var(--v-4) 0; }
+  }
+
+
+  /* ============ v4: тексты и структура по ТЗ заказчика ============ */
+  :root, .v-page { --role-1: #20b8b1; --role-2: #2b2b2b; --role-3: #8aa8a6; }
+  .ico { width: 2.5rem; height: 2.5rem; flex: none; fill: none; stroke: var(--v-accent-deep); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* 1 · первый экран */
+  .hero__copy { max-width: min(44rem, 52vw); }
+  .hero__label { text-transform: uppercase; letter-spacing: .14em; font-weight: 600; font-size: var(--v-t-xs); color: var(--v-accent-deep); }
+  .hero__copy h1 { font-size: clamp(2.4rem, 1rem + 3.2vw, 4.4rem); }
+  .hero__copy .v-lede { max-width: 30ch; }
+  .ico4 { margin: var(--v-6) 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-3) var(--v-6); max-width: 34rem; }
+  .ico4 a { display: flex; align-items: center; gap: var(--v-3); text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); line-height: 1.3; padding: .35em 0; }
+  .ico4 .ico { width: 2.4rem; height: 2.4rem; }
+  @media (hover: hover) and (pointer: fine) { .ico4 a:hover span { text-decoration: underline; text-decoration-color: var(--v-accent); text-underline-offset: .2em; text-decoration-thickness: 2px; } }
+  @media (max-width: 860px) {
+    .hero__copy h1 { font-size: clamp(2rem, 1rem + 4.6vw, 2.5rem); }
+    .hero__copy .v-lede { font-size: var(--v-t-base); max-width: none; margin-top: var(--v-2); }
+    .hero__cta { margin-top: var(--v-3); }
+    .ico4 { margin-top: var(--v-3); gap: var(--v-1) var(--v-4); }
+    .ico4 a { font-size: .8125rem; gap: var(--v-2); padding: .2em 0; }
+    .ico4 .ico { width: 1.9rem; height: 1.9rem; }
+  }
+
+  /* 2 · не продаём занятия */
+  .not { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: var(--v-8) var(--v-9); align-items: center; }
+  .not h3 { font-family: var(--v-font-text); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.3; max-width: 26ch; text-wrap: balance; }
+  .not__lead { margin-top: var(--v-7); }
+  .not__lead:first-of-type { margin-top: var(--v-6); }
+  .not p { margin-top: var(--v-4); color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .nots { margin: var(--v-5) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--v-5) var(--v-7); }
+  .nots li { display: grid; justify-items: start; gap: var(--v-2); font-size: var(--v-t-sm); font-weight: 600; max-width: 9rem; }
+  .nots svg { width: 3.6rem; height: 3.6rem; fill: none; stroke: var(--v-ink-soft); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .nots svg .x { stroke: var(--v-accent-deep); stroke-width: 2.4; }
+  .not__fig { border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 3 / 4; max-width: 24rem; width: 100%; justify-self: end; background: #fff; }
+  .not__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .roles { margin-top: var(--v-9); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--v-5); }
+  .role { background: #f5f5f5; border-radius: var(--v-radius); padding: var(--v-6); border-top: 4px solid var(--c); display: grid; align-content: start; gap: var(--v-3); }
+  .role .ico { stroke: var(--v-ink); width: 2.8rem; height: 2.8rem; }
+  .role h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.05; max-width: none; }
+  .role b { font-weight: 600; line-height: 1.35; }
+  .role span { color: var(--v-ink-soft); font-size: var(--v-t-sm); text-wrap: pretty; }
+  @media (max-width: 860px) { .not { grid-template-columns: 1fr; gap: var(--v-6); } .not__fig { justify-self: start; max-width: 18rem; } .roles { grid-template-columns: 1fr; margin-top: var(--v-7); } .role { padding: var(--v-5); } .nots { gap: var(--v-4) var(--v-5); } .nots li { max-width: 7.5rem; } }
+
+  /* 3 · решения: тетрадь с картинками целей */
+  .stages li span em { display: block; font-style: normal; font-size: var(--v-t-xs); color: var(--v-ink-soft); margin-top: .15em; font-weight: 400; }
+  .stages li span::before { height: .9em; top: .1em; }
+  .pg__img { display: block; width: calc(100% - 2.6rem); aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; margin-top: calc(var(--lh) * .5); box-shadow: 0 1px 3px rgb(var(--v-shadow-color) / .18); }
+  .pg__cap { margin-top: calc(var(--lh) * .5); width: calc(100% - 2.6rem); font-size: var(--v-t-sm); line-height: var(--lh); color: var(--v-ink); }
+  .pg__quote { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); line-height: calc(var(--lh) * 1.25); color: var(--v-ink); margin-top: var(--lh); }
+  .pg__who { margin-top: var(--lh); font-size: var(--v-t-sm); line-height: var(--lh); color: var(--v-accent-deep); font-weight: 600; letter-spacing: .08em; }
+  .close { max-width: 46rem; }
+  .close p { margin-top: var(--v-4); color: var(--v-ink-soft); font-size: var(--v-t-lg); line-height: 1.4; }
+  .close .v-btn { margin-top: var(--v-6); }
+  .close small { display: block; margin-top: var(--v-3); color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  @media (max-width: 860px) {
+    .stages li span em { display: none; }
+    .nb { --pg: min(calc(100vw - 2 * var(--v-gutter) - 1rem), calc((100svh - 22rem) / 1.38), 20rem); }
+    .pg__cap { font-size: .8125rem; }
+  }
+
+  /* общая листалка (кейсы, отзывы): scroll-snap, кнопки только на мыши */
+  .xrail { display: flex; gap: var(--v-5); overflow-x: auto; scroll-snap-type: x proximity; padding: 0 var(--v-gutter) var(--v-5); margin-inline: calc(var(--v-gutter) * -1); scroll-padding-inline: var(--v-gutter); align-items: flex-start; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--v-hair-strong) transparent; }
+  .xrail > * { scroll-snap-align: start; flex: none; }
+  .xhead { display: flex; justify-content: space-between; align-items: end; gap: var(--v-5); margin-bottom: var(--v-6); flex-wrap: wrap; }
+  .xnav { display: flex; gap: var(--v-2); }
+  .xnav button { width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid var(--v-hair-strong); background: #fff; color: var(--v-ink); cursor: pointer; font: inherit; font-size: 1.1rem; line-height: 1; display: grid; place-items: center; transition: transform .16s var(--v-ease-out), background-color .16s; }
+  .xnav button:active { transform: scale(.94); }
+  @media (hover: hover) and (pointer: fine) { .xnav button:hover { background: #f5f5f5; } }
+  @media (pointer: coarse) { .xnav { display: none; } }
+
+  /* 5 · кейсы */
+  .case { width: clamp(19rem, 30vw, 26rem); background: #fff; border-radius: var(--v-radius); box-shadow: var(--v-e1); padding: var(--v-6); display: grid; gap: var(--v-4); align-content: start; }
+  .who { display: flex; align-items: center; gap: var(--v-4); }
+  .who b { display: block; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.1; }
+  .who span { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .case p { font-size: var(--v-t-sm); line-height: 1.5; text-wrap: pretty; }
+  .case p b, .case .lab { font-weight: 600; color: var(--v-accent-deep); }
+  .case .lab { display: block; margin-bottom: .25em; }
+  .case ol { margin: 0; padding-left: 1.3em; display: grid; gap: .4em; font-size: var(--v-t-sm); line-height: 1.5; }
+  .case ul { margin: .4em 0 0; padding-left: 1.1em; }
+  .story summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .6em; font-weight: 600; font-size: var(--v-t-sm); padding: .75em 1.2em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); min-height: 2.75rem; transition: box-shadow .16s var(--v-ease-out); }
+  .story summary::-webkit-details-marker { display: none; }
+  .story summary::after { content: ""; width: .5rem; height: .5rem; border-right: 2px solid var(--v-ink); border-bottom: 2px solid var(--v-ink); transform: rotate(45deg); margin-bottom: .2rem; transition: transform .2s var(--v-ease-out); }
+  .story[open] summary::after { transform: rotate(-135deg); margin-bottom: -.2rem; }
+  .story .t2 { display: none; } .story[open] .t1 { display: none; } .story[open] .t2 { display: inline; }
+  @media (hover: hover) and (pointer: fine) { .story summary:hover { box-shadow: inset 0 0 0 1px var(--v-ink); } }
+  .story__more { margin-top: var(--v-4); display: grid; gap: var(--v-4); }
+  .more { margin-top: var(--v-5); max-width: 56ch; }
+  .more p { color: var(--v-ink-soft); font-size: var(--v-t-base); }
+  .more .v-btn { margin-top: var(--v-5); }
+
+  /* 6 · дорожная карта цены */
+  .road { --fill: clamp(0, (var(--v-p, 0) - .1) / .45, 1); position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--v-6); margin-top: var(--v-8); padding-top: var(--v-6); }
+  .road::before, .road::after { content: ""; position: absolute; left: 0; right: 0; top: .5rem; height: 2px; }
+  .road::before { background: var(--v-hair-strong); }
+  .road::after { background: var(--v-accent); transform-origin: left; transform: scaleX(var(--fill)); }
+  .stage { --on: clamp(0, (var(--v-p, 0) - var(--a)) * 14, 1); position: relative; opacity: calc(.5 + .5 * var(--on)); }
+  .stage::before { content: ""; position: absolute; left: 0; top: calc(var(--v-6) * -1 + .1rem); width: 1rem; height: 1rem; border-radius: 50%; background: #fff; border: 2px solid var(--v-accent); z-index: 2; box-shadow: 0 0 0 4px #fff; }
+  .stage::after { content: ""; position: absolute; left: 0; top: calc(var(--v-6) * -1 + .1rem); width: 1rem; height: 1rem; border-radius: 50%; background: var(--v-accent); transform: scale(var(--on)); z-index: 3; }
+  .stage__n { font-size: var(--v-t-xs); font-weight: 600; letter-spacing: .1em; color: var(--v-ink-soft); text-transform: uppercase; }
+  .stage h3 { margin-top: var(--v-2); font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.05; }
+  .stage__price { margin-top: var(--v-3); font-weight: 600; font-size: var(--v-t-base); color: var(--v-accent-deep); line-height: 1.3; }
+  .stage ul { margin: var(--v-4) 0 0; padding: 0; list-style: none; display: grid; gap: var(--v-2); font-size: var(--v-t-sm); line-height: 1.4; color: var(--v-ink-soft); }
+  .stage li { position: relative; padding-left: 1.1em; text-wrap: pretty; }
+  .stage li::before { content: ""; position: absolute; left: 0; top: .62em; width: .5em; height: 2px; background: var(--v-accent-deep); }
+  @media (max-width: 860px) {
+    .road { grid-template-columns: 1fr; gap: var(--v-7); padding-top: 0; padding-left: 2.2rem; margin-top: var(--v-6); }
+    .road::before, .road::after { top: .5rem; bottom: .5rem; left: .5rem; right: auto; width: 2px; height: auto; }
+    .road::after { transform-origin: top; transform: scaleY(var(--fill)); }
+    .stage::before, .stage::after { left: -2.2rem; top: .1rem; }
+    .stage::before { box-shadow: 0 0 0 4px #fff; }
+  }
+
+  /* 7 · с чего начать */
+  .start__copy h3 { margin-top: var(--v-4); font-family: var(--v-font-text); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.3; }
+  .start__copy > p { margin-top: var(--v-5); }
+  .chk { margin: var(--v-4) 0 0; padding: 0; list-style: none; display: grid; gap: var(--v-3); max-width: 36rem; font-size: var(--v-t-sm); }
+  .chk li { display: grid; grid-template-columns: 1.4rem 1fr; gap: var(--v-3); align-items: baseline; }
+  .chk li::before { content: ""; width: .8rem; height: .45rem; border-left: 2px solid var(--v-accent-deep); border-bottom: 2px solid var(--v-accent-deep); transform: rotate(-45deg); margin-top: .2rem; }
+  .form h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.08; }
+  .form input[type="text"], .form input[type="tel"], .form input[type="email"] { font: inherit; font-size: 1rem; font-weight: 400; color: var(--v-ink); padding: .85em 1em; border: 1px solid var(--v-hair-strong); border-radius: var(--v-radius); background: #fff; width: 100%; min-height: 3rem; }
+  .form input:focus-visible { outline: 2px solid var(--v-accent-deep); outline-offset: 1px; }
+  .form .opt { color: var(--v-ink-soft); font-weight: 400; }
+  .alt { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-3) var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .soc { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; height: 2.75rem; padding: 0 .9em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); font-weight: 600; font-size: var(--v-t-sm); text-decoration: none; color: var(--v-ink); }
+  @media (hover: hover) and (pointer: fine) { .soc:hover { box-shadow: inset 0 0 0 1px var(--v-ink); } }
+  .alt .soc { gap: .4em; }
+  .fine { font-size: var(--v-t-xs); color: var(--v-ink-soft); line-height: 1.5; margin: 0; }
+  .fine a { color: var(--v-ink); }
+  .thanks { display: grid; gap: var(--v-3); justify-items: start; padding: var(--v-5) 0; }
+  .thanks[hidden] { display: none; }
+  .thanks .ico { width: 3.4rem; height: 3.4rem; }
+  .thanks p { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.1; margin: 0; }
+  .thanks small { color: var(--v-ink-soft); font-size: var(--v-t-xs); }
+
+  /* 8 · отзывы */
+  .rv { width: clamp(20rem, 32vw, 28rem); background: #f5f5f5; border-radius: var(--v-radius); padding: var(--v-6); display: grid; gap: var(--v-4); align-content: start; }
+  .rv .who b { font-size: var(--v-t-base); }
+  .rv__t { font-size: var(--v-t-sm); line-height: 1.55; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 8; overflow: hidden; text-wrap: pretty; }
+  .rv.is-open .rv__t { -webkit-line-clamp: unset; display: block; }
+  .rv__more { justify-self: start; background: none; border: 0; padding: .6em 0; font: inherit; font-size: var(--v-t-sm); font-weight: 600; color: var(--v-accent-deep); cursor: pointer; text-decoration: underline; text-underline-offset: .2em; min-height: 2.75rem; }
+  .rv__more[hidden] { display: none; }
+
+  /* 9 · бонус */
+  .gd { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-6); margin-top: var(--v-7); max-width: 56rem; }
+  .gd figure { margin: 0; display: grid; gap: var(--v-4); align-content: start; }
+  .gd__img { aspect-ratio: 4 / 3; border-radius: var(--v-radius); overflow: hidden; background: #fff; box-shadow: var(--v-e1); }
+  .gd__img img { width: 100%; height: 100%; object-fit: cover; object-position: 80% 70%; }
+  .gd figure:nth-child(2) .gd__img img { transform: scaleX(-1); }
+  .gd h3 { font-family: var(--v-font-text); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.3; }
+  .gd p { color: var(--v-ink-soft); font-size: var(--v-t-sm); margin-top: .3em; }
+  .getfree { margin-top: var(--v-7); display: grid; gap: var(--v-3); justify-items: start; }
+  .getfree b { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); }
+  .getfree div { display: flex; flex-wrap: wrap; gap: var(--v-3); }
+  .getfree a { display: inline-flex; align-items: center; padding: .85em 1.5em; border-radius: 999px; background: var(--v-accent); color: var(--v-accent-ink); font-weight: 600; font-size: var(--v-t-sm); text-decoration: none; box-shadow: var(--v-e1); min-height: 2.75rem; }
+  @media (max-width: 860px) { .gd { grid-template-columns: 1fr; } }
+
+  /* 10 · FAQ */
+  .qa summary { padding: var(--v-5) 0; }
+  .qa__body { padding: 0 var(--v-7) var(--v-5) 0; color: var(--v-ink-soft); font-size: var(--v-t-sm); line-height: 1.55; max-width: 64ch; display: grid; gap: var(--v-3); }
+  .qa__body p { padding: 0; margin: 0; font-size: inherit; color: inherit; max-width: none; }
+  .qa__body ol, .qa__body ul { margin: 0; padding-left: 1.3em; display: grid; gap: .35em; }
+  .qa__body ul { list-style: disc; }
+  .qa__body ol ul { margin-top: .35em; }
+  .qa__body b { color: var(--v-ink); font-weight: 600; }
+
+  /* 11 · финал: слоган и футер */
+  .fin__inner { grid-template-columns: 1fr; align-items: center; }
+  .fin__inner h2 { font-size: clamp(2.6rem, 1rem + 5.4vw, 6.4rem); line-height: .96; max-width: 14ch; }
+  .reqs { display: grid; gap: var(--v-2); color: var(--v-ink-soft); font-size: var(--v-t-xs); line-height: 1.5; }
+  .reqs a { color: #fff; }
+  .foot { align-items: flex-end; }
+  .foot nav { display: flex; gap: var(--v-3); flex-wrap: wrap; align-items: center; }
+  .foot .soc { color: #fff; box-shadow: inset 0 0 0 1px rgb(255 255 255 / .4); }
+  @media (max-width: 860px) {
+    .fin__inner { padding-top: 5rem; }
+    .fin__inner h2 { font-size: clamp(2.2rem, 1rem + 7vw, 3rem); }
+    .foot span:last-child { display: block; }
+  }
+
+  /* ============ v5: отступы (сброс движка .v-page p/ul/h3 перебивал классы), телефон, футер ============ */
+  .v-page .not__lead { margin-top: var(--v-6); }
+  .v-page .not__lead ~ .not__lead { margin-top: var(--v-7); }
+  .v-page .nots { margin: var(--v-5) 0 0; }
+  .v-page .ico4 { margin: var(--v-7) 0 0; }
+  .v-page .stage__price { margin-top: var(--v-3); }
+  .v-page .chk { margin: var(--v-4) 0 0; }
+
+
+  @media (max-width: 860px) {
+    .hero__copy { max-width: none; }
+    .v-page .ico4 { margin-top: var(--v-3); }
+  }
+
+  /* ============ v5.1: отступы, команда без фото, подвал в потоке ============ */
+  /* расстояние между блоками меньше: было до 9 rem сверху и снизу */
+  .v-page { --v-section: clamp(2.75rem, 6vw, 5rem); }
+  #faq { background: #fff; }
+  .xhead { margin-bottom: var(--v-5); }
+  .v-page .more { margin-top: var(--v-4); }
+  .v-page .road { margin-top: var(--v-7); }
+
+  /* 4 · команда: сетка карточек, вместо фото монограмма */
+  .team__head { display: flex; justify-content: space-between; align-items: end; gap: var(--v-4) var(--v-6); flex-wrap: wrap; margin-bottom: var(--v-6); }
+  .legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: var(--v-2) var(--v-5); font-size: var(--v-t-sm); }
+  .legend li { display: flex; align-items: center; gap: var(--v-3); }
+  .legend i { width: .9rem; height: .9rem; border-radius: 50%; background: var(--c); flex: none; }
+  .team { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--v-5); align-items: stretch; }
+  .person { grid-column: span 2; background: #f5f5f5; border-top: 4px solid var(--c); border-radius: 0 0 var(--v-radius) var(--v-radius); padding: var(--v-5) var(--v-5) var(--v-6); display: grid; gap: var(--v-4); align-content: start; }
+  .person--lead { grid-column: span 3; }
+  .person__head { display: flex; align-items: center; gap: var(--v-4); }
+  .person__ava { flex: none; width: 3.4rem; height: 3.4rem; border-radius: 50%; background: var(--c); color: var(--ci, #2b2b2b); display: grid; place-items: center; font-family: var(--v-font-display); font-weight: 700; font-size: 1.15rem; letter-spacing: .02em; line-height: 1; }
+  .v-page .person__role { font-size: var(--v-t-xs); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--v-ink-soft); line-height: 1.2; }
+  .v-page .person h3 { margin-top: .2em; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.05; }
+  .v-page .person__sub { font-size: var(--v-t-sm); color: var(--v-ink); font-weight: 600; line-height: 1.4; }
+  .v-page .pbul { display: grid; gap: var(--v-2); font-size: var(--v-t-sm); line-height: 1.45; color: var(--v-ink-soft); }
+  .pbul li { position: relative; padding-left: 1.1em; text-wrap: pretty; }
+  .pbul li::before { content: ""; position: absolute; left: 0; top: .66em; width: .5em; height: 2px; background: var(--c); }
+  .person[style*="role-3"] .pbul li::before { background: #5f8582; }
+  @media (max-width: 1000px) { .person, .person--lead { grid-column: span 3; } }
+  @media (max-width: 700px) { .team { grid-template-columns: 1fr; } .person, .person--lead { grid-column: 1; } }
+
+  /* 11 · подвал: обычный блок, а не экран с прокруткой */
+  .fin { height: auto; display: block; padding: var(--v-section) 0 0; background: #2b2b2b; }
+  .fin .fin__inner { display: block; padding: 0; align-self: auto; }
+  .fin .fin__inner h2 { font-size: clamp(2.2rem, 1rem + 4.4vw, 5rem); max-width: 16ch; }
+  .foot { margin-top: var(--v-7); padding: var(--v-5) 0 var(--v-6); align-items: center; justify-content: space-between; }
+  .foot nav { order: 0; flex-basis: auto; margin: 0; }
+  .reqs { gap: var(--v-3); }
+  .reqs a[href^="mailto"] { white-space: nowrap; }
+  @media (max-width: 860px) { .faq { grid-template-columns: 1fr; gap: var(--v-5); } .qa__body { padding-right: 0; } }
+  .reqs .legal-links { display: flex; flex-wrap: wrap; gap: var(--v-1) var(--v-5); }
+  .reqs .legal-links a { text-decoration: underline; text-decoration-color: rgb(255 255 255 / .4); padding-block: .3em; }
+  @media (max-width: 860px) {
+    .fin .fin__inner { padding: 0; }
+    .fin .fin__inner h2 { font-size: clamp(2rem, 1rem + 6vw, 2.8rem); }
+    .foot { margin-top: var(--v-6); padding-bottom: calc(var(--v-5) + 3rem); }
+    .foot span:last-child { display: flex; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-target" viewBox="0 0 40 40"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="9"/><circle cx="20" cy="20" r="2.5"/></symbol>
+  <symbol id="i-team" viewBox="0 0 40 40"><circle cx="20" cy="11" r="4.5"/><circle cx="8" cy="16" r="3.4"/><circle cx="32" cy="16" r="3.4"/><path d="M11.5 33c0-5.5 3.8-9.5 8.5-9.5s8.5 4 8.5 9.5"/><path d="M2.5 32c0-4 2.5-7 5.5-7M37.5 32c0-4-2.5-7-5.5-7"/></symbol>
+  <symbol id="i-three" viewBox="0 0 40 40"><rect x="6" y="8" width="28" height="26" rx="4"/><path d="M6 16h28M14 5v6M26 5v6M14 25l4 4 8-9"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 40 40"><path d="M10 36V5"/><path d="M10 8h21l-5 7 5 7H10"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 40 40"><circle cx="20" cy="20" r="15"/><path d="M26 14l-3.5 8.5L14 26l3.5-8.5z"/></symbol>
+  <symbol id="i-plan" viewBox="0 0 40 40"><rect x="9" y="5" width="22" height="30" rx="3"/><path d="M14 14h12M14 20h12M14 26h7"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 40 40"><path d="M5 8h30v19H19l-9 7v-7H5z"/><path d="M12 16h16M12 21h9"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 40 40"><path d="M8 33v-7M16 33v-13M24 33v-19M32 33V6"/></symbol>
+  <symbol id="i-cert" viewBox="0 0 40 40"><rect x="4" y="7" width="32" height="21" rx="2"/><path d="M10 14h20M10 20h11"/><circle cx="29" cy="26" r="4.5"/><path d="M26.5 30.5L25 37l4-2.2 4 2.2-1.5-6.5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 40 40"><path d="M20 10c-4.500-3-10-3-15-2v23c5-1 10.500-1 15 2 4.500-3 10-3 15-2V8c-5-1-10.500-1-15 2zM20 10v23"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 40 40"><circle cx="20" cy="20" r="16"/><path d="M12 21l6 6 11-13"/></symbol>
+</svg>
+
+<div class="v-page">
+  <span data-v-progress></span>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top" aria-label="На главную">AS</a>
+    <a class="bar__name" href="#top">English with Alex Sem</a>
+    <div class="bar__end">
+      <a class="v-btn" href="#nachat">Записаться</a>
+      <details class="menu">
+        <summary aria-label="Меню"><span class="menu__ico" aria-hidden="true"></span></summary>
+        <nav class="menu__list" aria-label="Разделы">
+          <a href="#komanda-idei">Мы не продаём занятия</a>
+          <a href="#zadachi">Решения для ваших задач</a>
+          <a href="#komanda">Давайте знакомиться</a>
+          <a href="#keisy">Кейсы клиентов</a>
+          <a href="#cena">Сколько стоит свобода</a>
+          <a href="#nachat">С чего начать</a>
+          <a href="#otzyvy">Отзывы клиентов</a>
+          <a href="#bonus">Бонус</a>
+          <a href="#faq">Частые вопросы</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · ПЕРВЫЙ ЭКРАН -->
+    <section id="top" data-v-act="pin" data-v-span="1.5" aria-label="Английский язык: ваш личный наставник">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.3">
+          <div class="v-fill hero__img">
+            <picture>
+              <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+              <img src="assets/hero.webp" srcset="assets/hero-1200.webp 1200w, assets/hero.webp 1920w" sizes="100vw" alt="Рабочий стол взрослого ученика: паспорт, ноутбук, блокнот, наушники и кофе" width="1920" height="1080" fetchpriority="high">
+            </picture>
+          </div>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.9 0">
+          <p class="hero__label">Английский язык</p>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Ваш личный наставник со своей командой</h1>
+          <p class="v-lede">Когда нужен результат, а не очередные уроки</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="#nachat" data-v-magnet="0.2" data-v-rise="0">Записаться</a>
+          </div>
+          <ul class="ico4">
+            <li><a href="#zadachi"><svg class="ico" aria-hidden="true"><use href="#i-target"/></svg><span>Индивидуально под вашу цель</span></a></li>
+            <li><a href="#komanda"><svg class="ico" aria-hidden="true"><use href="#i-team"/></svg><span>На вас работает команда</span></a></li>
+            <li><a href="#cena"><svg class="ico" aria-hidden="true"><use href="#i-three"/></svg><span>3 пробных занятия</span></a></li>
+            <li><a href="#cena"><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg><span>Сопровождение до достижения цели (и даже после)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · МЫ НЕ ПРОДАЁМ ЗАНЯТИЯ АНГЛИЙСКИМ -->
+    <section class="v-section v-section--tight" data-v-act="flow" id="komanda-idei" aria-label="Мы не продаём занятия английским">
+      <div class="v-wrap">
+        <div class="not">
+          <div data-v-in data-v-stagger="70">
+            <h2 class="v-display v-display--lg">Мы не продаём занятия английским</h2>
+            <h3 class="not__lead">Вам нужен результат, а не очередной курс Английского</h3>
+            <ul class="nots">
+              <li><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-bars"/><path class="x" d="M5 35L35 5"/></svg><span>Не уровень B1</span></li>
+              <li><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-cert"/><path class="x" d="M5 35L35 5"/></svg><span>Не сертификат</span></li>
+              <li><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-book"/><path class="x" d="M5 35L35 5"/></svg><span>Не знание Present Perfect</span></li>
+            </ul>
+            <h3 class="not__lead">Вам нужна возможность решить конкретную жизненную задачу</h3>
+            <p>На ваш результат работает команда, которая помогает достичь конкретной цели: переезд, работа, международный бизнес, путешествия или жизнь за границей.</p>
+          </div>
+          <figure class="not__fig" data-v-in>
+            <img src="assets/komu.webp" alt="Три блокнота, ручка и стикеры" width="1000" height="1333" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="roles" data-v-in data-v-stagger="90">
+          <article class="role" style="--c: var(--role-1)">
+            <svg class="ico" aria-hidden="true"><use href="#i-compass"/></svg>
+            <h3>Наставник</h3>
+            <b>Единая точка ответственности за ваш результат</b>
+            <span>Формулирует цель, строит стратегию обучения, контролирует прогресс, поддерживает между занятиями и помогает преодолевать сложности на пути к результату</span>
+          </article>
+          <article class="role" style="--c: var(--role-2)">
+            <svg class="ico" aria-hidden="true"><use href="#i-plan"/></svg>
+            <h3>Методист</h3>
+            <b>Соответствие программы вашей цели</b>
+            <span>Создает индивидуальную программу под вашу цель, подбирает материалы и контролирует соответствие занятий вашим задачам</span>
+          </article>
+          <article class="role" style="--c: var(--role-3)">
+            <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+            <h3>Преподаватель</h3>
+            <b>Ваши навыки в английском</b>
+            <span>Проводит занятия, развивает языковые навыки и учит использовать Английский в реальных жизненных и рабочих ситуациях</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · РЕШЕНИЯ ДЛЯ ВАШИХ ЗАДАЧ: тетрадь листается по скроллу, четыре цели -->
+    <section data-v-act="pin" data-v-span="2.5" data-v-drift="#f5f5f5" id="zadachi" aria-label="У нас есть решение для ваших задач">
+      <div data-v-stage>
+        <div class="plan">
+          <div class="plan__copy" data-v-cue="0 1 0 0" data-v-rise="0">
+            <h2 class="v-display">У нас есть решение для ваших задач</h2>
+            <ol class="stages" aria-label="Цели">
+              <li style="--a: .09; --b: .39"><small>Цель 1</small><span>Путешествия<em>Самостоятельно через 3–4 месяца, без страха, стыда и паники</em></span></li>
+              <li style="--a: .39; --b: .65"><small>Цель 2</small><span>Переговоры<em>Через 6–8 месяцев, без переводчиков</em></span></li>
+              <li style="--a: .65; --b: .90"><small>Цель 3</small><span>Работа<em>За большие деньги в международной компании или за рубежом</em></span></li>
+              <li style="--a: .90; --b: 1.2"><small>Цель 4</small><span>Переезд<em>Жизнь, учёба, работа за рубежом</em></span></li>
+            </ol>
+          </div>
+
+          <div class="nb" aria-label="Тетрадь с четырьмя целями" role="img">
+            <div class="nb__base" aria-hidden="true"></div>
+
+            <div class="leaf" style="--i: 4; --a: .84; --b: .96" aria-hidden="true">
+              <div class="leaf__face leaf__front">
+                <p class="pg__week">Цель 3</p>
+                <p class="pg__title">Работа</p>
+                <img class="pg__img" src="goals/assets/goal-work.webp" alt="" width="800" height="600">
+                <p class="pg__cap">За большие деньги в международной компании или за рубежом</p>
+              </div>
+              <div class="leaf__face leaf__back"></div>
+            </div>
+
+            <div class="leaf" style="--i: 5; --a: 1.5; --b: 1.6" aria-hidden="true">
+              <div class="leaf__face leaf__front">
+                <p class="pg__week">Цель 4</p>
+                <p class="pg__title">Переезд</p>
+                <img class="pg__img" src="goals/assets/goal-move.webp" alt="" width="800" height="600">
+                <p class="pg__cap">Жизнь, учёба, работа за рубежом</p>
+              </div>
+              <div class="leaf__face leaf__back"></div>
+            </div>
+
+            <div class="leaf" style="--i: 3; --a: .58; --b: .72" aria-hidden="true">
+              <div class="leaf__face leaf__front">
+                <p class="pg__week">Цель 2</p>
+                <p class="pg__title">Переговоры</p>
+                <img class="pg__img" src="goals/assets/goal-talks.webp" alt="" width="800" height="600">
+                <p class="pg__cap">Через 6–8 месяцев, без переводчиков</p>
+              </div>
+              <div class="leaf__face leaf__back"></div>
+            </div>
+
+            <div class="leaf" style="--i: 2; --a: .32; --b: .46" aria-hidden="true">
+              <div class="leaf__face leaf__front">
+                <p class="pg__week">Цель 1</p>
+                <p class="pg__title">Путешествия</p>
+                <img class="pg__img" src="goals/assets/goal-travel.webp" alt="" width="800" height="600">
+                <p class="pg__cap">Самостоятельно через 3–4 месяца, без страха, стыда и паники</p>
+              </div>
+              <div class="leaf__face leaf__back"></div>
+            </div>
+
+            <div class="leaf leaf--cover" style="--i: 1; --a: .02; --b: .16" aria-hidden="true">
+              <div class="leaf__face leaf__front">
+                <div class="cover__label">
+                  <b>Моя цель</b>
+                  <span>Цель:</span>
+                  <span>Срок:</span>
+                  <span>Наставник: <i>Alex Sem</i></span>
+                </div>
+                <p class="cover__brand">English with Alex Sem</p>
+              </div>
+              <div class="leaf__face leaf__back">
+                <p class="pg__quote">«Английский открывает новые возможности. Мы помогаем ими воспользоваться»</p>
+                <p class="pg__who">ALEX SEM</p>
+              </div>
+            </div>
+
+            <span class="nb__staple nb__staple--a" aria-hidden="true"></span>
+            <span class="nb__staple nb__staple--b" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3б · под тетрадью, тот же блок -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f5f5f5" aria-label="Наставничество помогает достигать целей">
+      <div class="v-wrap">
+        <div class="close" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">Наставничество помогает достигать целей с помощью английского</h2>
+          <p>Мы начинаем не с учебника. Мы начинаем с вашей цели.</p>
+          <a class="v-btn" href="#nachat">Записаться на вводную встречу</a>
+          <small>онлайн · бесплатно · без обязательств</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ДАВАЙТЕ ЗНАКОМИТЬСЯ: сетка карточек без фото -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#ffffff" id="komanda" aria-label="Давайте знакомиться">
+      <div class="v-wrap">
+        <div class="team__head" data-v-in>
+          <h2 class="v-display v-display--lg">Давайте знакомиться</h2>
+          <ul class="legend">
+            <li style="--c: var(--role-1)"><i></i>Наставник</li>
+            <li style="--c: var(--role-2)"><i></i>Методист</li>
+            <li style="--c: var(--role-3)"><i></i>Преподаватели</li>
+          </ul>
+        </div>
+
+        <div class="team" data-v-in data-v-stagger="60">
+          <article class="person person--lead" style="--c: var(--role-1)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">AS</span>
+              <div><p class="person__role">Наставник</p><h3>Alex Sem</h3></div>
+            </header>
+            <p class="person__sub">Ваш наставник и руководитель команды</p>
+            <ul class="pbul">
+              <li>Я тоже взрослый и знаю, что после работы нет сил на артикли</li>
+              <li>Руководитель и наставник с 20-летним опытом</li>
+              <li>Более 25 000 часов преподавания</li>
+              <li>Сотни учеников живут, работают и учатся по всему миру: от Аргентины до Ирландии, от Великобритании до Бали</li>
+              <li>В прошлом топ-менеджер крупной международной IT-компании</li>
+              <li>Образование: инженерное, языковое (Лондон), психологическое (МГУ), педагогическое</li>
+            </ul>
+          </article>
+
+          <article class="person person--lead" style="--c: var(--role-2); --ci: #fff">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">E</span>
+              <div><p class="person__role">Методист</p><h3>Elena</h3></div>
+            </header>
+            <p class="person__sub">Следит за работой преподавателя: смотрит записи занятий, даёт обратную связь, готовит материалы и отчёты</p>
+            <ul class="pbul">
+              <li>3 высших педагогических образования: педагог английского языка, логопед, дирижёр</li>
+              <li>Опыт преподавания более 15 лет</li>
+              <li>Работала во всевозможных учебных заведениях (детские сады, школы, колледжи, учебные центры)</li>
+              <li>Объездила десятки стран, во многих жила подолгу</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">E</span>
+              <div><p class="person__role">Преподаватель</p><h3>Elizabeth</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Носитель языка, билингв</li>
+              <li>Окончила колледж Кертин в Бентли, Австралия</li>
+              <li>Преподаёт английский более 5 лет</li>
+              <li>Прошла курсы в тестовом центре TOEFL и Британском Совете</li>
+              <li>Её студенты получают 7.5+ баллов по IELTS</li>
+              <li>Жила по всему миру, в том числе 3 года в Австралии</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">A</span>
+              <div><p class="person__role">Преподаватель</p><h3>Akhmat</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Степень бакалавра в лингвистике, степень магистра в преподавании</li>
+              <li>6 лет жил и работал в международных школах и университетах Шанхая и Пекина</li>
+              <li>Сертификат TESOL (преподавание английского носителям других языков)</li>
+              <li>8 лет опыта частным репетитором</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">J</span>
+              <div><p class="person__role">Преподаватель</p><h3>Julia</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Высшее педагогическое образование (английский и немецкий языки)</li>
+              <li>Опыт обучения групп до 10 человек в языковых школах</li>
+              <li>5 лет частным репетитором</li>
+              <li>Бывший гид для иностранных туристов</li>
+              <li>Ведёт собственный разговорный клуб английского языка</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">A</span>
+              <div><p class="person__role">Преподаватель</p><h3>Anfisa</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Филологическое образование, репетитор английского и немецкого</li>
+              <li>7 лет школьным учителем, 13 лет частным репетитором</li>
+              <li>Ученики получают максимальные баллы на ЕГЭ и ОГЭ</li>
+              <li>Сотрудничала с Международным олимпийским комитетом во время работы в международной девелоперской компании</li>
+              <li>Мама троих детей</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">S</span>
+              <div><p class="person__role">Преподаватель</p><h3>Sofia</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Окончила Московский государственный лингвистический университет</li>
+              <li>Преподаёт частным репетитором более 5 лет</li>
+              <li>Училась в Университете Люмьер Лион II во Франции по программе Erasmus+</li>
+              <li>Работала на курсах подготовки к ЕГЭ в РАНХиГС</li>
+              <li>Участница TEDx и недели ECOM&amp;Retail</li>
+              <li>Выступала в постановках оригинальных бродвейских мюзиклов</li>
+            </ul>
+          </article>
+
+          <article class="person" style="--c: var(--role-3)">
+            <header class="person__head">
+              <span class="person__ava" aria-hidden="true">A</span>
+              <div><p class="person__role">Преподаватель</p><h3>Alex</h3></div>
+            </header>
+            <ul class="pbul">
+              <li>Носитель языка, билингв, преподаёт американский английский</li>
+              <li>15 лет прожил в США: Хьюстон, Лас-Вегас, Лос-Анджелес</li>
+              <li>Известный художник, чьи работы находятся в Белом доме и в студии Майкла Джексона</li>
+              <li>Давал интервью крупнейшим американским каналам, включая ABC News и Fox Business</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · КЕЙСЫ КЛИЕНТОВ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f5f5f5" id="keisy" aria-label="Кейсы клиентов">
+      <div class="v-wrap">
+        <div class="xhead" data-v-in>
+          <h2 class="v-display v-display--lg">Кейсы клиентов</h2>
+          <div class="xnav" data-rail="cases"><button type="button" data-dir="-1" aria-label="Назад">&larr;</button><button type="button" data-dir="1" aria-label="Вперёд">&rarr;</button></div>
+        </div>
+        <div class="xrail" id="cases" data-v-in tabindex="0" aria-label="Кейсы клиентов, листайте вбок">
+
+          <article class="case">
+            <div class="who"><div><b>Александр</b><span>бизнес-аналитик</span></div></div>
+            <p><span class="lab">Дано</span>Английский уровня B1.</p>
+            <p><span class="lab">Запрос</span>«Нужно подтянуть уровень до B2 и сдать международный экзамен, чтобы работать в Австралии».</p>
+            <details class="story"><summary><span class="t1">Показать историю целиком</span><span class="t2">Свернуть</span></summary>
+              <div class="story__more">
+                <div><span class="lab">Сделано</span><ol>
+                  <li>После нескольких занятий поменяли цель: не подтягивать общий уровень, а сразу за 3 месяца подготовиться к экзамену. Затем за 6 месяцев довести деловой английский до B1+, достаточного для работы в IT на желаемой должности.</li>
+                  <li>Провели занятия в 2 этапа: подготовка к экзамену и развитие бизнес-английского.</li></ol></div>
+                <div><span class="lab">Результат</span><ol>
+                  <li>Через 4 месяца успешно сдал экзамен и подал документы на визу в Австралию.</li>
+                  <li>Ещё через 6 месяцев свободно общается на деловые темы на уровне B1+, живёт и работает в Австралии.</li></ol></div>
+                <p><b>P.S.</b> Сейчас живёт на Кипре и работает ведущим бизнес-аналитиком в одной из крупнейших мировых продакшн-компаний.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case">
+            <div class="who"><div><b>Ксения</b><span>психолог, мама</span></div></div>
+            <p><span class="lab">Дано</span>Практически нулевой английский. Считала, что у неё нет способностей к языкам.</p>
+            <p><span class="lab">Запрос</span>«Хочу учить язык просто так, для себя».</p>
+            <details class="story"><summary><span class="t1">Показать историю целиком</span><span class="t2">Свернуть</span></summary>
+              <div class="story__more">
+                <div><span class="lab">Сделано</span><ol>
+                  <li>На вводной встрече выяснили настоящие мотивы:<ul><li>супруг почти в совершенстве говорит по-английски, и она не хочет ударить в грязь лицом перед его иностранными друзьями;</li><li>они с супругом всерьёз обдумывали переезд за рубеж (и в итоге переехали).</li></ul></li>
+                  <li>Сформулировали цель: уровень B1 за полгода (получилось быстрее).</li>
+                  <li>Составили план обучения: speaking, listening, базовая грамматика, только темы для общения и переезда.</li>
+                  <li>Провели занятия в течение 4 месяцев.</li></ol></div>
+                <div><span class="lab">Результат</span><ol>
+                  <li>Через 4 месяца Ксения начала общаться с иностранцами, ушёл страх.</li>
+                  <li>Позже Ксения с супругом и детьми переехала за рубеж.</li>
+                  <li>Сейчас Ксения учит греческий через английский и уже достигла в греческом B1.</li></ol></div>
+                <p><b>P.S.</b> Счастливо живёт с семьёй в Греции, воспитывает детей и радуется жизни.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case">
+            <div class="who"><div><b>Анастасия</b><span>предприниматель в сфере ИИ</span></div></div>
+            <p><span class="lab">Дано</span>Совсем нулевой английский, не знала даже чисел.</p>
+            <p><span class="lab">Запрос</span>«Переехала на Бали, даже заказать доставку не могу, срочно нужен язык».</p>
+            <details class="story"><summary><span class="t1">Показать историю целиком</span><span class="t2">Свернуть</span></summary>
+              <div class="story__more">
+                <div><span class="lab">Сделано</span><ol>
+                  <li>Сформулировали цель: за 3 месяца научиться говорить на базовые темы, необходимые для жизни.</li>
+                  <li>Составили план: только speaking и listening, минимум грамматики, только насущные темы, 300–400 ключевых слов для простого общения.</li>
+                  <li>Через 3 месяца пересмотрели цель и методику: выучить язык на уровне, достаточном для переезда в другую страну.</li>
+                  <li>Ещё через несколько месяцев новая цель: использовать язык в работе с носителями.</li></ol></div>
+                <div><span class="lab">Результат</span><ol>
+                  <li>Через 3 месяца ушёл языковой барьер: сама на английском разрешила конфликтную ситуацию со стыковочным рейсом в азиатском аэропорту.</li>
+                  <li>Ещё через 3 месяца переехала в Аргентину и стала общаться в англоязычных сообществах.</li>
+                  <li>Ещё через 3 месяца отчитывалась перед британским советом директоров и начала учить португальский через английский.</li></ol></div>
+                <p><b>P.S.</b> Вышла замуж за француза и переехала во Францию :)</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case">
+            <div class="who"><div><b>Маргарита</b><span>предприниматель в сфере логистики, юрист</span></div></div>
+            <p><span class="lab">Дано</span>Английский на уровне A2 с сильным языковым барьером: «всё понимаю, но сказать ничего не могу».</p>
+            <p><span class="lab">Запрос</span>«Живу в Турции, занимаюсь международным бизнесом, нужно участвовать в переговорах».</p>
+            <details class="story"><summary><span class="t1">Показать историю целиком</span><span class="t2">Свернуть</span></summary>
+              <div class="story__more">
+                <div><span class="lab">Сделано</span><ol>
+                  <li>Сформулировали цель: за 6 месяцев достичь неуверенного B1 в speaking и listening для деловых коммуникаций.</li>
+                  <li>После 2–3 занятий выяснили, что с деловым общением проблем нет, а сложности возникают на неформальных встречах.</li>
+                  <li>Переформулировали цель: за 6 месяцев достичь уверенного B1 в говорении и понимании речи на общие темы.</li>
+                  <li>Составили план обучения и провели занятия.</li></ol></div>
+                <div><span class="lab">Результат</span><ol>
+                  <li>Через 6 месяцев Маргарита спокойно говорит на общие темы: с ошибками, но они не мешают смыслу.</li>
+                  <li>Английским теперь занимается вся семья: Маргарита, супруг и двое сыновей.</li>
+                  <li>Позже семья переехала в страну, где английский востребован, и открыла там бизнес.</li></ol></div>
+                <p><b>P.S.</b> Маргарита с супругом достигли своих целей за 6 месяцев, а дети почти в совершенстве владеют английским и учатся в международной школе.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case">
+            <div class="who"><div><b>Michaella</b><span>ассистент руководителя</span></div></div>
+            <p><span class="lab">Дано</span>Английский на уровне B1, но очень давно не было практики.</p>
+            <p><span class="lab">Запрос</span>За несколько месяцев активировать английский и устроиться в крупную международную компанию на должность PA (личного ассистента).</p>
+            <details class="story"><summary><span class="t1">Показать историю целиком</span><span class="t2">Свернуть</span></summary>
+              <div class="story__more">
+                <div><span class="lab">Сделано</span><ol>
+                  <li>Сформулировали цель: подготовиться именно к собеседованию, так как на этой должности нужен в основном письменный английский.</li>
+                  <li>Провели несколько занятий, на которых отработали все возможные сценарии собеседования.</li></ol></div>
+                <div><span class="lab">Результат</span><p>Через месяц Michaella получила желаемую должность.</p></div>
+                <p><b>P.S.</b> На новой работе Michaella узнала о новом IT-стартапе, успешно в него вложилась и через полгода вышла на пенсию.</p>
+              </div>
+            </details>
+          </article>
+
+        </div>
+        <div class="more" data-v-in>
+          <p>Кейсов сотни. Ученики Алекса и команды достигают своих целей, связанных с английским. Они живут, работают и учатся в США, Канаде, Великобритании, Ирландии, Германии, Италии, ОАЭ и многих других странах.</p>
+          <a class="v-btn" href="#nachat">Хочу так же</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · СКОЛЬКО СТОИТ СВОБОДА: дорожная карта, линия заполняется по скроллу -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#ffffff" id="cena" aria-label="Сколько стоит свобода">
+      <div class="v-wrap">
+        <div data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Сколько стоит свобода?</h2>
+          <p class="v-lede" style="margin-top: var(--v-4); max-width: 44ch; color: var(--v-ink-soft)">Оплата блоками: в каждый блок входят 8 занятий с преподавателем.</p>
+        </div>
+
+        <div class="road">
+          <article class="stage" style="--a: .16">
+            <p class="stage__n">Этап 1</p>
+            <h3>Хотите попробовать?</h3>
+            <p class="stage__price">Не платите ничего</p>
+            <ul>
+              <li>Вводная встреча</li>
+              <li>Предварительный план обучения после вводной встречи</li>
+              <li>3 пробных занятия по 60 минут (оплачиваете только, если принимаете решение идти с нами)</li>
+            </ul>
+          </article>
+          <article class="stage" style="--a: .26">
+            <p class="stage__n">Этап 2</p>
+            <h3>Решили идти с нами?</h3>
+            <p class="stage__price">24&nbsp;000&nbsp;₽ за 1-й месяц</p>
+            <ul>
+              <li>Детальный план обучения после пробных занятий</li>
+              <li>Ещё 5 занятий по 60 минут</li>
+              <li>Поддержка преподавателя и наставника в чате и по аудио</li>
+              <li>Отчёт о прогрессе после 1-го месяца (8 занятий)</li>
+              <li>Проверка прогресса с наставником</li>
+            </ul>
+          </article>
+          <article class="stage" style="--a: .36">
+            <p class="stage__n">Этап 3</p>
+            <h3>Всё устраивает?</h3>
+            <p class="stage__price">28&nbsp;000 / 32&nbsp;000&nbsp;₽ в месяц</p>
+            <ul>
+              <li>8 занятий по 60 минут</li>
+              <li>Стоимость зависит от преподавателя: носитель-билингв или нет</li>
+              <li>Поддержка преподавателя и наставника в чате и по аудио</li>
+              <li>Ежемесячные отчёты об успехах (и неудачах)</li>
+              <li>Регулярные проверки прогресса</li>
+            </ul>
+          </article>
+          <article class="stage" style="--a: .46">
+            <p class="stage__n">Этап 4</p>
+            <h3>Цель достигнута</h3>
+            <ul>
+              <li>Проверяете свои навыки в реальной жизни</li>
+              <li>Получаете сертификат</li>
+              <li>Наставник остаётся на связи и помогает с любыми вопросами в образовании</li>
+              <li>Можете практиковать язык в нашем английском клубе</li>
+              <li>Попадаете в закрытый чат выпускников</li>
+              <li>Будем благодарны за отзыв</li>
+            </ul>
+          </article>
+        </div>
+
+        <div data-v-in style="margin-top: var(--v-8)"><a class="v-btn" href="#nachat">Попробовать</a></div>
+      </div>
+    </section>
+
+    <!-- 7 · С ЧЕГО НАЧАТЬ + ФОРМА -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f5f5f5" id="nachat" aria-label="С чего начать">
+      <div class="v-wrap start">
+        <div class="start__copy" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">С чего начать?</h2>
+          <h3>30 минут, которые могут изменить вашу жизнь</h3>
+          <p>Запишитесь на бесплатную вводную онлайн-встречу:</p>
+          <ul class="chk">
+            <li>займёт 30 минут</li>
+            <li>оценим ваш speaking и listening по шкале CEFR</li>
+            <li>точно сформулируем цель обучения</li>
+            <li>составим план действий</li>
+            <li>расскажем, как быстрее достичь цели</li>
+            <li>пришлём подробный отчёт</li>
+          </ul>
+        </div>
+        <div data-v-in>
+          <form class="form" id="zayavka" action="{{куда-идут-заявки}}" method="post" novalidate>
+            <h3>Записаться на вводную встречу или консультацию</h3>
+            <label>Имя<input type="text" name="name" autocomplete="given-name" required></label>
+            <label>Телефон<input type="tel" name="phone" autocomplete="tel" required></label>
+            <label><span>Электронная почта <span class="opt">(необязательно)</span></span><input type="email" name="email" autocomplete="email"></label>
+            <button class="v-btn" type="submit">Записаться</button>
+            <p class="form__msg" role="status" aria-live="polite"></p>
+            <div class="alt">
+              <span>Или напишите нам в Макс или Телеграм</span>
+              <a class="soc" href="#" data-stub="msg" target="_blank" rel="noopener" aria-label="Макс">Макс</a>
+              <a class="soc" href="#" data-stub="msg" target="_blank" rel="noopener" aria-label="Телеграм">Телеграм</a>
+            </div>
+            <p class="fine">Отправляя заявку, я даю согласие на обработку моих персональных данных в соответствии с <a href="politika.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>. Текст <a href="soglasie.html" target="_blank" rel="noopener">согласия</a>.</p>
+          </form>
+          <div class="form thanks" id="thanks" hidden role="status">
+            <svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>
+            <p>Спасибо! Мы свяжемся с вами в течение 1 рабочего дня</p>
+            <small>Демо: на самом деле заявка никуда не отправлена.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · ОТЗЫВЫ КЛИЕНТОВ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#ffffff" id="otzyvy" aria-label="Отзывы клиентов">
+      <div class="v-wrap">
+        <div class="xhead" data-v-in>
+          <h2 class="v-display v-display--lg">Отзывы клиентов</h2>
+          <div class="xnav" data-rail="reviews"><button type="button" data-dir="-1" aria-label="Назад">&larr;</button><button type="button" data-dir="1" aria-label="Вперёд">&rarr;</button></div>
+        </div>
+        <div class="xrail" id="reviews" data-v-in tabindex="0" aria-label="Отзывы клиентов, листайте вбок">
+          <article class="rv">
+            <div class="who"><div><b>Сергей Шестаков</b></div></div>
+            <p class="rv__t">Хочется сказать большое спасибо Алексу за прекрасную организацию обучения! Ранее Алекс готовил моего сына к SAT и IELTS, в результате сын поступил в международный университет. Также удалось за сжатое время подтянуть английский членам семьи. Они занимаются с разными преподавателями из команды Алекса, и в обоих случаях отлично подобраны методика и материал: гибко, под наши цели. Радует, что я вижу записи всех занятий. А ещё всё происходит под надзором Алекса и методиста команды. Каждый месяц я получаю отчёт о прогрессе, а Алекс проводит регулярные progress checks. А главное, что спустя полгода уже есть значительные результаты. Повторюсь, прекрасная организация обучения!</p>
+            <button class="rv__more" type="button" hidden>Читать полностью</button>
+          </article>
+          <article class="rv">
+            <div class="who"><div><b>Елена Шварц</b></div></div>
+            <p class="rv__t">Только что было первое занятие с Элизабет из команды Алекса. Если честно, у меня такое настроение, просто уи-и-и! Это настолько классно… Прям восторг какой-то. Всё отработали, она очень классная, прям профи. Обдуманно ведёт занятия, понимает цель и ведёт к ней. Очень интересно было узнать некоторые моменты по произношению. В общем, очень понравилось, и очень хочется заниматься дальше. Спасибо вам огромное!</p>
+            <button class="rv__more" type="button" hidden>Читать полностью</button>
+          </article>
+          <article class="rv">
+            <div class="who"><div><b>Андрей Кобелев</b></div></div>
+            <p class="rv__t">Занимаюсь с преподавателем из команды Алекса, Юлией, всё очень классно. Гибкий график: для меня это было важно, так как я пилот. Есть результат: за 3 месяца разговорился, почти не делаю ошибок в речи, стало проще.</p>
+            <button class="rv__more" type="button" hidden>Читать полностью</button>
+          </article>
+          <article class="rv">
+            <div class="who"><div><b>Юлия Суркова</b></div></div>
+            <p class="rv__t">Хочу выразить благодарность Алексу и его команде. Я преподаватель английского языка, а каждому преподавателю нужен свой преподаватель. Нестер из команды Алекса начал со мной работать, и за пару месяцев мы достигли отличных результатов! Словарный запас растёт, навык говорения крепнет. Занятия очень интересные, построены на аутентичных материалах. Очень удобно отслеживать прогресс по ежемесячным отчётам о пройденном материале. Большое спасибо Алексу и Нестеру! Вы лучшие!</p>
+            <button class="rv__more" type="button" hidden>Читать полностью</button>
+          </article>
+        </div>
+        <div class="more" data-v-in>
+          <a class="v-btn v-btn--ghost" href="#" data-stub="msg" target="_blank" rel="noopener">Больше отзывов в Максе →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · БОНУС -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f5f5f5" id="bonus" aria-label="Бонус">
+      <div class="v-wrap">
+        <div data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Бонус</h2>
+          <p class="v-lede" style="margin-top: var(--v-4); max-width: 40ch; color: var(--v-ink-soft)">Раздаём полезные гайды за подписку на наш канал в Максе</p>
+        </div>
+        <div class="gd" data-v-in data-v-stagger="90">
+          <figure>
+            <div class="gd__img"><img src="assets/stack.webp" alt="Печатный гайд" width="1000" height="1333" loading="lazy"></div>
+            <figcaption><h3>Можно ли выучить английский самостоятельно?</h3><p>Да, можно! Но есть нюанс…</p></figcaption>
+          </figure>
+          <figure>
+            <div class="gd__img"><img src="assets/stack.webp" alt="Печатный гайд" width="1000" height="1333" loading="lazy"></div>
+            <figcaption><h3>Репетитор вашего ребёнка действительно учит?</h3><p>Или вы просто платите деньги за время…</p></figcaption>
+          </figure>
+        </div>
+        <div class="getfree" data-v-in>
+          <b>Получить бесплатно</b>
+          <div>
+            <a href="#" data-slot="ссылка-макс">Макс</a>
+            <a href="#" data-slot="ссылка-vk">VK</a>
+            <a href="#" data-slot="ссылка-телеграм">Телеграм</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#ffffff" id="faq" aria-label="Часто задаваемые вопросы">
+      <div class="v-wrap faq">
+        <div data-v-in><h2 class="v-display v-display--md">Часто задаваемые вопросы</h2></div>
+        <div data-v-in data-v-stagger="40">
+
+          <details class="qa" name="faq" open><summary><span class="qa__q">1. Есть ли гарантия результата?</span></summary><div class="qa__body">
+            <p>Было бы нечестно гарантировать результат, который зависит не только от нас. На скорость достижения цели влияют ваше усердие, выполнение заданий, регулярность занятий и способности к языкам: они у всех разные, но безнадёжных случаев не бывает.</p>
+            <p><b>Что мы можем гарантировать,</b> так это то, что мы приложим все усилия, чтобы наставничество происходило на самом высоком уровне и что мы сделаем все от нас зависящее, чтобы вы достигли ваших целей в английском как можно быстрее.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">2. Как все устроено шаг за шагом?</span></summary><div class="qa__body">
+            <ol>
+              <li><b>Вводная встреча</b><ul><li>формулируем вашу цель</li><li>определяем текущий уровень</li><li>составляем предварительный план</li><li>подбираем преподавателя</li></ul></li>
+              <li><b>3 пробных занятия</b><ul><li>вы адаптируетесь</li><li>принимаете решение</li><li>мы составляем детальный план обучения</li></ul></li>
+              <li><b>Регулярные занятия</b><ul><li>развиваем нужные навыки</li><li>решаем любые вопросы по обучению</li><li>поддерживаем между занятиями</li></ul></li>
+              <li><b>Постоянный контроль</b><ul><li>смотрим записи занятий</li><li>готовим ежемесячные отчёты о прогрессе</li><li>наставник проводит регулярные progress checks по видеосвязи</li><li>корректируем цели и план</li></ul></li>
+              <li><b>Выпускной</b><ul><li>применяете навыки на практике</li><li>получаете сертификат выпускника</li></ul></li>
+            </ol></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">3. А если мне не понравится?</span></summary><div class="qa__body">
+            <p>Скорее всего, речь о контакте с преподавателем. Во-первых, у вас есть 3 пробных занятия, чтобы понять, сложится ли контакт. Плюс, есть первый месяц со скидкой, чтобы удостовериться, что все точно идет как надо.</p>
+            <p>В любом случае, все проблемы мы видим заранее: на записях занятий, в отчётах преподавателей и на progress checks с наставником. Что делаем:</p>
+            <ol><li>Пересобираем план</li><li>Меняем подход и методику</li><li>Пересматриваем цель</li><li>Меняем преподавателя без потери контекста: всю историю хранит наставник</li><li>В крайнем случае возвращаем оплату за неиспользованное время</li></ol></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">4. Как вы отслеживаете мой прогресс?</span></summary><div class="qa__body">
+            <p>Очень тщательно, на всех этапах. Каждый месяц вы получаете progress report: ваши достижения и области, над которыми ещё нужно поработать. Наставник регулярно проводит progress checks по видеосвязи, чтобы убедиться, что навыки развиваются в сторону вашей цели.</p>
+            <p>Есть и работа, которую вы не увидите, но почувствуете: мы смотрим записи занятий, общаемся с преподавателями, даём им обратную связь и с вашего согласия корректируем учебный план.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">5. Как вы отбираете преподавателей?</span></summary><div class="qa__body">
+            <p><b>Все наши преподаватели прошли отбор от 30 до 60 человек на место</b></p>
+            <ol><li>Ищем кандидатов везде: от профильных платформ до профессиональных чатов</li><li>Отсеиваем кандидатов без профильного образования и опыта, студентов и тех, кто работает по устаревшим методикам</li><li>Проверяем видео-задание: произношение и то, как преподаватель подаёт материал</li><li>Alex и Elena проводят финальное собеседование</li><li>Составляем психологический портрет преподавателя и определяем, каким ученикам он подходит</li><li>Доверяем провести 1–3 занятия</li><li>Смотрим записи и даём обратную связь</li><li>Проверяем, как учтены рекомендации</li><li>Берём в команду</li></ol></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">6. Через сколько времени я заговорю как носитель языка?</span></summary><div class="qa__body">
+            <p>Стремление говорить как носитель достойно уважения, но обычно за ним не стоит конкретная жизненная цель. На вводной встрече мы вместе её найдём: почти наверняка она окажется более насущной.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">7. Можно ли временно приостановить наставничество?</span></summary><div class="qa__body">
+            <p>Да. Не волнуйтесь: ни наставник, ни методист, ни преподаватель, ни оплаченное время никуда не денутся. Мы будем вас ждать.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">8. Вы готовите к экзаменам?</span></summary><div class="qa__body">
+            <p>Да, мы готовим к международным языковым экзаменам, а также к вступительному экзамену SAT. Это отдельная услуга, её можно обсудить с наставником.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">9. Вы даёте сертификат об окончании обучения?</span></summary><div class="qa__body">
+            <p>Да, даём. Но важно понимать, что официально уровень языка подтверждают только международные сертификаты, которые выдают после сдачи экзаменов. Мы готовим к таким экзаменам, но в России сейчас нет официальных центров для их сдачи, поэтому ехать придётся в другую страну. Куда лучше, подскажем в рамках наставничества.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">10. Есть ли рассрочка?</span></summary><div class="qa__body">
+            <p>В стоимость наставничества уже заложена оплата блоками. В каждый блок входят 8 занятий с преподавателем.</p></div></details>
+
+          <details class="qa" name="faq"><summary><span class="qa__q">11. Могу ли я записать своего ребёнка?</span></summary><div class="qa__body">
+            <p>Да, в команде есть детские преподаватели. Наставничество для детей устроено немного иначе. Сайт по английскому для детей сейчас в разработке. Вы можете задать любые вопросы напрямую Алексу в Макс, ВК или Телеграм, указанных ниже.</p></div></details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 · ФУТЕР: слоган, реквизиты, соцсети -->
+    <section class="fin" data-v-act="flow" id="zapis" aria-label="Контакты">
+      <div class="v-wrap">
+        <div class="fin__inner" data-v-in>
+          <h2 class="v-display">Stop studying English – Start using it</h2>
+        </div>
+        <footer class="foot">
+          <div class="reqs">
+            <span>© 2026 English with Alex Sem · <a href="mailto:info@alex-sem.ru">info@alex-sem.ru</a></span>
+            <span class="legal-links"><a href="politika.html" target="_blank" rel="noopener">Политика конфиденциальности</a><a href="soglasie.html" target="_blank" rel="noopener">Согласие на обработку данных</a></span>
+          </div>
+          <nav aria-label="Соцсети">
+            <a class="soc" href="#" data-stub="msg" target="_blank" rel="noopener" aria-label="Макс">Макс</a>
+            <a class="soc" href="#" data-stub="msg" target="_blank" rel="noopener" aria-label="ВКонтакте">ВК</a>
+            <a class="soc" href="#" data-stub="msg" target="_blank" rel="noopener" aria-label="Телеграм">Телеграм</a>
+          </nav>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="cookie" id="cookie" role="region" aria-label="Cookie" hidden>
+    <span>Этот сайт собирает файлы cookie. Нажимая «Согласен» или саму плашку, вы соглашаетесь на их использование. <a href="politika.html#cookie" target="_blank" rel="noopener">Подробнее</a></span>
+    <button type="button" id="cookie-ok">Согласен</button>
+  </div>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span правим до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.4');
+    document.getElementById('zadachi').setAttribute('data-v-span', '2.3');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+  // Фирменный ход «тетрадь, которую листаешь» живёт в CSS: каждый лист считает --f от --v-p акта.
+
+  // Меню-бургер закрывается по клику на пункт.
+  var menu = document.querySelector('.menu');
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) menu.removeAttribute('open'); });
+
+  // Листалки (кейсы, отзывы): кнопки со стрелками на мыши.
+  document.querySelectorAll('.xnav').forEach(function (nav) {
+    var rail = document.getElementById(nav.getAttribute('data-rail'));
+    nav.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      rail.scrollBy({ left: Number(b.getAttribute('data-dir')) * rail.clientWidth * 0.8, behavior: 'smooth' });
+    });
+  });
+
+  // Отзывы: «Читать полностью» только там, где текст не влез.
+  document.querySelectorAll('.rv').forEach(function (rv) {
+    var t = rv.querySelector('.rv__t'), b = rv.querySelector('.rv__more');
+    function check() { b.hidden = rv.classList.contains('is-open') ? false : t.scrollHeight <= t.clientHeight + 1; }
+    b.addEventListener('click', function () {
+      var open = rv.classList.toggle('is-open');
+      b.textContent = open ? 'Свернуть' : 'Читать полностью';
+    });
+    check(); window.addEventListener('resize', check);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(check);
+  });
+
+  // FAQ: открыт один вопрос (запасной вариант для браузеров без name у details).
+  document.querySelectorAll('details.qa').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      document.querySelectorAll('details.qa[open]').forEach(function (o) { if (o !== d) o.removeAttribute('open'); });
+    });
+  });
+
+  // Форма: демо, заявки никуда не отправляются ({{куда-идут-заявки}}).
+  var form = document.getElementById('zayavka'), msg = form.querySelector('.form__msg');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.name.value.trim() && form.phone.value.trim()) {
+      form.hidden = true; document.getElementById('thanks').hidden = false;
+    } else {
+      msg.textContent = 'Заполните имя и телефон.';
+    }
+  });
+
+  // Cookie-плашка: один раз, запоминаем в браузере (если доступно).
+  var ck = document.getElementById('cookie'), seen = false;
+  try { seen = localStorage.getItem('cookie-ok') === '1'; } catch (err) {}
+  if (!seen) ck.hidden = false;
+  // Плашка пропадает по клику на неё саму или на кнопку (ссылка «Подробнее» плашку не закрывает).
+  ck.addEventListener('click', function (e) {
+    if (e.target.closest('a')) return;
+    ck.hidden = true;
+    try { localStorage.setItem('cookie-ok', '1'); } catch (err) {}
+  });
+</script>
+<script data-demo-stub>
+(()=>{var t=document.createElement("div");t.setAttribute("role","status");t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#14151A;color:#fff;padding:12px 18px;border-radius:12px;font:15px/1.4 system-ui,sans-serif;z-index:2147483647;max-width:calc(100% - 32px);opacity:0;pointer-events:none;transition:opacity .25s;text-align:center";var x;
+function show(m){t.textContent=m;if(!t.isConnected)document.body.appendChild(t);t.style.opacity=1;clearTimeout(x);x=setTimeout(function(){t.style.opacity=0},2600)}
+window.addEventListener("click",function(e){var a=e.target.closest('a[data-stub],[data-s-msg],a[href^="tel:"],a[href*="wa.me"],a[href*="t.me"],a[href*="max.ru"],a[href*="vk.com"],a[href*="whatsapp"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();show(a.matches('[data-stub="booking"]')?"Это демо: здесь будет ваша онлайн-запись":a.matches('[data-stub="tel"],[href^="tel:"]')?"Это демо: здесь будет ваш телефон":"Это демо: здесь будет ваш мессенджер")},true);
+})();
+</script>
+</body>
+</html>

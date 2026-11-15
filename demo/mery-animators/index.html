@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mery Animators · детские праздники в Калуге</title>
+<meta name="description" content="Детские праздники в Калуге: аниматоры и ростовые куклы от 2000 ₽, Дед Мороз и Снегурочка к Новому году. Цена названа заранее, консультация бесплатная, выезд по Калуге и области.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Mery Animators">
+<meta property="og:title" content="Детский праздник в Калуге: герои от 2000 ₽">
+<meta property="og:description" content="Аниматоры и ростовые куклы приедут на ваш праздник. Цена названа заранее, консультация бесплатная, работаем по Калуге и области.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231d4ed8%27/%3E%3Cellipse cx=%2716%27 cy=%2713%27 rx=%277%27 ry=%268.5%27 fill=%27%23ffc61a%27/%3E%3Cpath d=%27M16 22c-1 3 1 4-1 7%27 stroke=%27%23f6f8fd%27 stroke-width=%271.6%27 fill=%27none%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mery Animators","description":"Детские праздники: аниматоры и ростовые куклы, Дед Мороз и Снегурочка. Выезд по Калуге и области.","telephone":"+70000000000","areaServed":"Калуга и область","address":{"@type":"PostalAddress","addressLocality":"Калуга","addressCountry":"RU"},"priceRange":"2000-3200 ₽","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"22","reviewCount":"20"}}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта (синий из логотипа Mery, светлая) ---- */
+  .v-page {
+    --v-canvas: #f6f8fd; --v-surface: #ffffff;
+    --v-ink: #0f1f3d; --v-ink-soft: #4a5875;           /* 6,7:1 на холсте */
+    --v-accent: #1d4ed8; --v-accent-ink: #ffffff;      /* 6,6:1 на холсте, 6,7:1 текст на кнопке */
+    --c-sun: #ffc61a; --c-pink: #ff5a9d;               /* только маркеры и воздушный шарик в знаке */
+    --v-font-display: "Nunito", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Onest", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 20 40 90;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .08), 0 8px 22px rgb(var(--v-shadow-color) / .10);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .10), 0 22px 54px rgb(var(--v-shadow-color) / .16);
+    --v-edge: inset 0 1px 0 rgb(255 255 255 / .8);
+    --v-radius: 16px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-display-weight: 500;
+    --v-track-tight: -0.02em;
+    --v-track-normal: 0;
+  }
+  html, body { background: #f6f8fd; hyphens: none; -webkit-hyphens: none; }
+  .v-page, .v-page * { hyphens: none; -webkit-hyphens: none; }
+  .v-page .v-display { font-weight: 700; line-height: 1.08; }
+  .v-page .v-display--lg { font-size: clamp(1.7rem, 1.05rem + 2.3vw, 2.9rem); }
+  .v-page .v-display--md { font-size: clamp(1.5rem, 1rem + 1.7vw, 2.35rem); line-height: 1.12; }
+  .v-page .v-lede { font-weight: 400; line-height: 1.45; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+  .mark { background: linear-gradient(transparent 58%, var(--c-sun) 58% 92%, transparent 92%); padding: 0 .08em; }
+
+  /* ---- шапка ------------------------------------------------------------ */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, rgb(246 248 253 / .88), rgb(246 248 253 / 0));
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(246 248 253 / .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-base); letter-spacing: 0; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .55em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { position: relative; width: .8em; height: 1em; border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%; background: var(--c-pink); display: inline-block; transform: rotate(-12deg); }
+  .bar__mark i::after { content: ""; position: absolute; left: 50%; top: 100%; width: 1.5px; height: .5em; margin-left: -.75px; background: var(--v-ink-soft); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 500; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: .95rem; }
+  }
+  @media (max-width: 860px) { .bar.is-scrolled { background: rgb(246 248 253 / .95); } }
+
+  /* ---- hero: праздничная комната, три плана ------------------------------- */
+  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 100% 50%; }
+  .hero__card { --w: clamp(160px, 13vw, 200px); --r: clamp(1.5rem, 4vw, 5rem); --t: clamp(5.5rem, 11vh, 8rem); }
+  .hero__card figure { position: absolute; right: var(--r); top: var(--t); width: var(--w); padding: .45rem .45rem .6rem; border-radius: calc(var(--v-radius) - 6px);
+    background: var(--v-surface); box-shadow: 0 30px 60px rgb(20 40 90 / .2), var(--v-edge); transform: rotate(4deg); }
+  .hero__card img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: calc(var(--v-radius) - 9px); display: block; }
+  .hero__card figcaption { margin-top: .55rem; font-size: var(--v-t-xs); line-height: 1.35; color: var(--v-ink-soft); }
+  .hero__card figcaption b { display: block; color: var(--v-ink); font-weight: 500; }
+  /* ценник: стандартное поздравление, цена и состав */
+  .v-layer.hero__tag, .v-layer.hero__card { z-index: 3; }
+  .hero__tag { --tw: clamp(210px, 16.5vw, 250px); }
+  .tag { position: absolute; right: calc(clamp(1.5rem, 4vw, 5rem) + clamp(1.5rem, 5vw, 5.5rem)); top: calc(clamp(5.5rem, 11vh, 8rem) + clamp(160px, 13vw, 200px) * 1.333 + 4.6rem); width: var(--tw);
+    padding: .8rem .95rem .9rem; border-radius: var(--v-radius); background: var(--v-surface); box-shadow: 0 30px 60px rgb(20 40 90 / .22), var(--v-edge); transform: rotate(-3deg); color: var(--v-ink); display: grid; gap: .25rem; }
+  .tag__k { font-size: .72rem; letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; }
+  .tag b { font-family: var(--v-font-display); font-weight: 700; font-size: 1.65rem; line-height: 1.1; color: var(--v-accent); }
+  .tag span:last-child { font-size: .84rem; line-height: 1.35; }
+  .tag::before { content: ""; position: absolute; left: .95rem; top: -.55rem; width: 2.6rem; height: 1.1rem; border-radius: .3rem; background: var(--c-sun); transform: rotate(-4deg); opacity: .92; }
+  @media (max-height: 760px) and (min-width: 861px) { .tag span:last-child { font-size: .78rem; } .tag b { font-size: 1.4rem; } }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(120% 95% at 0% 100%, rgb(246 248 253 / .94) 0%, rgb(246 248 253 / .62) 38%, transparent 70%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 26%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, var(--v-canvas) 0%, rgb(246 248 253 / .5) 45%, transparent 100%); }
+  .hero__copy { bottom: clamp(5rem, 14vh, 9rem); max-width: min(46rem, 86vw); }
+  .hero__label { display: inline-block; margin-bottom: var(--v-4); color: var(--v-ink); background: var(--c-sun); padding: .35em .8em; border-radius: 999px; }
+  .hero__copy .v-display { font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem); max-width: 17ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); color: var(--v-ink); max-width: 40ch; font-size: var(--v-t-base); }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: var(--v-t-xl); } .hero__copy { bottom: clamp(3.5rem, 10vh, 6rem); } }
+  @media (max-width: 860px) {
+    .hero__back img { object-position: 50% 80%; }
+    .hero__scrim { background: linear-gradient(to bottom, rgb(246 248 253 / .95) 0%, rgb(246 248 253 / .82) 46%, transparent 70%); }
+    .hero__floor { height: 14%; }
+    .hero__card figure { display: none; }
+    .v-layer.hero__tag, .v-layer.hero__card { z-index: 3; }
+  .hero__tag { --tw: min(56vw, 232px); }
+    .tag { right: 4vw; top: auto; bottom: 4.5vh; transform: rotate(-2.5deg); box-shadow: 0 18px 36px rgb(20 40 90 / .24), var(--v-edge); padding: .65rem .8rem .75rem; }
+    .tag b { font-size: 1.35rem; }
+    .hero__copy { top: clamp(5.5rem, 11vh, 7rem); bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: var(--v-t-xl); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-4); }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-5); gap: var(--v-2) var(--v-5); }
+  }
+
+  /* ---- что ломает праздник: строки-определения и поворот ------------------------ */
+  .poka__head { max-width: 58rem; margin-bottom: var(--v-7); }
+  .poka__head .v-body { margin-top: var(--v-4); }
+  .poka__rows li { display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .poka__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .poka__rows h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.2; letter-spacing: 0; text-wrap: balance; }
+  .poka__rows p { color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  .turn { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); align-items: start;
+    padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .turn .v-label { color: var(--v-accent); padding-top: .4em; }
+  .turn__text { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); line-height: 1.35; letter-spacing: 0; text-wrap: pretty; max-width: 36ch; }
+  @media (max-width: 860px) {
+    .poka__rows li, .turn { grid-template-columns: 1fr; gap: var(--v-2); }
+    .poka__rows h3 { font-size: var(--v-t-base); }
+    .turn { padding: var(--v-5); }
+    .turn__text { font-size: var(--v-t-base); }
+  }
+
+  /* ---- фирменный ход 1: праздник собирается веером ---------------------------- */
+  .sb { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr auto; column-gap: var(--v-8); height: 100%;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .sb__head { grid-column: 1; max-width: 34rem; }
+  .sb__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .sb__rep { grid-column: 1; grid-row: 2; position: relative; align-self: center; min-height: 12rem; }
+  .sb__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .sb__step { display: inline-flex; align-items: center; gap: .55em; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; margin-bottom: var(--v-3); }
+  .sb__step i { width: .7em; height: .7em; border-radius: 50%; background: var(--c-sun); box-shadow: 0 0 0 2px var(--v-ink); }
+  .sb__rep h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; text-wrap: balance; margin-bottom: var(--v-3); }
+  .sb__rep p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .sb__rep p b { color: var(--v-ink); font-weight: 500; }
+  .sb__after { grid-column: 1; grid-row: 3; display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
+  .sb__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 34ch; }
+  .fan { grid-column: 2; grid-row: 1 / -1; position: relative; align-self: center; justify-self: center; width: min(100%, 66vh); aspect-ratio: 1 / 1; }
+  .fan__card { --k: clamp(0, calc((var(--v-p, 0) - var(--s)) / .3), 1); --w: clamp(0, calc((var(--v-p, 0) - .58) / .24), 1);
+    position: absolute; left: 27%; bottom: 6%; width: 46%; aspect-ratio: 3 / 4; transform-origin: 50% 250%;
+    border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: 0 24px 48px rgb(20 40 90 / .2), var(--v-edge);
+    transform: translateX(calc(var(--k) * var(--tx))) rotate(calc(var(--a0) * (1 - var(--k)) + var(--a1) * var(--k))) translateY(calc(var(--k) * -6% + var(--w) * 5%));
+    opacity: calc(1 - .6 * var(--w)); will-change: transform, opacity; }
+  .fan__card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fan__card figcaption { position: absolute; left: var(--v-4); right: var(--v-4); bottom: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink); font-weight: 500;
+    opacity: calc(var(--k) * (1 - var(--w))); text-shadow: 0 1px 8px rgb(255 255 255 / .95), 0 0 2px rgb(255 255 255 / .95); }
+  .fan__card--1 { --s: .04; --a0: 0deg; --a1: -8deg; --tx: -30%; z-index: 3; }
+  .fan__card--2 { --s: .14; --a0: 1deg; --a1: 0deg; --tx: 0%; z-index: 2; }
+  .fan__card--3 { --s: .24; --a0: -1deg; --a1: 8deg; --tx: 30%; z-index: 1; }
+  .fan__card--wrap { --k: 1; z-index: 4; transform-origin: 50% 50%; transform: translateY(calc((1 - var(--w)) * 14%)) scale(calc(.92 + .08 * var(--w))); opacity: var(--w); }
+  .fan__card--wrap figcaption { opacity: var(--w); right: auto; padding: .3em .7em; border-radius: 999px; background: rgb(255 255 255 / .92); text-shadow: none; }
+  .fan__legend { position: absolute; left: 0; right: 0; bottom: -1.6rem; text-align: center; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 1100px) { .sb { column-gap: var(--v-6); } .sb__rep h3 { font-size: var(--v-t-lg); } }
+  @media (max-width: 860px) {
+    .sb { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; row-gap: var(--v-3); padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .sb__head { max-width: none; }
+    .sb__head .v-label { display: none; }
+    .sb__head .v-display { font-size: var(--v-t-lg); }
+    .fan { grid-column: 1; grid-row: 2; width: min(100%, 40vh); aspect-ratio: 4 / 3; align-self: start; }
+    .fan__card { bottom: 0; }
+    .fan__card--1 { --a1: -6deg; --tx: -24%; } .fan__card--3 { --a1: 6deg; --tx: 24%; }
+    .fan__card figcaption { display: none; }
+    .fan__legend { display: none; }
+    .sb__rep { grid-row: 3; align-self: start; min-height: 9rem; }
+    .sb__rep h3 { font-size: var(--v-t-base); margin-bottom: var(--v-2); }
+    .sb__rep p { font-size: var(--v-t-sm); }
+    .sb__after { grid-row: 4; }
+    .sb__hint { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .fan { width: min(100%, 34vh); } .sb__after { display: none; } }
+
+  /* ---- сколько стоит -------------------------------------------------------------- */
+  .price { display: grid; grid-template-columns: .8fr 1.4fr; gap: var(--v-9); align-items: start; }
+  .price__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .price__rows li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-6); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .price__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .price__rows h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.2; letter-spacing: 0; }
+  .price__rows p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 48ch; }
+  .price__rows .sum { grid-column: 2; grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.1; color: var(--v-accent); text-align: right; white-space: nowrap; }
+  .price__rows .sum small { display: block; font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); margin-top: .45em; white-space: normal; }
+  .price__terms { margin-top: var(--v-6); display: grid; gap: var(--v-3); }
+  .price__terms li { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .price__terms b { color: var(--v-ink); font-weight: 500; }
+  .price > * { min-width: 0; }
+  @media (max-width: 1000px) {
+    .price { grid-template-columns: 1fr; gap: var(--v-6); }
+    .price__rows li { grid-template-columns: 1fr; }
+    .price__rows .sum { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; margin-top: var(--v-2); }
+    .price__terms li { grid-template-columns: 1fr; gap: var(--v-1); }
+  }
+
+  /* ---- фирменный ход 2: двадцать минут визита (циферблат) ------------------------- */
+  .kc__img img { width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 100% 50%; }
+  .kc__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(115% 90% at 0% 0%, rgb(246 248 253 / .95) 0%, rgb(246 248 253 / .68) 40%, transparent 72%); }
+  .kc { position: absolute; inset: 0; z-index: 3; display: grid; grid-template-columns: 1.1fr .9fr; column-gap: var(--v-8); align-items: center;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .kc__copy { max-width: 36rem; }
+  .kc__copy .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .kc__copy .v-display--lg { margin-bottom: var(--v-6); }
+  .kc__rep { position: relative; min-height: 11rem; }
+  .kc__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .kc__rep h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; margin-bottom: var(--v-3); text-wrap: balance; }
+  .kc__rep p { color: var(--v-ink); opacity: .92; max-width: 42ch; text-wrap: pretty; }
+  .clock { position: relative; justify-self: start; align-self: center; margin: -20vh 0 0 -15.5vw; width: min(100%, 33vh, 300px); aspect-ratio: 1 / 1; border-radius: 50%;
+    background: radial-gradient(closest-side, rgb(255 255 255 / .8) 0 62%, transparent 63%), conic-gradient(from 0deg, rgb(29 78 216 / .2) 0 270deg, rgb(255 198 26 / .55) 270deg 360deg);
+    box-shadow: inset 0 0 0 2px var(--v-hair-strong), var(--v-e2); }
+  .clock__tick { position: absolute; left: 50%; top: 4%; width: 2px; height: 5%; margin-left: -1px; background: var(--v-hair-strong); transform-origin: 50% 920%; transform: rotate(var(--deg)); }
+  .clock__tick--big { background: var(--v-ink); height: 7%; transform-origin: 50% 657%; }
+  .clock__mark { position: absolute; inset: 0; transform: rotate(var(--deg)); pointer-events: none; }
+  .clock__mark i { position: absolute; left: 50%; top: 7.5%; width: .9rem; height: .9rem; margin-left: -.45rem; border-radius: 50%;
+    background: var(--v-ink); transform: scale(calc(.55 + .45 * var(--on))); opacity: calc(.4 + .6 * var(--on)); }
+  .clock__mark b { position: absolute; left: 50%; top: -2.4rem; padding: .05rem .5rem; border-radius: 1rem; background: rgb(255 255 255 / .92); transform: translateX(-50%) rotate(calc(-1 * var(--deg))); font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; white-space: nowrap;
+    color: var(--v-ink); opacity: calc(.55 + .45 * var(--on)); }
+  .clock__mark--photo { --deg: 270deg; --on: clamp(0, calc((var(--v-p, 0) - .7) * 14), 1); }
+  .clock__hand { position: absolute; left: 50%; bottom: 50%; transform-origin: 50% 100%; border-radius: 999px; }
+  .clock__hand--m { width: 4px; height: 40%; margin-left: -2px; background: var(--v-accent); transform: rotate(calc(var(--v-p, 0) * 360deg)); }
+  .clock__pin { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--v-ink); box-shadow: 0 0 0 3px #fff; }
+  .clock__num { position: absolute; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .clock__num--12 { left: 50%; top: 15%; transform: translateX(-50%); }
+  .clock__num--3 { right: 14%; top: 50%; transform: translateY(-50%); }
+  .clock__num--6 { left: 50%; bottom: 15%; transform: translateX(-50%); }
+  .clock__num--9 { left: 14%; top: 50%; transform: translateY(-50%); }
+  .kc__legend { position: absolute; left: 0; right: 0; bottom: auto; top: -3.4rem; text-align: center; white-space: normal; text-wrap: balance; line-height: 1.5; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 1100px) and (min-width: 861px) { .clock { margin-left: 0; } }
+  @media (max-width: 860px) {
+    .kc__img img { object-position: 85% 50%; }
+    .kc__scrim { background: linear-gradient(to bottom, rgb(246 248 253 / .96) 0%, rgb(246 248 253 / .86) 46%, rgb(246 248 253 / .3) 78%, transparent 100%); }
+    .kc { grid-template-columns: 1fr; grid-template-rows: auto 1fr; row-gap: var(--v-4); align-items: start; padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .kc__copy { max-width: none; grid-row: 1; }
+    .kc__copy .v-label { display: none; }
+    .kc__copy .v-display--lg { font-size: var(--v-t-lg); margin-bottom: var(--v-4); }
+    .kc__rep { min-height: 9rem; }
+    .kc__rep h3 { font-size: var(--v-t-base); margin-bottom: var(--v-2); }
+    .kc__rep p { font-size: var(--v-t-sm); }
+    .clock { grid-row: 2; width: min(54vw, 30vh); justify-self: center; align-self: end; margin: 0 14vw 3vh 0; }
+    .clock__mark i { top: -.45rem; }
+    .clock__mark b { top: -2.1rem; font-size: .95rem; }
+    .kc__legend { display: none; }
+    .clock__num { font-size: .95rem; }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .clock { width: min(46vw, 26vh); } }
+
+  /* ---- кто приедет: фото со шторкой и факты --------------------------------------- */
+  .ev { display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--v-9); align-items: center; }
+  .ev__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .ev__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .ev__facts li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .ev__facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .ev__facts strong { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-base); letter-spacing: 0; line-height: 1.25; }
+  .ev__facts span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 54ch; }
+  .ev .v-stack .v-display { margin-bottom: var(--v-2); }
+  .ev__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 54ch; }
+  .ev__hint b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 860px) { .ev { grid-template-columns: 1fr; gap: var(--v-6); } .ev__fig { aspect-ratio: 4 / 5; } .ev__fig img { object-position: 50% 30%; } }
+
+  /* ---- Новый год ------------------------------------------------------------------- */
+  .ny { display: grid; grid-template-columns: 1fr 1.15fr; gap: var(--v-9); align-items: center; }
+  .ny__fig { border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--v-e2), var(--v-edge); background: var(--v-surface); }
+  .ny__fig img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+  .ny__rows li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); display: grid; grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-5); align-items: baseline; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .ny__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .ny__rows b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-base); }
+  .ny__rows .sum { font-family: var(--v-font-display); font-weight: 700; color: var(--v-accent); white-space: nowrap; font-size: var(--v-t-base); }
+  .ny .v-stack > * + * { margin-top: var(--v-4); }
+  @media (max-width: 860px) { .ny { grid-template-columns: 1fr; gap: var(--v-6); } .ny__fig { order: -1; } }
+
+  /* ---- отзывы с Яндекс.Карт -------------------------------------------------------- */
+  .reviews__head { display: flex; flex-wrap: wrap; gap: var(--v-6); align-items: end; justify-content: space-between; margin-bottom: var(--v-7); }
+  .reviews__rating { display: flex; align-items: center; gap: var(--v-3); font-size: var(--v-t-sm); flex-wrap: wrap; }
+  .reviews__rating a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  .reviews__num { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-2xl); line-height: 1; color: var(--v-accent); }
+  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
+  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); line-height: 1.35; }
+  .reviews__text { text-wrap: pretty; }
+  .v-page .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 500; }
+  .v-page .reviews__fact { margin-top: var(--v-7); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } }
+
+  /* ---- финал ----------------------------------------------------------------------- */
+  .close { min-height: 86svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 2.5rem;
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(29 78 216 / .09), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 40ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); }
+  .v-page .close__hint { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 44ch; }
+  .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .close__meta a { color: var(--v-accent); }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(2.5rem + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+    .close__tel { font-size: var(--v-t-base); }
+    .foot__more { display: none; }
+  }
+  /* телефон: текст не мельче 15 px */
+  @media (max-width: 860px) {
+    .hero__tel, .poka__rows p, .sb__rep p, .sb__hint, .price__rows p, .price__terms li, .kc__rep p, .ev__facts span, .ev__hint, .ny__rows li,
+    .reviews__meta, .reviews__rating, .reviews__fact, .close__hint, .close__meta, .foot, .hero__card figcaption, .tag span:last-child { font-size: .95rem; }
+    .bar .v-btn { font-size: .95rem; }
+    .v-label, .sb__step, .close__meta b, .price__rows .sum small, .tag__k { font-size: .8rem; }
+  }
+</style>
+<style>
+/* legal-add */
+.legal-links{margin-top:10px;font-size:13px;opacity:.8;hyphens:none}
+.legal-links a{color:inherit}
+.ckn{margin:8px 0 0;font-size:12px;line-height:1.45;opacity:.75;hyphens:none}
+.ckn a{color:inherit;text-decoration:underline}
+.ckb{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:720px;margin:0 auto;padding:14px 16px;background:#fff;color:#1b1c22;border:1px solid #e7e8ee;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,.18);font:400 14px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;hyphens:none;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ckb p{margin:0;flex:1 1 280px}
+.ckb a{color:inherit;text-decoration:underline}
+.ckb__b{display:flex;gap:8px;flex-wrap:wrap}
+.ckb button{font:inherit;font-weight:600;padding:9px 14px;border-radius:8px;border:1px solid #1b1c22;background:#fff;color:#1b1c22;cursor:pointer}
+.ckb button[data-v="all"]{background:#1b1c22;color:#fff}
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Mery Animators</a>
+    <nav class="bar__right" aria-label="Быстрые ссылки">
+      <a class="bar__tel" href="#" data-stub="tel">+7 (000) 000-00-00</a>
+      <a class="v-btn" href="#" data-stub="msg" target="_blank" rel="noopener">Заказать праздник</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: праздничная комната, три плана -->
+    <section id="top" data-v-act="pin" data-v-span="2" data-v-drift="#f6f8fd" aria-label="Детские праздники в Калуге">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.6">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+            <img src="assets/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="v-layer hero__card" data-v-parallax="-0.25">
+          <figure>
+            <picture>
+              <source media="(max-width: 600px)" srcset="assets/animators-480.webp" width="480" height="640">
+              <img src="assets/animators.webp" alt="Двое аниматоров в ярких зелёном и красном комбинезонах" width="900" height="1200" decoding="async">
+            </picture>
+            <figcaption><b>Аниматоры Mery</b>приезжают на ваш праздник</figcaption>
+          </figure>
+        </div>
+        <div class="v-layer hero__tag" data-v-parallax="-0.12">
+          <div class="tag">
+            <span class="tag__k">Стандартное поздравление</span>
+            <b class="v-nums">2000 ₽</b>
+            <span>15 минут веселья и танцев, затем 5 минут фото с героем</span>
+          </div>
+        </div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.86 0 0.12">
+          <span class="v-label hero__label">Детские праздники</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Детский праздник в Калуге: герои от 2000 ₽</h1>
+          <p class="v-lede">Аниматоры и ростовые куклы приедут на ваш праздник. Цена названа заранее, консультация бесплатная, работаем по Калуге и области.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="#" data-stub="msg" target="_blank" rel="noopener">Заказать праздник</a>
+            <a class="hero__tel" href="#" data-stub="tel">или позвоните <b>+7 (000) 000-00-00</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЦЕНА БЕЗДЕЙСТВИЯ и ПОВОРОТ -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#eef3fc" id="poka" aria-label="Что портит детский праздник">
+      <div class="v-wrap">
+        <div class="poka__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Праздник у ребёнка <span class="mark">один раз в году</span></h2>
+          <p class="v-body v-soft">Родителю нужно не просто «позвать аниматора», а решить сразу несколько вещей. Вот где обычно всё ломается.</p>
+        </div>
+        <ul class="poka__rows" data-v-in data-v-stagger="90">
+          <li><h3>Герои и цены лежат в разных группах</h3><p>У каждого персонажа своя карточка, своя цена и своя переписка. Собрать праздник из трёх чатов утомительно, а сравнить нечего.</p></li>
+          <li><h3>Костюм мятый, а ребёнок смотрит вблизи</h3><p>Дети разглядывают героя вплотную: грязный мех и потёртая ткань ломают сказку за минуту. В отзыве на Яндекс.Картах о Mery отдельно хвалят чистые свежие костюмы.</p></li>
+          <li><h3>Программа одна на всех</h3><p>Один сценарий на любой возраст и любого именинника: детям скучно, родителям неловко. Праздник, который не подстроили под ребёнка, запоминается не тем.</p></li>
+        </ul>
+        <div class="turn" data-v-in data-v-in-self>
+          <span class="v-label">Поэтому</span>
+          <p class="turn__text">Герои, аниматоры и цены собраны в одном месте, консультация бесплатная, а сценарий подстраиваем под ваш праздник.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ПОВОРОТ и ВЫБОР: праздник собирается (фирменный ход 1, веер карточек) -->
+    <section data-v-act="pin" data-v-span="2.4" data-v-drift="#f6f8fd" id="sborka" aria-label="Как собираем праздник">
+      <div data-v-stage>
+        <div class="sb">
+          <div class="sb__head" data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Как собираем</span>
+            <h2 class="v-display v-display--md">Праздник собираем под ребёнка, а не наоборот</h2>
+          </div>
+
+          <div class="sb__rep">
+            <div data-v-cue="0 0.26 0 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>1 · Повод</span>
+              <h3>Скажите, кого поздравляем</h3>
+              <p>Сколько лет именинику, любимый герой, сколько будет гостей. <b>Консультация бесплатная</b>, писать можно в группу ВКонтакте или звонить.</p>
+            </div>
+            <div data-v-cue="0.27 0.51 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>2 · Герой</span>
+              <h3>Кукла или аниматоры из каталога</h3>
+              <p>Ростовые куклы по 2000 ₽ и аниматоры от 2000 ₽. <b>Цену называем до заказа</b>, она не зависит от того, как вы уговорили маму.</p>
+            </div>
+            <div data-v-cue="0.52 0.76 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>3 · Сценарий</span>
+              <h3>Веселье, танцы и фото на память</h3>
+              <p>Герой приезжает и ведёт праздник: <b>танцы под любимые песни</b> ребёнка, потом фотосессия. Длину программы согласуем заранее.</p>
+            </div>
+            <div data-v-cue="0.77 1 0.05 0">
+              <span class="sb__step"><i aria-hidden="true"></i>4 · Остальное</span>
+              <h3>Шары и десерты там же</h3>
+              <p>В группе ВКонтакте сказано, что <b>шары и десерты можно заказать у той же команды</b>: меньше звонков, меньше договорённостей. Детали уточняйте.</p>
+            </div>
+          </div>
+
+          <div class="fan" aria-hidden="true">
+            <figure class="fan__card fan__card--3"><img src="assets/santa-card.webp" alt="" width="689" height="919" loading="lazy" decoding="async"><figcaption>Дед Мороз · зимой</figcaption></figure>
+            <figure class="fan__card fan__card--2"><img src="assets/cake.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Десерты</figcaption></figure>
+            <figure class="fan__card fan__card--1"><img src="assets/balloons.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Воздушные шары</figcaption></figure>
+            <figure class="fan__card fan__card--wrap"><img src="assets/animators.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Аниматоры приехали</figcaption></figure>
+            <p class="fan__legend">Шары и десерты – иллюстрации, состав уточняйте</p>
+          </div>
+
+          <div class="sb__after" data-v-cue="0.78 1 0.06 0">
+            <a class="v-btn" href="#" data-stub="msg" target="_blank" rel="noopener">Заказать праздник</a>
+            <span class="sb__hint">Не знаете, кого выбрать – напишите возраст именинника, подскажем героя</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ВЫБОР: сколько стоит -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#eef3fc" id="ceny" aria-label="Сколько стоит">
+      <div class="v-wrap price">
+        <div class="price__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--lg">Сколько стоит</h2>
+          <p class="v-body">Цены с карточки на Яндекс Картах и из группы ВКонтакте. Актуальные форматы и цены на ваш день уточняйте у менеджера.</p>
+        </div>
+        <div data-v-in data-v-stagger="80">
+          <ul class="price__rows">
+            <li>
+              <h3>Ростовая кукла</h3>
+              <p>Белый мишка ростом 2,6 метра, Чебурашка, Лисичка, Зайчик, Горилла, Хаски, Халк, Черепашка-ниндзя, Панда, Соник. Формат «стандартное поздравление»: 15 минут веселья и танцев, затем 5 минут фото.</p>
+              <span class="sum v-nums">2000 ₽<small>формат – при заказе</small></span>
+            </li>
+            <li>
+              <h3>Аниматоры</h3>
+              <p>Аниматоры в костюмах героев, например миньоны. Сколько длится программа и сколько человек приедет, называем при заказе.</p>
+              <span class="sum v-nums">от 2000 ₽<small>время – уточнить</small></span>
+            </li>
+            <li>
+              <h3>Дед Мороз и Снегурочка</h3>
+              <p>К Новому году: утренники и поздравления дома. Цены на этот сезон называем при заказе.</p>
+              <span class="sum">уточнить<small>на ваш день</small></span>
+            </li>
+          </ul>
+          <ul class="price__terms">
+            <li><b>Для взрослых гостей</b><span>Куклы-звёзды эстрады с песней и фото на память, от 2500 ₽. Кого именно, обсуждаем при заказе.</span></li>
+            <li><b>Выезд</b><span>По Калуге и области. Сколько стоит выезд за город, уточняем при заказе.</span></li>
+            <li><b>Консультация</b><span>Бесплатная: поможем выбрать героя под возраст и повод.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ДОКАЗАТЕЛЬСТВО: двадцать минут визита (фирменный ход 2, циферблат) -->
+    <section data-v-act="pin" data-v-span="2" data-v-drift="#fbfcff" id="vizit" aria-label="Как проходит визит">
+      <div data-v-stage>
+        <div class="v-layer kc__img" data-v-parallax="-0.4">
+          <img src="assets/party.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="kc__scrim" aria-hidden="true"></div>
+        <div class="kc">
+          <div class="kc__copy">
+            <div data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label">Визит</span>
+              <h2 class="v-display v-display--lg">Двадцать минут с героем</h2>
+            </div>
+            <div class="kc__rep">
+              <div data-v-cue="0 0.34 0 0.06">
+                <h3>Герой приезжает на праздник</h3>
+                <p>В назначенное время, прямо туда, где собрались гости. Появление можно сделать сюрпризом: договоримся заранее.</p>
+              </div>
+              <div data-v-cue="0.36 0.66 0.06 0.06">
+                <h3>Пятнадцать минут веселья</h3>
+                <p>Непрерывное веселье и танцы под любимые песни ребёнка. Формат «стандартное поздравление» из группы ВКонтакте.</p>
+              </div>
+              <div data-v-cue="0.68 1 0.06 0">
+                <h3>Пять минут на фото</h3>
+                <p>Фотосессия с героем на память: именинник, гости и родители, пока костюм ещё в движении.</p>
+              </div>
+            </div>
+          </div>
+          <div class="clock" aria-hidden="true">
+            <i class="clock__tick clock__tick--big" style="--deg:0deg"></i><i class="clock__tick" style="--deg:30deg"></i><i class="clock__tick" style="--deg:60deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:90deg"></i><i class="clock__tick" style="--deg:120deg"></i><i class="clock__tick" style="--deg:150deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:180deg"></i><i class="clock__tick" style="--deg:210deg"></i><i class="clock__tick" style="--deg:240deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:270deg"></i><i class="clock__tick" style="--deg:300deg"></i><i class="clock__tick" style="--deg:330deg"></i>
+            <span class="clock__num clock__num--12">0</span><span class="clock__num clock__num--3">5</span><span class="clock__num clock__num--6">10</span><span class="clock__num clock__num--9">15</span>
+            <span class="clock__mark clock__mark--photo"><i></i><b>фото</b></span>
+            <i class="clock__hand clock__hand--m"></i>
+            <i class="clock__pin"></i>
+            <p class="kc__legend">Стрелка идёт по двадцати минутам визита</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · КТО ПРИЕДЕТ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#eef3fc" id="geroi" aria-label="Кто приедет на праздник">
+      <div class="v-wrap ev">
+        <figure class="ev__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.46" data-v-tilt="4">
+          <img src="assets/animators.webp" alt="Двое аниматоров в ярких зелёном и красном комбинезонах, руки на поясе" width="900" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <div class="v-stack" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">Кто приедет на ваш праздник</h2>
+          <ul class="ev__facts">
+            <li><strong>Ростовые куклы</strong><span>В прайсе одиннадцать героев: от белого мишки ростом 2,6 метра до Чебурашки, Халка и Соника. Куклу выбираете вы или ребёнок.</span></li>
+            <li><strong>Аниматоры</strong><span>Ведущие в ярких костюмах героев, как на фото. Сколько человек приедет и какая программа, подбираем под возраст гостей.</span></li>
+            <li><strong>Дед Мороз и Снегурочка</strong><span>К новогодним утренникам и домашним поздравлениям. Цены на этот сезон называем при заказе.</span></li>
+          </ul>
+          <p class="ev__hint"><b>Так о себе пишет группа ВКонтакте:</b> «Красивые и чистые костюмы премиум-класса», «Индивидуальные сценарии для Вашего праздника», «Всегда бесплатная консультация».</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · НОВЫЙ ГОД -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f6f8fd" id="novyj-god" aria-label="Новый год">
+      <div class="v-wrap ny">
+        <div class="v-stack" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">К Новому году: Дед Мороз и Снегурочка</h2>
+          <p class="v-body v-soft">Утренник или семейный вечер дома: напишите дату и сколько будет гостей, назовём цену и подскажем формат.</p>
+          <ul class="ny__rows">
+            <li><span><b>Дед Мороз и Снегурочка</b>визит на утренник или домой</span><span class="sum">уточнить</span></li>
+            <li><span><b>Именное видеопоздравление</b>от Деда Мороза, по данным группы ВКонтакте</span><span class="sum v-nums">350 ₽</span></li>
+          </ul>
+        </div>
+        <figure class="ny__fig" data-v-parallax="0.18">
+          <img src="assets/santa.webp" alt="Дед Мороз и Снегурочка в светлой комнате у наряженной ёлки" width="1200" height="919" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 8 · ДОВЕРИЕ: отзывы с Яндекс.Карт -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#eef3fc" id="otzyvy" aria-label="Отзывы с Яндекс.Карт">
+      <div class="v-wrap reviews">
+        <div class="reviews__head" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--md">Что пишут на Яндекс.Картах</h2>
+          <div class="reviews__rating">
+            <span class="reviews__num v-nums">4,9</span>
+            <span class="reviews__stars" style="--r: 4.9" role="img" aria-label="рейтинг 4,9 из 5"></span>
+            <span class="v-soft">20 отзывов</span>
+            <a href="https://yandex.ru/maps/org/mery_animators/116185298849/" target="_blank" rel="noopener">Читать все отзывы</a>
+          </div>
+        </div>
+        <ul class="reviews__list" data-v-in data-v-stagger="90">
+          <li class="reviews__item reviews__item--big">
+            <p class="reviews__text">«Заказывал ребенку! Все остались довольны, даже взрослые, веселые ребята, молодцы!»</p>
+            <p class="reviews__meta"><b>Тимур Теплинский</b> · 27 ноября 2024 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«Организация на высшем уровне . Если хотите получить приятных аниматоров и чистые свежие костюмы вам сюда. Все гости остались довольны, будем заказывать еще»</p>
+            <p class="reviews__meta"><b>Данила Лаптев</b> · 27 ноября 2024 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«устроили невероятный праздник! ребята большие профессионалы. спасибо, обязательно обратимся еще!»</p>
+            <p class="reviews__meta"><b>Турал Мамедов</b> · 27 ноября 2024 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+        </ul>
+        <p class="reviews__fact" data-v-in data-v-in-self>Отзывы скопированы с карточки на Яндекс.Картах без правок, все оставлены в ноябре 2024 года.</p>
+      </div>
+    </section>
+
+    <!-- 9 · ДЕЙСТВИЕ -->
+    <section data-v-act="flow" data-v-drift="#f6f8fd" id="zakaz" aria-label="Заказать праздник">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80">
+            <h2 class="v-display v-display--lg">Расскажите про <span class="mark">именинника</span></h2>
+            <p class="v-lede">Напишите возраст, повод и сколько будет гостей: подскажем героя и назовём цену. Консультация бесплатная.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="#" data-stub="msg" target="_blank" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Заказать праздник</a>
+              <a class="close__tel" href="#" data-stub="tel">+7 (000) 000-00-00</a>
+            </div>
+            <p class="close__hint">Не любите писать – звоните. Заявки принимаем в группе ВКонтакте и по телефону.</p>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Выезд</b>по Калуге и области</span>
+            <span><b>Консультация</b>бесплатная</span>
+            <span><b>Группа ВКонтакте</b><a href="#" data-stub="msg" target="_blank" rel="noopener">vk.ru/ваша-ссылка</a></span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>Mery Animators · Калуга</span>
+          <span class="foot__more">Детские праздники: аниматоры, ростовые куклы, Дед Мороз и Снегурочка</span>
+        <p class="legal-links"><a href="politika.html">Политика обработки персональных данных</a> · <a href="soglasie.html">Согласие на обработку данных</a></p></footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.6');
+    document.getElementById('sborka').setAttribute('data-v-span', '2.2');
+    document.getElementById('vizit').setAttribute('data-v-span', '1.8');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+  // Фирменные ходы (веер карточек в #sborka и циферблат в #vizit) ведёт CSS от --v-p акта.
+</script>
+<script>
+(function(){var K='cookie-choice';try{if(localStorage.getItem(K))return}catch(e){}
+var b=document.createElement('div');b.className='ckb';b.setAttribute('role','dialog');b.setAttribute('aria-label','Файлы cookie');
+b.innerHTML='<p>Сайт использует файлы cookie: необходимые для работы и, если вы согласны, для статистики. <a href="politika.html">Подробнее</a></p><div class="ckb__b"><button type="button" data-v="necessary">Только необходимые</button><button type="button" data-v="all">Принять</button></div>';
+b.addEventListener('click',function(e){var v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;try{localStorage.setItem(K,v)}catch(x){}try{document.dispatchEvent(new CustomEvent('cookie-choice',{detail:v}))}catch(x){}b.remove()});
+document.body.appendChild(b)})();
+</script>
+<!-- legal-add -->
+<script data-demo-stub>
+(()=>{var t=document.createElement("div");t.setAttribute("role","status");t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#14151A;color:#fff;padding:12px 18px;border-radius:12px;font:15px/1.4 system-ui,sans-serif;z-index:2147483647;max-width:calc(100% - 32px);opacity:0;pointer-events:none;transition:opacity .25s;text-align:center";var x;
+function show(m){t.textContent=m;if(!t.isConnected)document.body.appendChild(t);t.style.opacity=1;clearTimeout(x);x=setTimeout(function(){t.style.opacity=0},2600)}
+window.addEventListener("click",function(e){var a=e.target.closest('a[data-stub],[data-s-msg],a[href^="tel:"],a[href*="wa.me"],a[href*="t.me"],a[href*="max.ru"],a[href*="vk.com"],a[href*="whatsapp"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();show(a.matches('[data-stub="booking"]')?"Это демо: здесь будет ваша онлайн-запись":a.matches('[data-stub="tel"],[href^="tel:"]')?"Это демо: здесь будет ваш телефон":"Это демо: здесь будет ваш мессенджер")},true);
+})();
+</script>
+</body>
+</html>

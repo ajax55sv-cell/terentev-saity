@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Участки у моря · земельные участки в Сочи</title>
+<meta name="description" content="Земельные участки в Хосте, Сочи: площадь, назначение земли, коммуникации, подъезд и цена по каждому участку. Документы можно запросить до показа.">
+<meta property="og:title" content="Земельные участки в Хосте, Сочи">
+<meta property="og:description" content="Площадь, назначение земли, коммуникации, подъезд и цена по каждому участку. Документы – до показа.">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M16 3 28 29H4z%27 fill=%27%23e8570f%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<style>
+  /* ---- тема: известняк, хвоя, межевой колышек ---------------------------- */
+  .v-page {
+    --v-canvas: #e9ece6; --v-surface: #f6f7f3;
+    --v-ink: #14211d; --v-ink-soft: #55645d;
+    --v-accent: #e8570f; --v-accent-ink: #160d06;
+    --v-spruce: #12261f; --v-spruce-2: #1b3329;
+    --v-font-display: "Lora", "Georgia", serif;
+    --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 20 33 29;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .1), 0 8px 22px rgb(var(--v-shadow-color) / .1);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .12), 0 22px 56px rgb(var(--v-shadow-color) / .2);
+    --v-radius: 4px;
+    --v-measure: 56ch;
+    --v-section: clamp(4rem, 9vw, 8rem);
+    transition: none;
+  }
+  .v-page .v-display { font-weight: 700; letter-spacing: -.01em; line-height: 1.08; }
+  .v-page h1.v-display { font-size: clamp(2.3rem, 1.2rem + 4.2vw, 4.8rem); line-height: 1.05; }
+  .v-page h2.v-display { font-size: clamp(2rem, 1.3rem + 2.8vw, 3.6rem); }
+  .v-page .v-btn { border-radius: 3px; box-shadow: none; font-weight: 600; padding: 1em 1.5em; }
+  .v-page a.v-btn { color: var(--v-accent-ink); }
+  .v-page .v-btn:hover { box-shadow: var(--v-e1); }
+  .v-page .v-btn:focus-visible { outline-color: var(--v-ink); }
+  .v-page img { content-visibility: auto; }
+  .v-page dl, .v-page dd, .v-page ol { margin: 0; padding: 0; }
+  .v-page .on-dark { --v-ink: #eaeee8; --v-ink-soft: #b0c0b7; --v-hair: rgb(234 238 232 / .16); --v-hair-strong: rgb(234 238 232 / .3); color: var(--v-ink); }
+
+  /* ---- верхняя полоса: имя и единственная кнопка ------------------------- */
+  .bar { position: fixed; z-index: 30; inset: 0 0 auto 0; display: flex; align-items: center; justify-content: space-between; gap: var(--v-4);
+    padding: .55rem var(--v-gutter); background: color-mix(in oklab, var(--v-canvas) 86%, transparent); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--v-hair); }
+  .brand { display: inline-flex; align-items: center; gap: .55em; text-decoration: none; font-family: var(--v-font-display); font-weight: 700; font-size: 1.3rem; letter-spacing: .01em; line-height: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brand i { width: .62em; height: .62em; background: var(--v-accent); clip-path: polygon(50% 0, 100% 100%, 0 100%); flex: none; }
+  .bar .v-btn { padding: .65em 1.1em; font-size: var(--v-t-sm); }
+  .nav { display: flex; gap: clamp(1rem, 2.4vw, 2.2rem); margin-inline: auto; }
+  .v-page .nav a { text-decoration: none; font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink); padding: .5rem 0; position: relative; white-space: nowrap; }
+  .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: .25rem; height: 2px; background: var(--v-accent); transform: scaleX(0); transform-origin: left; transition: transform .18s var(--v-ease-out); }
+  @media (hover: hover) and (pointer: fine) { .nav a:hover::after { transform: scaleX(1); } }
+  .nav a:focus-visible::after { transform: scaleX(1); }
+  [id] { scroll-margin-top: 4.5rem; }
+  @media (max-width: 860px) {
+    .bar { flex-wrap: wrap; row-gap: 0; padding-bottom: 0; }
+    .nav { order: 3; flex: 1 0 100%; margin: 0 calc(var(--v-gutter) * -1); padding: 0 var(--v-gutter); overflow-x: auto; scrollbar-width: none; gap: 1.4rem; }
+    .nav::-webkit-scrollbar { display: none; }
+    [id] { scroll-margin-top: 6.5rem; }
+    .hero__copy { top: 7rem !important; }
+    .steps__title { top: 7.2rem !important; }
+  }
+
+  /* ---- 1. первый экран: камера подъезжает к участку ---------------------- */
+  .hero { --mx: .66; --my: .68; }                   /* где на фото стоит метка участка (доли кадра) */
+  .hero [data-v-stage] { background: #c5d1cb; }
+  /* «мир» - кадр 16:9 с запасом 12%, как object-fit: cover; фото и метка живут в одних координатах */
+  .hero__world { position: absolute; left: 50%; top: 50%; width: max(112vw, calc(112svh * 16 / 9)); aspect-ratio: 16 / 9; translate: -50% -50%; }
+  .hero__zoom { position: absolute; inset: 0; transform-origin: calc(var(--mx) * 100%) calc(var(--my) * 100%);
+    transform: scale(calc(1 + var(--v-p, 0) * .42)); will-change: transform; }
+  .hero__zoom img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; content-visibility: visible; }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(233 236 230 / .9) 0%, rgb(233 236 230 / .6) 30%, rgb(233 236 230 / 0) 56%),
+                linear-gradient(to top, rgb(233 236 230 / .5) 0%, rgb(233 236 230 / 0) 26%); }
+  .hero__copy { z-index: 4; max-width: min(44rem, 92vw); bottom: clamp(3rem, 11vh, 7rem); }
+  .hero__copy h1 { max-width: 14ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 36ch; color: var(--v-ink); }
+  .hero__copy .v-btn { margin-top: var(--v-6); }
+  .hero__spot { z-index: 3; }
+  /* дымка расходится вокруг участка: фокус на метке, края светлеют */
+  .hero__fog { position: absolute; inset: -100%; pointer-events: none;
+    background: radial-gradient(circle at calc((1 + var(--mx)) / 3 * 100%) calc((1 + var(--my)) / 3 * 100%), rgb(233 236 230 / 0) 0, rgb(233 236 230 / 0) 11%, rgb(233 236 230 / .62) 24%);
+    opacity: clamp(0, calc(var(--v-p, 0) * 2.2), 1); }
+  .hero__mark { position: absolute; left: calc(var(--mx) * 100%); top: calc(var(--my) * 100%); width: 0; height: 0; }
+  .hero__mark i { position: absolute; left: -.55rem; top: -.55rem; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--v-accent); border: 3px solid #fff; box-shadow: 0 2px 10px rgb(0 0 0 / .3); }
+  .hero__mark::before, .hero__mark::after { content: ""; position: absolute; left: -1.6rem; top: -1.6rem; width: 3.2rem; height: 3.2rem; border-radius: 50%;
+    border: 2px solid var(--v-accent); opacity: 0; animation: hero-ping 2.6s ease-out infinite; }
+  .hero__mark::after { animation-delay: 1.3s; }
+  @keyframes hero-ping { 0% { transform: scale(.3); opacity: .9; } 100% { transform: scale(1.5); opacity: 0; } }
+  .hero__card { position: absolute; left: 0; top: 0; width: min(19.5rem, 62vw); translate: -50% calc(-100% - 1.7rem);
+    background: var(--v-surface); border-radius: var(--v-radius); box-shadow: var(--v-e2); padding: .85rem 1rem 1rem;
+    opacity: clamp(0, calc((var(--v-p, 0) - .04) * 12), 1); transform: translateY(calc((1 - clamp(0, calc((var(--v-p, 0) - .04) * 12), 1)) * 14px)); }
+  .hero__card::after { content: ""; position: absolute; left: 50%; bottom: -.45rem; width: .9rem; height: .9rem; background: var(--v-surface); transform: translateX(-50%) rotate(45deg); }
+  .hero__head { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; padding-bottom: .55rem; border-bottom: 1px solid rgb(0 0 0 / .12); }
+  .hero__head b { font-family: var(--v-font-display); font-size: 1.6rem; font-weight: 700; line-height: 1; white-space: nowrap; }
+  .hero__head span { font-size: var(--v-t-xs); color: var(--v-ink-soft); text-align: right; white-space: nowrap; }
+  .v-page .hero__list { list-style: none; margin: .55rem 0 0; padding: 0; display: grid; gap: .42rem; }
+  .v-page .hero__list li { position: relative; padding-left: 1.45rem; font-size: .9rem; line-height: 1.3;
+    opacity: clamp(0, calc((var(--v-p, 0) - var(--t)) * 16), 1); transform: translateX(calc((1 - clamp(0, calc((var(--v-p, 0) - var(--t)) * 16), 1)) * 10px)); }
+  .v-page .hero__list li::before { content: ""; position: absolute; left: .15rem; top: .22em; width: .38rem; height: .72rem; border: solid var(--v-accent); border-width: 0 3px 3px 0; transform: rotate(40deg); }
+  .v-page .hero__list li span { color: var(--v-ink-soft); }
+  .v-page .hero__price { margin: .65rem 0 0; font-family: var(--v-font-display); font-size: 1.3rem; font-weight: 700; line-height: 1;
+    opacity: clamp(0, calc((var(--v-p, 0) - .74) * 16), 1); }
+  @media (max-width: 860px) {
+    .hero__scrim { background: linear-gradient(to bottom, rgb(233 236 230 / .94) 0%, rgb(233 236 230 / .8) 34%, rgb(233 236 230 / 0) 58%); }
+    /* на телефоне метка по центру и ниже, карточка под ней: сверху остаётся место для заголовка */
+    .hero__world { left: 50%; top: 64%; translate: calc(var(--mx) * -100%) calc(var(--my) * -100%); }
+    .hero__card { translate: -50% 1.5rem; }
+    .hero__card::after { bottom: auto; top: -.45rem; }
+    .hero__card { padding: .6rem .8rem .7rem; width: min(17rem, 84vw); }
+    .hero__head { flex-wrap: wrap; row-gap: .1rem; padding-bottom: .4rem; }
+    .hero__head b { font-size: 1.5rem; }
+    .hero__head span { white-space: normal; text-align: left; }
+    .v-page .hero__list { margin-top: .4rem; gap: .28rem; }
+    .v-page .hero__list li { font-size: .8rem; line-height: 1.25; padding-left: 1.2rem; }
+    .v-page .hero__list li::before { width: .3rem; height: .58rem; border-width: 0 2.5px 2.5px 0; }
+    .v-page .hero__price { margin-top: .45rem; font-size: 1.25rem; }
+    .hero__copy { left: var(--v-gutter); right: var(--v-gutter); top: 4.6rem; bottom: auto; max-width: none; }
+    .hero__copy h1 { max-width: 13ch; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); }
+    .hero__copy .v-btn { margin-top: var(--v-5); }
+  }
+  @media (max-width: 860px) and (max-height: 740px) { .hero__copy .v-lede { display: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .hero__zoom { transform: none; }
+    .hero__fog { opacity: 0; }
+    .hero__card, .v-page .hero__list li, .v-page .hero__price { opacity: 1; transform: none; }
+    .hero__mark::before, .hero__mark::after { animation: none; }
+  }
+
+  /* ---- 2. что проверяем: страх – ответ ------------------------------------ */
+  .risks { padding-top: calc(var(--v-section) * .6); }
+  .risks__grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .v-page .risks__head > * + * { margin-top: var(--v-5); }
+  .risks__list { border-top: 1px solid var(--v-hair-strong); }
+  .risks__list li { display: grid; grid-template-columns: minmax(0, 15rem) 1fr; gap: var(--v-5); padding-block: var(--v-5); border-bottom: 1px solid var(--v-hair-strong); }
+  .risks__list h3 { margin: 0; font-family: var(--v-font-display); font-weight: 700; font-size: 1.45rem; line-height: 1.15; color: var(--v-ink); text-wrap: balance; }
+  .risks__list p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; align-self: center; }
+  @media (max-width: 860px) {
+    .risks__grid { grid-template-columns: 1fr; }
+    .risks__list li { grid-template-columns: 1fr; gap: var(--v-2); }
+  }
+
+  /* ---- 3. участки: боковая лента ------------------------------------------- */
+  .plots { background: var(--v-spruce); }
+  .plots [data-v-stage] { display: flex; align-items: center; background: var(--v-spruce); }
+  .plots__rail { align-items: center; padding-inline: var(--v-gutter) calc(var(--v-gutter) * 2); gap: clamp(1rem, 2.5vw, 2rem); }
+  .plots__intro { flex: none; width: min(26rem, 84vw); }
+  .v-page .plots__intro > * + * { margin-top: var(--v-5); }
+  .plots__intro .v-lede { color: var(--v-ink); max-width: 28ch; }
+  .plot { flex: none; width: min(23rem, 80vw); background: var(--v-surface); color: #14211d; border-radius: var(--v-radius); box-shadow: var(--v-e2); overflow: hidden; display: flex; flex-direction: column; }
+  .plot__shape { position: relative; aspect-ratio: 16 / 9; background: #dfe5de; border-bottom: 1px solid rgb(20 33 29 / .14); }
+  .plot__shape svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .plot__shape .c { fill: none; stroke: rgb(20 33 29 / .1); stroke-width: 1; }
+  .plot__shape .p { fill: rgb(232 87 15 / .16); stroke: #14211d; stroke-width: 2; stroke-linejoin: round; }
+  .plot__shape circle { fill: var(--v-accent); stroke: #f6f7f3; stroke-width: 2; }
+  .plot__body { padding: var(--v-5) var(--v-5) var(--v-5); }
+  .plot__body h3 { margin: 0 0 var(--v-4); font-family: var(--v-font-display); font-weight: 700; font-size: 1.65rem; line-height: 1.12; color: #14211d; }
+  .plot dl > div { display: flex; justify-content: space-between; gap: var(--v-4); padding-block: .55rem; border-top: 1px solid rgb(20 33 29 / .14); font-size: var(--v-t-sm); }
+  .plot dt { color: #55645d; flex: none; }
+  .plot dd { text-align: right; font-weight: 500; }
+  .plot dl > div.is-price dd { font-weight: 600; }
+  .plot--cta { background: var(--v-accent); color: var(--v-accent-ink); justify-content: space-between; padding: var(--v-6); min-height: 24rem; box-shadow: none; }
+  .plot--cta h3 { font-family: var(--v-font-display); font-weight: 700; line-height: 1.08; color: var(--v-accent-ink); font-size: clamp(2rem, 1.6rem + 1.6vw, 2.8rem); margin: 0; }
+  .v-page .plot--cta p { max-width: 24ch; margin-top: var(--v-4); }
+  .plot--cta .v-btn { background: var(--v-spruce); color: #eaeee8; align-self: flex-start; margin-top: var(--v-6); }
+  .v-page .plot--cta a.v-btn { color: #eaeee8; }
+  .plot--cta .v-btn:focus-visible { outline-color: var(--v-spruce); }
+
+  /* ---- 4. расположение ---------------------------------------------------- */
+  .loc__grid { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .loc__fig { border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 4 / 3; background: #c5d1cb; }
+  .loc__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .loc__cap { margin-top: var(--v-3); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .v-page .loc__text > * + * { margin-top: var(--v-5); }
+  .v-page .facts { border-top: 1px solid var(--v-hair-strong); margin-top: var(--v-6) !important; }
+  .facts > div { display: flex; justify-content: space-between; gap: var(--v-4); padding-block: .8rem; border-bottom: 1px solid var(--v-hair); }
+  .facts dt { color: var(--v-ink-soft); }
+  .facts dd { text-align: right; font-weight: 500; }
+  /* живописные места рядом: два кадра одной высоты, широкий и узкий */
+  .scenic { margin-top: clamp(4rem, 9vw, 8rem); }
+  .scenic__title { max-width: 18ch; }
+  .scenic__grid { display: grid; grid-template-columns: 8fr 4fr; gap: clamp(1rem, 3vw, 2.5rem); align-items: start; margin-top: var(--v-6); }
+  .scenic figure { margin: 0; }
+  .scenic img { display: block; width: 100%; height: clamp(14rem, 30vw, 25rem); object-fit: cover; border-radius: var(--v-radius); box-shadow: var(--v-e2); background: #c5d1cb; }
+  .scenic figcaption { margin-top: var(--v-3); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .loc__grid { grid-template-columns: 1fr; }
+    .scenic__grid { grid-template-columns: 1fr; }
+    .scenic img { height: auto; aspect-ratio: 3 / 2; }
+  }
+
+  /* ---- 5. как купить: межевая линия с колышками --------------------------- */
+  .steps [data-v-stage] { background: var(--v-spruce); }
+  .steps__bg img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 50% 55%; content-visibility: visible; }
+  .steps__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(10 24 19 / .88) 0%, rgb(10 24 19 / .62) 34%, rgb(10 24 19 / 0) 62%); }
+  .steps__title { position: absolute; z-index: 4; left: var(--v-gutter); top: clamp(5rem, 14vh, 8rem); }
+  .steps__copy { position: absolute; z-index: 4; left: var(--v-gutter); bottom: clamp(3rem, 12vh, 8rem); width: min(32rem, 88vw); display: grid; }
+  .step { grid-area: 1 / 1; }
+  .step h3 { margin: 0; font-family: var(--v-font-display); font-weight: 700; font-size: clamp(2.1rem, 1.5rem + 2.4vw, 3.4rem); line-height: 1.05; }
+  .step h3 span { color: var(--v-accent); margin-right: .25em; }
+  .step p { margin-top: var(--v-4); max-width: 38ch; color: var(--v-ink); text-wrap: pretty; }
+  .steps__line { position: absolute; z-index: 4; right: calc(var(--v-gutter) + 1vw); top: 18vh; bottom: 14vh; width: 1px; background: rgb(234 238 232 / .3); }
+  .steps__fill { position: absolute; inset: 0; background: var(--v-accent); transform-origin: top; transform: scaleY(clamp(0, calc(var(--v-p, 0) * 1.15), 1)); }
+  .steps__stake { position: absolute; right: 0; width: 0; height: 0; font-style: normal; }
+  .steps__stake b { position: absolute; left: -6.5px; top: -6.5px; width: 13px; height: 13px; background: var(--v-spruce); border: 1px solid rgb(234 238 232 / .6); transform: rotate(45deg); transition: background-color .3s var(--v-ease-out), border-color .3s var(--v-ease-out), transform .3s var(--v-ease-out); }
+  .steps__stake.is-on b { background: var(--v-accent); border-color: var(--v-accent); transform: rotate(45deg) scale(1.2); }
+  .steps__stake span { position: absolute; right: 1.2rem; top: 0; transform: translateY(-50%); white-space: nowrap; font-size: var(--v-t-sm); color: var(--v-ink-soft); transition: color .3s var(--v-ease-out); }
+  .steps__stake.is-on span { color: var(--v-ink); }
+  @media (max-width: 860px) {
+    .steps__scrim { background: linear-gradient(to top, rgb(10 24 19 / .94) 0%, rgb(10 24 19 / .7) 46%, rgb(10 24 19 / .1) 78%); }
+    .steps__line { top: 14vh; bottom: auto; height: 22vh; right: var(--v-gutter); }
+    .steps__stake span { display: none; }
+    .steps__title { top: 5rem; }
+  }
+
+  /* ---- 6. риелтор --------------------------------------------------------- */
+  .agent__grid { display: grid; grid-template-columns: minmax(0, 17rem) 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .agent__photo { aspect-ratio: 3 / 4; border-radius: var(--v-radius); background:
+      repeating-linear-gradient(135deg, rgb(20 33 29 / .07) 0 1px, transparent 1px 12px), var(--v-surface);
+    box-shadow: inset 0 0 0 1px var(--v-hair-strong); display: grid; place-items: center; text-align: center; padding: var(--v-4); color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .v-page .agent__text > * + * { margin-top: var(--v-5); }
+  @media (max-width: 700px) { .agent__grid { grid-template-columns: 1fr; } .agent__photo { max-width: 14rem; } }
+
+  /* ---- 7. форма ----------------------------------------------------------- */
+  .final { background: var(--v-spruce); position: relative; overflow: hidden; }
+  .final__bg { position: absolute; inset: 0; }
+  .final__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+  .final__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, rgb(18 38 31 / .94) 0%, rgb(18 38 31 / .8) 45%, rgb(18 38 31 / .45) 100%); }
+  .final .v-wrap { position: relative; z-index: 2; }
+  .final__grid { display: grid; grid-template-columns: 5fr 6fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .v-page .final__head > * + * { margin-top: var(--v-5); }
+  .v-page .contacts { margin-top: var(--v-7) !important; border-top: 1px solid var(--v-hair-strong); }
+  .contacts > div { display: flex; justify-content: space-between; gap: var(--v-4); padding-block: .7rem; border-bottom: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .contacts dt { color: var(--v-ink-soft); }
+  .contacts dd { text-align: right; }
+  .form { background: rgb(8 20 15 / .62); backdrop-filter: blur(6px); border-radius: var(--v-radius); box-shadow: var(--v-e2), inset 0 1px 0 rgb(234 238 232 / .12); padding: clamp(1.25rem, 3vw, 2.25rem); display: grid; gap: var(--v-5); }
+  .field { display: grid; gap: .4rem; }
+  .field label { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .field input, .field select, .field textarea { width: 100%; font: inherit; color: var(--v-ink); background: rgb(234 238 232 / .08); border: 1px solid var(--v-hair-strong); border-radius: 3px; padding: .8em .9em; min-height: 3rem; }
+  .field select option { color: #14211d; }
+  .field textarea { min-height: 5.5rem; resize: vertical; }
+  .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline: 2px solid var(--v-accent); outline-offset: 1px; border-color: var(--v-accent); }
+  .field ::placeholder { color: rgb(176 192 183 / .7); }
+  .consent { display: flex; gap: .7rem; align-items: flex-start; font-size: var(--v-t-xs); color: var(--v-ink-soft); line-height: 1.45; }
+  .consent input { margin-top: .15rem; accent-color: var(--v-accent); width: 1.1rem; height: 1.1rem; flex: none; }
+  .v-page button.v-btn { background: var(--v-accent); color: var(--v-accent-ink); border-radius: 3px; justify-content: center; }
+  .form__status { min-height: 1.2em; font-size: var(--v-t-sm); color: var(--v-ink); }
+  .foot { position: relative; z-index: 2; margin-top: var(--v-9); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--v-3) var(--v-6); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .foot a { color: inherit; }
+  @media (max-width: 860px) { .final__grid { grid-template-columns: 1fr; } .final__bg::after { background: rgb(18 38 31 / .86); } }
+
+  @media (max-width: 520px) {
+    .brand { font-size: 1.25rem; }
+    .bar .v-btn { font-size: .78rem; padding: .6em .85em; }
+  }
+</style>
+<style>
+/* legal-add */
+.legal-links{margin-top:10px;font-size:13px;opacity:.8;hyphens:none}
+.legal-links a{color:inherit}
+.ckn{margin:8px 0 0;font-size:12px;line-height:1.45;opacity:.75;hyphens:none}
+.ckn a{color:inherit;text-decoration:underline}
+.ckb{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:720px;margin:0 auto;padding:14px 16px;background:#fff;color:#1b1c22;border:1px solid #e7e8ee;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,.18);font:400 14px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;hyphens:none;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ckb p{margin:0;flex:1 1 280px}
+.ckb a{color:inherit;text-decoration:underline}
+.ckb__b{display:flex;gap:8px;flex-wrap:wrap}
+.ckb button{font:inherit;font-weight:600;padding:9px 14px;border-radius:8px;border:1px solid #1b1c22;background:#fff;color:#1b1c22;cursor:pointer}
+.ckb button[data-v="all"]{background:#1b1c22;color:#fff}
+</style>
+</head>
+<body>
+<div class="v-page">
+<div data-v-progress></div>
+
+<header class="bar">
+  <a class="brand" href="#top"><i></i>Участки у моря</a>
+  <nav class="nav" aria-label="Разделы сайта">
+    <a href="#uchastki">Участки</a>
+    <a href="#raspolozhenie">Расположение</a>
+    <a href="#kak-kupit">Как купить</a>
+    <a href="#rieltor">Риелтор</a>
+  </nav>
+  <a class="v-btn" href="#podborka">Получить подборку участков</a>
+</header>
+
+<main id="top">
+
+<!-- 1. Первый экран: камера подъезжает к участку, карточка с документами заполняется. pin, три плана (фото, метка, реплика) -->
+<section class="hero" data-v-act="pin" data-v-span="2.6">
+  <div data-v-stage>
+    <div class="v-layer hero__bg" data-v-parallax="-0.5">
+      <div class="hero__world"><div class="hero__zoom"><img src="assets/hero.webp" alt="Ровная поляна на вершине холма над морем в районе Сочи, по краю подпорная стенка и въезд" width="1920" height="1080" fetchpriority="high"></div></div>
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="v-layer hero__spot" data-v-parallax="-0.5" aria-hidden="true">
+      <div class="hero__world">
+        <div class="hero__fog"></div>
+        <div class="hero__mark"><i></i>
+          <div class="hero__card">
+            <div class="hero__head"><b>8 сот.</b><span>Участок №14</span></div>
+            <ul class="hero__list">
+              <li style="--t:.14"><span>Назначение:</span> ИЖС</li>
+              <li style="--t:.26"><span>Коммуникации:</span> электричество и вода у границы</li>
+              <li style="--t:.38"><span>Подъезд:</span> асфальт до участка</li>
+              <li style="--t:.50"><span>Документы:</span> выписка ЕГРН, межевой план</li>
+            </ul>
+            <p class="hero__price">7 400 000 ₽</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 1 0 0">
+      <h1 class="v-display v-display--xl">Участки в Хосте, Сочи – документы до показа</h1>
+      <p class="v-lede">Площадь, назначение земли, коммуникации, подъезд и цена – по каждому участку, до звонка.</p>
+      <a class="v-btn" href="#podborka">Получить подборку участков</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Что проверяем: страх – ответ. flow + in -->
+<section class="v-section risks" data-v-act="flow" id="proverka">
+  <div class="v-wrap risks__grid">
+    <div class="risks__head" data-v-in>
+      <h2 class="v-display">Участок красивый. А строить на нём можно?</h2>
+      <p class="v-body v-soft">Четыре вопроса, которые покупатель задаёт ещё до первого звонка. Ответы на них стоят в карточке участка, а не «по запросу».</p>
+    </div>
+    <ul class="risks__list" data-v-in data-v-stagger="80">
+      <li><h3>Не та категория земли</h3><p>Назначение земли и вид разрешённого использования указаны в карточке участка.</p></li>
+      <li><h3>Нет подъезда и коммуникаций</h3><p>Подъезд и коммуникации названы по каждому участку: что есть на границе, а чего нет.</p></li>
+      <li><h3>Спор по документам</h3><p>Документы по участку можно запросить до показа и спокойно прочитать вдвоём.</p></li>
+      <li><h3>Цена только по звонку</h3><p>Цена стоит в карточке рядом с площадью. Разговор начинается с фактов.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. Участки: боковая лента. pan -->
+<section class="plots on-dark" data-v-act="pan" data-v-span="4.2" id="uchastki">
+  <div data-v-stage>
+    <div class="plots__rail" data-v-pan="0.1">
+      <div class="plots__intro">
+        <h2 class="v-display">Участки в Хосте</h2>
+        <p class="v-lede">Каждый – с площадью, назначением земли, коммуникациями, подъездом и ценой.</p>
+      </div>
+
+      <article class="plot">
+        <div class="plot__shape" aria-hidden="true">
+          <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><path class="c" d="M-10 150 C60 110 120 140 180 100 S290 60 340 90"/><path class="c" d="M-10 170 C70 130 130 160 190 122 S290 84 340 112"/><path class="c" d="M-10 130 C50 90 110 120 170 78 S280 36 340 68"/>
+            <path class="p" d="M70 128 L96 50 L196 34 L262 76 L236 140 L140 150 Z"/>
+            <circle cx="70" cy="128" r="5"/><circle cx="96" cy="50" r="5"/><circle cx="196" cy="34" r="5"/><circle cx="262" cy="76" r="5"/><circle cx="236" cy="140" r="5"/><circle cx="140" cy="150" r="5"/></svg>
+        </div>
+        <div class="plot__body">
+          <h3>Участок 14</h3>
+          <dl>
+            <div><dt>Площадь</dt><dd>8 сот.</dd></div>
+            <div><dt>Назначение земли</dt><dd>ИЖС</dd></div>
+            <div><dt>Коммуникации</dt><dd>электричество и вода у границы</dd></div>
+            <div><dt>Подъезд</dt><dd>асфальт до участка</dd></div>
+            <div class="is-price"><dt>Цена</dt><dd>7 400 000 ₽</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="plot">
+        <div class="plot__shape" aria-hidden="true">
+          <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><path class="c" d="M-10 60 C70 100 140 60 200 110 S290 140 340 110"/><path class="c" d="M-10 84 C70 124 140 84 200 134 S290 164 340 134"/><path class="c" d="M-10 36 C70 76 140 36 200 86 S290 116 340 86"/>
+            <path class="p" d="M60 70 L150 38 L250 52 L268 118 L170 146 L84 130 Z"/>
+            <circle cx="60" cy="70" r="5"/><circle cx="150" cy="38" r="5"/><circle cx="250" cy="52" r="5"/><circle cx="268" cy="118" r="5"/><circle cx="170" cy="146" r="5"/><circle cx="84" cy="130" r="5"/></svg>
+        </div>
+        <div class="plot__body">
+          <h3>Участок 21</h3>
+          <dl>
+            <div><dt>Площадь</dt><dd>10 сот.</dd></div>
+            <div><dt>Назначение земли</dt><dd>ЛПХ</dd></div>
+            <div><dt>Коммуникации</dt><dd>электричество, скважина на участке</dd></div>
+            <div><dt>Подъезд</dt><dd>грунтовая дорога, 300 м от асфальта</dd></div>
+            <div class="is-price"><dt>Цена</dt><dd>9 200 000 ₽</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="plot">
+        <div class="plot__shape" aria-hidden="true">
+          <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><path class="c" d="M-10 110 C60 70 130 120 200 70 S290 40 340 70"/><path class="c" d="M-10 134 C60 94 130 144 200 94 S290 64 340 94"/><path class="c" d="M-10 86 C60 46 130 96 200 46 S290 16 340 46"/>
+            <path class="p" d="M96 140 L70 80 L128 36 L230 44 L276 104 L206 150 Z"/>
+            <circle cx="96" cy="140" r="5"/><circle cx="70" cy="80" r="5"/><circle cx="128" cy="36" r="5"/><circle cx="230" cy="44" r="5"/><circle cx="276" cy="104" r="5"/><circle cx="206" cy="150" r="5"/></svg>
+        </div>
+        <div class="plot__body">
+          <h3>Участок 3</h3>
+          <dl>
+            <div><dt>Площадь</dt><dd>6 сот.</dd></div>
+            <div><dt>Назначение земли</dt><dd>ИЖС</dd></div>
+            <div><dt>Коммуникации</dt><dd>электричество, вода и газ по границе</dd></div>
+            <div><dt>Подъезд</dt><dd>асфальт до участка</dd></div>
+            <div class="is-price"><dt>Цена</dt><dd>8 900 000 ₽</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="plot plot--cta">
+        <div>
+          <h3>Нужен другой район или площадь?</h3>
+          <p>Пришлём участки, которые подходят вам, с теми же фактами и ценой.</p>
+        </div>
+        <a class="v-btn" href="#podborka">Получить подборку участков</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Расположение. flow, шторка, in -->
+<section class="v-section loc" data-v-act="flow" id="raspolozhenie">
+  <div class="v-wrap loc__grid">
+    <div>
+      <figure class="loc__fig" data-v-reveal="left" data-v-reveal-at="0.08 0.4"><img src="assets/location.webp" alt="Прибрежная дорога среди зелёных склонов над морем" width="1400" height="1050" loading="lazy"></figure>
+      <p class="loc__cap">Иллюстрация района. Карта района и расположение участков – пришлём по запросу.</p>
+    </div>
+    <div class="loc__text" data-v-in data-v-stagger="80">
+      <h2 class="v-display">Где участок и что рядом</h2>
+      <p class="v-body v-soft">Район и расстояния – фактами, а не словами «рядом с морем». Точные данные по каждому участку – в его карточке.</p>
+      <dl class="facts">
+        <div><dt>До моря</dt><dd>около 1,5 км</dd></div>
+        <div><dt>До центра Сочи</dt><dd>около 15 км</dd></div>
+        <div><dt>Дорога к участку</dt><dd>асфальт, 5 минут от трассы</dd></div>
+        <div><dt>Рядом</dt><dd>магазин, школа, остановка</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="v-wrap scenic">
+    <h2 class="v-display scenic__title" data-v-in>Живописные места рядом</h2>
+    <div class="scenic__grid" data-v-in data-v-stagger="140">
+      <figure class="scenic__wide">
+        <img src="assets/scenic-slopes.webp" alt="Склон с кипарисами над морем в утреннем свете" width="1600" height="760" loading="lazy">
+        <figcaption>Склоны с кипарисами – 2 км от участков</figcaption>
+      </figure>
+      <figure class="scenic__tall">
+        <img src="assets/scenic-terraces.webp" alt="Тропа по террасам среди кипарисов над морем" width="900" height="1125" loading="lazy">
+        <figcaption>Тропа по террасам – 3 км от участков</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Как купить: межевая линия, четыре колышка. pin -->
+<section class="steps on-dark" data-v-act="pin" data-v-span="2.8" id="kak-kupit">
+  <div data-v-stage>
+    <div class="v-layer steps__bg" data-v-parallax="-0.4"><img src="assets/access.webp" alt="Деревянные межевые колышки с оранжевым шнуром на краю участка" width="1920" height="1080" loading="lazy"></div>
+    <div class="steps__scrim"></div>
+    <h2 class="v-display steps__title" data-v-cue="0 1 0 0">Как купить участок</h2>
+    <div class="steps__copy">
+      <div class="step" data-v-cue="0 0.27 0 0.05">
+        <h3><span>1</span>Просмотр</h3>
+        <p>Выбираете участки из подборки и записываетесь на показ. На месте смотрите границы, подъезд и окружение.</p>
+      </div>
+      <div class="step" data-v-cue="0.25 0.52 0.05 0.05">
+        <h3><span>2</span>Документы</h3>
+        <p>Запрашиваете документы по участку – можно до показа. Проверяете назначение земли и права на участок: выписка ЕГРН, межевой план, правоустанавливающие документы.</p>
+      </div>
+      <div class="step" data-v-cue="0.5 0.77 0.05 0.05">
+        <h3><span>3</span>Договор</h3>
+        <p>Цена и условия записываются в договоре. Читаете его до подписания, вдвоём и без спешки.</p>
+      </div>
+      <div class="step" data-v-cue="0.75 1 0.05 0">
+        <h3><span>4</span>Сделка</h3>
+        <p>Подписываем договор и оформляем переход права на участок. Даты и условия: срок оформления и порядок расчётов указаны в договоре.</p>
+      </div>
+    </div>
+    <div class="steps__line" aria-hidden="true">
+      <div class="steps__fill"></div>
+      <i class="steps__stake" style="top:0"><b></b><span>Просмотр</span></i>
+      <i class="steps__stake" style="top:33.3%"><b></b><span>Документы</span></i>
+      <i class="steps__stake" style="top:66.6%"><b></b><span>Договор</span></i>
+      <i class="steps__stake" style="top:100%"><b></b><span>Сделка</span></i>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Риелтор. flow + in -->
+<section class="v-section agent" data-v-act="flow" id="rieltor">
+  <div class="v-wrap agent__grid" style="grid-template-columns:1fr">
+    <div class="agent__text" data-v-in data-v-stagger="80">
+      <h2 class="v-display">Риелтор по участкам в Хосте</h2>
+      <p class="v-lede" style="max-width:34ch">Подбирает земельные участки в Сочи и сопровождает покупку от показа до сделки.</p>
+      <p class="v-body v-soft">Специализация: земельные участки в Хосте и Сочи. Только факты, которые можно проверить.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Форма. flow -->
+<section class="v-section final on-dark" data-v-act="flow" id="podborka">
+  <div class="final__bg" aria-hidden="true"><img src="assets/evening.webp" alt="" width="1920" height="1080" loading="lazy"></div>
+  <div class="v-wrap">
+    <div class="final__grid">
+      <div class="final__head" data-v-in data-v-stagger="80">
+        <h2 class="v-display">Подборка участков под ваш запрос</h2>
+        <p class="v-lede" style="color:var(--v-ink)">Оставьте контакт – вернёмся с участками, у которых названы площадь, назначение земли, коммуникации, подъезд и цена.</p>
+        <dl class="contacts">
+          <div><dt>Телефон</dt><dd>+7 (000) 000-00-00</dd></div>
+          <div><dt>Мессенджер</dt><dd>Telegram и WhatsApp – по номеру телефона</dd></div>
+          <div><dt>Часы</dt><dd>Ежедневно 9:00–20:00</dd></div>
+          <div><dt>Адрес</dt><dd>Сочи, Хоста, ул. Лесная, 7</dd></div>
+        </dl>
+      </div>
+      <form class="form" id="lead" action="#" method="post" data-v-in data-v-in-self>
+        <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7" required></div>
+        <div class="field"><label for="f-way">Как удобнее связаться</label>
+          <select id="f-way" name="way"><option>Позвонить</option><option>WhatsApp</option><option>Telegram</option></select></div>
+        <div class="field"><label for="f-wish">Что важно в участке (необязательно)</label><textarea id="f-wish" name="wish" placeholder="Район, площадь, бюджет"></textarea></div>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Согласен на <a href="soglasie.html">обработку персональных данных</a>. <a href="politika.html">Политика обработки данных</a></span></label>
+        <button class="v-btn" type="submit">Получить подборку участков</button>
+        <p class="form__status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <footer class="foot"><span>© 2026 Участки у моря · земельные участки в Сочи</span><span>Демонстрационный сайт: участки, цены и контакты условные. Фото – иллюстрации района</span><p class="legal-links"><a href="politika.html">Политика обработки персональных данных</a> · <a href="soglasie.html">Согласие на обработку данных</a></p></footer>
+  </div>
+</section>
+
+</main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Колышки на межевой линии «Как купить» загораются по ходу сцены.
+  (function () {
+    var act = document.getElementById('kak-kupit');
+    var stakes = Array.prototype.slice.call(act.querySelectorAll('.steps__stake'));
+    var live = false, last = -1;
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0;
+      var k = Math.min(3, Math.floor(p * 4 + 0.02));
+      if (k !== last) { last = k; stakes.forEach(function (s, i) { s.classList.toggle('is-on', i <= k); }); }
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    tick();
+  })();
+
+  // Форма: пока заказчик не назвал, куда слать заявки, ничего не отправляем и говорим об этом прямо.
+  (function () {
+    var form = document.getElementById('lead'), status = document.getElementById('lead-status');
+    form.addEventListener('submit', function (e) {
+      if (form.getAttribute('action') === '#') {
+        e.preventDefault();
+        status.textContent = 'Это демо: форма ещё не подключена к приёму заявок. Данные никуда не отправлены.';
+      }
+    });
+  })();
+</script>
+<script>
+(function(){var K='cookie-choice';try{if(localStorage.getItem(K))return}catch(e){}
+var b=document.createElement('div');b.className='ckb';b.setAttribute('role','dialog');b.setAttribute('aria-label','Файлы cookie');
+b.innerHTML='<p>Сайт использует файлы cookie: необходимые для работы и, если вы согласны, для статистики. <a href="politika.html">Подробнее</a></p><div class="ckb__b"><button type="button" data-v="necessary">Только необходимые</button><button type="button" data-v="all">Принять</button></div>';
+b.addEventListener('click',function(e){var v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;try{localStorage.setItem(K,v)}catch(x){}try{document.dispatchEvent(new CustomEvent('cookie-choice',{detail:v}))}catch(x){}b.remove()});
+document.body.appendChild(b)})();
+</script>
+<!-- legal-add -->
+<script data-demo-stub>
+(()=>{var t=document.createElement("div");t.setAttribute("role","status");t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#14151A;color:#fff;padding:12px 18px;border-radius:12px;font:15px/1.4 system-ui,sans-serif;z-index:2147483647;max-width:calc(100% - 32px);opacity:0;pointer-events:none;transition:opacity .25s;text-align:center";var x;
+function show(m){t.textContent=m;if(!t.isConnected)document.body.appendChild(t);t.style.opacity=1;clearTimeout(x);x=setTimeout(function(){t.style.opacity=0},2600)}
+window.addEventListener("click",function(e){var a=e.target.closest('a[data-stub],[data-s-msg],a[href^="tel:"],a[href*="wa.me"],a[href*="t.me"],a[href*="max.ru"],a[href*="vk.com"],a[href*="whatsapp"]');if(!a)return;e.preventDefault();e.stopImmediatePropagation();show(a.matches('[data-stub="booking"]')?"Это демо: здесь будет ваша онлайн-запись":a.matches('[data-stub="tel"],[href^="tel:"]')?"Это демо: здесь будет ваш телефон":"Это демо: здесь будет ваш мессенджер")},true);
+})();
+</script>
+</body>
+</html>
