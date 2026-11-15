@@ -224,6 +224,8 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
 .niches a.first{background:var(--accent);color:#fff}
 .niches a.first span{color:rgba(255,255,255,.8)}
 .niches a.first:hover{background:var(--accent);filter:brightness(1.08)}
+a.devices{color:inherit;text-decoration:none;cursor:pointer;transition:transform .25s}
+a.devices:hover{transform:translateY(-3px)}
 .case.flash{animation:flash 1.8s ease}
 @keyframes flash{0%,60%{background:var(--soft);box-shadow:0 0 0 14px var(--soft)}100%{background:transparent;box-shadow:0 0 0 14px transparent}}
 /* плашка статуса работ */
@@ -429,21 +431,23 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
 
   // копии демо лежат рядом с витриной (demo/...): в строке адреса показываем полный адрес
   const shownUrl = (u) => /^https?:/.test(u || '') ? String(u).replace(/^https?:\/\//, '') : 'ajax55sv-cell.github.io/terentev-saity/' + String(u || '');
+  // у ссылки на копию всегда явный index.html: так она открывается и с сайта, и с файла на диске (папка по ссылке на диске показывает список файлов)
+  const openHref = (u) => (/^https?:/.test(u || '') || /\.html?$/.test(u || '')) ? String(u || '') : String(u || '') + 'index.html';
   const labels = { demo: 'Демо-проект', concept: 'Демо-проект', study: 'Учебный кейс', real: 'Реальный заказ' };
   const story = (c) => [['Задача', c.task], ['Что сделал', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
   const likeHref = (c) => tgBase ? `${tgBase}?text=${encodeURIComponent(`Здравствуйте! Хочу такой же сайт, как «${c.title}». Мой бизнес: `)}` : '';
   const caseHtml = (c, i) => `
     <article class="case reveal" id="case-${i}" data-group="${esc(c.group || '')}">
-      <div class="devices${c.desktop ? '' : ' solo'}">
-        ${c.desktop ? `<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc(shownUrl(c.url))}</span></div><img src="${esc(c.desktop)}" alt="Сайт ${esc(c.title)}" decoding="async" ${i > 0 ? 'loading="lazy"' : ''}></div>` : ''}
+      <a class="devices${c.desktop ? '' : ' solo'}" href="${esc(openHref(c.url))}" target="_blank" rel="noopener" aria-label="Открыть демо: ${esc(c.title)}">
+        ${c.desktop ? `<div class="browser"><div class="bar"><i></i><i></i><i></i><span>${esc(shownUrl(c.url).replace(/index\.html$/, ''))}</span></div><img src="${esc(c.desktop)}" alt="Сайт ${esc(c.title)}" decoding="async" ${i > 0 ? 'loading="lazy"' : ''}></div>` : ''}
         ${c.mobile ? phone(c, 18 + (i % 3) * 3, true) : ''}
-      </div>
+      </a>
       <div class="case-text">
         <div class="meta"><span class="badge ${c.kind === 'real' ? 'real' : c.kind === 'study' ? 'study' : c.kind === 'concept' ? 'concept' : 'demo'}">${labels[c.kind] || labels.demo}</span>${esc([c.niche, c.city].filter(Boolean).join(' · '))}</div>
         <h3>${esc(c.title)}</h3>
         ${story(c) ? `<ul class="story">${story(c)}</ul>` : c.about ? `<p style="color:var(--ink-2);margin:14px 0 0">${esc(c.about)}</p>` : ''}
         ${c.quote ? `<blockquote class="quote">«${esc(c.quote)}»<cite>${esc(c.quoteAuthor || 'владелец')}</cite></blockquote>` : ''}
-        <div class="case-actions">${c.url ? `<a class="open" href="${esc(c.url)}" target="_blank" rel="noopener">Открыть сайт →</a>` : ''}${tgBase ? `<a class="like" href="${esc(likeHref(c))}" target="_blank" rel="noopener">Хочу такой же</a>` : ''}</div>
+        <div class="case-actions">${c.url ? `<a class="open" href="${esc(openHref(c.url))}" target="_blank" rel="noopener">Открыть сайт →</a>` : ''}${tgBase ? `<a class="like" href="${esc(likeHref(c))}" target="_blank" rel="noopener">Хочу такой же</a>` : ''}</div>
       </div>
     </article>`;
   // нажали нишу: все её работы идут первыми и открыты, остальные под кнопкой «Показать ещё»
